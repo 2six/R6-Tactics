@@ -3,17 +3,23 @@
     {
       "id": "reinforce",
       "label": "벽 강화",
-      "icon": "../../images/icons/reinforce.png"
+      "icon": "../../images/icons/reinforce.png",
+      "width": "32px",
+      "height": "32px"
     },
     {
       "id": "rotate",
       "label": "로테이션 공사",
-      "icon": "../../images/icons/reinforce.png"
+      "icon": "../../images/icons/reinforce.png",
+      "width": "32px",
+      "height": "32px"
     },
     {
       "id": "gadget",
       "label": "특수 가젯",
-      "icon": "../../images/icons/reinforce.png"
+      "icon": "../../images/icons/reinforce.png",
+      "width": "40px",
+      "height": "40px"
     }
   ],
   "sites": {
@@ -53,10 +59,25 @@
         }
       ],
       "labels": [
-        { "pos": { "x": "38%", "y": "35%" }, "text": "VIP 라운지" },
-        { "pos": { "x": "45%", "y": "65%" }, "text": "물담배 라운지" },
-        { "pos": { "x": "67%", "y": "55%" }, "text": "당구장" },
-        { "pos": { "x": "80%", "y": "30%" }, "text": "선라이즈 바" }
+        { 
+          "pos": { "x": "38%", "y": "35%" }, 
+          "text": "VIP 라운지",
+          "fontSize": "18px",
+          "rotation": -10
+        },
+        { 
+          "pos": { "x": "45%", "y": "65%" }, 
+          "text": "물담배 라운지"
+        },
+        { 
+          "pos": { "x": "67%", "y": "55%" }, 
+          "text": "당구장"
+        },
+        { 
+          "pos": { "x": "80%", "y": "30%" }, 
+          "text": "선라이즈 바",
+          "rotation": 10 
+        }
       ]
     },
     "kitchen_service": {

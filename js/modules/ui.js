@@ -143,6 +143,15 @@ export function displayStrategies(strategies, strategyTypes, activeFilters) {
         const icon = document.createElement('img');
         icon.className = 'strategy-icon';
         icon.src = typeInfo.icon;
+        
+        // --- [수정됨] 아이콘 크기 적용 ---
+        if (typeInfo.width) {
+            icon.style.width = typeInfo.width;
+        }
+        if (typeInfo.height) {
+            icon.style.height = typeInfo.height;
+        }
+
         icon.style.left = strategy.pos.x;
         icon.style.top = strategy.pos.y;
         icon.addEventListener('click', (e) => {
@@ -160,6 +169,19 @@ export function displayLabels(labels = []) {
         labelEl.textContent = label.text;
         labelEl.style.left = label.pos.x;
         labelEl.style.top = label.pos.y;
+
+        // --- [수정됨] 라벨 폰트 크기 및 회전 적용 ---
+        if (label.fontSize) {
+            labelEl.style.fontSize = label.fontSize;
+        }
+        
+        // 기본 위치 조정과 회전을 함께 적용
+        let transformValue = 'translate(-50%, -50%)';
+        if (label.rotation) {
+            transformValue += ` rotate(${label.rotation}deg)`;
+        }
+        labelEl.style.transform = transformValue;
+
         mapViewer.appendChild(labelEl);
     });
 }
