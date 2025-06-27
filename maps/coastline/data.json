@@ -51,12 +51,19 @@
             "youtubeId": null
           }
         }
+      ],
+      "labels": [
+        { "pos": { "x": "38%", "y": "35%" }, "text": "VIP 라운지" },
+        { "pos": { "x": "45%", "y": "65%" }, "text": "물담배 라운지" },
+        { "pos": { "x": "67%", "y": "55%" }, "text": "당구장" },
+        { "pos": { "x": "80%", "y": "30%" }, "text": "선라이즈 바" }
       ]
     },
     "kitchen_service": {
       "name": "1F 주방 / 서비스",
       "mapImage": "../../images/maps/coastline_1f.png",
-      "strategies": []
+      "strategies": [],
+      "labels": []
     }
   }
 }

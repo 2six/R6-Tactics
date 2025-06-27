@@ -1,8 +1,7 @@
 import { loadStrategyData } from './modules/data.js';
-import { createSiteSelector, createFilterCheckboxes, updateMapBackground, displayStrategies, initMapControls } from './modules/ui.js';
+import { createSiteSelector, createFilterCheckboxes, updateMapBackground, displayStrategies, displayLabels, initMapControls } from './modules/ui.js';
 
 const dataPath = 'data.json';
-
 let fullData = null;
 
 function getActiveFilters() {
@@ -12,7 +11,6 @@ function getActiveFilters() {
 
 function renderView(siteId) {
     if (!fullData) return;
-
     const siteData = fullData.sites[siteId];
     if (!siteData) {
         console.error(`Site '${siteId}' not found in data.json`);
@@ -21,7 +19,10 @@ function renderView(siteId) {
     
     updateMapBackground(siteData.mapImage);
     const activeFilters = getActiveFilters();
+    // displayStrategies가 맵을 초기화하므로 먼저 호출
     displayStrategies(siteData.strategies, fullData.strategyTypes, activeFilters);
+    // 그 다음 라벨을 추가
+    displayLabels(siteData.labels);
 
     const url = new URL(window.location);
     url.searchParams.set('site', siteId);
@@ -32,7 +33,11 @@ function handleFilterChange() {
     const params = new URLSearchParams(window.location.search);
     const currentSiteId = params.get('site');
     if (currentSiteId) {
-        renderView(currentSiteId);
+        const siteData = fullData.sites[currentSiteId];
+        const activeFilters = getActiveFilters();
+        // 필터 변경 시에는 맵 배경을 다시 로드할 필요 없이 아이콘만 다시 그림
+        displayStrategies(siteData.strategies, fullData.strategyTypes, activeFilters);
+        displayLabels(siteData.labels);
     }
 }
 
@@ -42,11 +47,9 @@ async function init() {
         alert('전략 데이터를 불러오는 데 실패했습니다.');
         return;
     }
-
     const params = new URLSearchParams(window.location.search);
     let currentSiteId = params.get('site');
     const siteIds = Object.keys(fullData.sites);
-    
     if (!currentSiteId || !siteIds.includes(currentSiteId)) {
         currentSiteId = siteIds[0];
     }
@@ -56,10 +59,11 @@ async function init() {
     });
 
     createFilterCheckboxes(fullData.strategyTypes, handleFilterChange);
-
+    
+    // 초기 뷰 렌더링
     renderView(currentSiteId);
     
-    // 맵 컨트롤(줌 등) 기능 초기화
+    // 맵 컨트롤(줌, 패닝 등) 기능 초기화
     initMapControls();
 }
 
