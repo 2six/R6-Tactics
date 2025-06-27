@@ -186,45 +186,57 @@ export function displayLabels(labels = []) {
     });
 }
 
+// --- [수정됨] Coordinate Helper Functions ---
+
 export function initCoordHelper() {
-    // 1. 좌표를 표시할 div를 동적으로 생성
     const coordDisplay = document.createElement('div');
     coordDisplay.className = 'coord-helper-display';
     document.body.appendChild(coordDisplay);
 
-    // 2. mapArea에 마우스 이동 이벤트 리스너 등록
     mapArea.addEventListener('mousemove', (event) => {
-        // 3. 맵 뷰어의 원본 크기 가져오기
-        const viewerBaseWidth = mapViewer.offsetWidth;
-        const viewerBaseHeight = mapViewer.offsetHeight;
-        if (viewerBaseWidth === 0 || viewerBaseHeight === 0) return;
+        // --- 여기부터 완전히 새로운 계산 로직 ---
 
-        // 4. 맵 영역(mapArea) 기준 마우스 위치 계산
-        const rect = mapArea.getBoundingClientRect();
-        const mouseXInArea = event.clientX - rect.left;
-        const mouseYInArea = event.clientY - rect.top;
+        // 1. 줌/패닝이 적용된 맵 뷰어의 화면상 실제 크기와 위치를 가져옴
+        const mapRect = mapViewer.getBoundingClientRect();
 
-        // 5. 줌/패닝을 고려하여 맵 이미지 위의 실제 픽셀 좌표 계산
-        const mouseXOnMap = (mouseXInArea - currentTranslateX) / currentScale;
-        const mouseYOnMap = (mouseYInArea - currentTranslateY) / currentScale;
+        // 2. 마우스 커서의 현재 화면상 위치
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
 
-        // 6. 픽셀 좌표를 퍼센트(%)로 변환
-        const percentX = (mouseXOnMap / viewerBaseWidth) * 100;
-        const percentY = (mouseYOnMap / viewerBaseHeight) * 100;
+        // 3. 마우스가 맵 뷰어의 영역 안에 있는지 확인
+        if (
+            mouseX >= mapRect.left &&
+            mouseX <= mapRect.right &&
+            mouseY >= mapRect.top &&
+            mouseY <= mapRect.bottom
+        ) {
+            // 4. 맵 뷰어 내에서의 상대적인 마우스 위치 (픽셀 단위)
+            const mouseXOnScaledMap = mouseX - mapRect.left;
+            const mouseYOnScaledMap = mouseY - mapRect.top;
 
-        // 7. 좌표가 맵 이미지 영역 안에 있을 때만 표시
-        if (percentX >= 0 && percentX <= 100 && percentY >= 0 && percentY <= 100) {
+            // 5. 줌 배율을 고려하여 원본 맵 이미지 기준의 픽셀 좌표 계산
+            const mouseXOnOriginalMap = mouseXOnScaledMap / currentScale;
+            const mouseYOnOriginalMap = mouseYOnScaledMap / currentScale;
+
+            // 6. 원본 맵 이미지의 너비/높이 가져오기
+            const originalMapWidth = mapViewer.offsetWidth;
+            const originalMapHeight = mapViewer.offsetHeight;
+
+            // 7. 픽셀 좌표를 퍼센트(%)로 변환
+            const percentX = (mouseXOnOriginalMap / originalMapWidth) * 100;
+            const percentY = (mouseYOnOriginalMap / originalMapHeight) * 100;
+            
             coordDisplay.style.display = 'block';
             coordDisplay.textContent = `X: ${percentX.toFixed(1)}%, Y: ${percentY.toFixed(1)}%`;
-            // 좌표 표시창 위치를 마우스 커서 옆으로 이동
-            coordDisplay.style.left = `${event.clientX + 15}px`;
-            coordDisplay.style.top = `${event.clientY}px`;
+            coordDisplay.style.left = `${mouseX + 15}px`;
+            coordDisplay.style.top = `${mouseY}px`;
+
         } else {
+            // 마우스가 맵 영역 밖에 있으면 숨김
             coordDisplay.style.display = 'none';
         }
     });
 
-    // 마우스가 맵 영역을 벗어나면 좌표 표시창 숨김
     mapArea.addEventListener('mouseleave', () => {
         coordDisplay.style.display = 'none';
     });

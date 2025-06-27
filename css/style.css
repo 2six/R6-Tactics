@@ -100,7 +100,7 @@ body {
 
 .map-label {
     color: white;
-    background-color: rgba(0, 0, 0, 0.6);
+    /*background-color: rgba(0, 0, 0, 0.6);*/
     padding: 1px 1px;
     font-size: 14px;
     font-weight: bold;
