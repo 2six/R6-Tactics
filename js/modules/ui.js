@@ -145,7 +145,7 @@ export function createFilterCheckboxes(strategyTypes, onFilterChange) {
 
 export function updateMapBackground(imageUrl) {
     mapViewer.style.backgroundImage = `url(${imageUrl})`;
-    fitMapToContainer();
+    // fitMapToContainer(); // <<< [수정됨] 이 줄을 제거하여 뷰가 리셋되지 않도록 합니다.
 }
 
 export function displayStrategies(strategies = [], strategyTypes, activeFilters, currentFloorId) {
