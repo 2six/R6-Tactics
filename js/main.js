@@ -1,10 +1,8 @@
 import { loadStrategyData } from './modules/data.js';
 import { createSiteSelector, createFilterCheckboxes, updateMapBackground, displayStrategies } from './modules/ui.js';
 
-// 현재 페이지의 맵 이름을 경로에서 추출 (예: 'coastline')
-const pathParts = window.location.pathname.split('/').filter(p => p);
-const currentMapName = pathParts[pathParts.length - 1];
-const dataPath = `/maps/${currentMapName}/data.json`;
+// data.json 파일의 경로를 현재 페이지(index.html) 기준으로 설정
+const dataPath = 'data.json';
 
 let fullData = null;
 
