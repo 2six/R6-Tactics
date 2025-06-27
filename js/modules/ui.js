@@ -1,5 +1,6 @@
 const mapArea = document.querySelector('.map-area');
 const mapViewer = document.getElementById('map-viewer');
+const floorSelector = document.getElementById('floor-selector');
 const siteSelector = document.getElementById('site-selector');
 const filterCheckboxesContainer = document.getElementById('filter-checkboxes');
 
@@ -94,6 +95,20 @@ export function initMapControls() {
 
 // --- UI Creation Functions ---
 
+export function createFloorSelector(floors, currentFloorId, onFloorChange) {
+    floorSelector.innerHTML = '';
+    for (const floorId in floors) {
+        const option = document.createElement('option');
+        option.value = floorId;
+        option.textContent = floors[floorId].name;
+        if (floorId === currentFloorId) {
+            option.selected = true;
+        }
+        floorSelector.appendChild(option);
+    }
+    floorSelector.addEventListener('change', () => onFloorChange(floorSelector.value));
+}
+
 export function createSiteSelector(sites, currentSiteId, onSiteChange) {
     siteSelector.innerHTML = '';
     for (const siteId in sites) {
@@ -133,24 +148,24 @@ export function updateMapBackground(imageUrl) {
     fitMapToContainer();
 }
 
-export function displayStrategies(strategies, strategyTypes, activeFilters) {
-    mapViewer.innerHTML = '';
+export function displayStrategies(strategies = [], strategyTypes, activeFilters, currentFloorId) {
+    mapViewer.innerHTML = ''; // 기존 아이콘/라벨 초기화
     const typeMap = new Map(strategyTypes.map(t => [t.id, t]));
+
     strategies.forEach(strategy => {
+        // [수정됨] 현재 층에 해당하는 전략만 필터링
+        if (strategy.floorId !== currentFloorId) return;
         if (!activeFilters.includes(strategy.type)) return;
+
         const typeInfo = typeMap.get(strategy.type);
         if (!typeInfo) return;
+
         const icon = document.createElement('img');
         icon.className = 'strategy-icon';
         icon.src = typeInfo.icon;
         
-        // --- [수정됨] 아이콘 크기 적용 ---
-        if (typeInfo.width) {
-            icon.style.width = typeInfo.width;
-        }
-        if (typeInfo.height) {
-            icon.style.height = typeInfo.height;
-        }
+        if (typeInfo.width) icon.style.width = typeInfo.width;
+        if (typeInfo.height) icon.style.height = typeInfo.height;
 
         icon.style.left = strategy.pos.x;
         icon.style.top = strategy.pos.y;

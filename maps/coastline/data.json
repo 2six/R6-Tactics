@@ -1,92 +1,63 @@
 {
   "strategyTypes": [
-    {
-      "id": "reinforce",
-      "label": "벽 강화",
-      "icon": "../../images/icons/reinforce.png",
-      "width": "32px",
-      "height": "32px"
-    },
-    {
-      "id": "rotate",
-      "label": "로테이션 공사",
-      "icon": "../../images/icons/reinforce.png",
-      "width": "32px",
-      "height": "32px"
-    },
-    {
-      "id": "gadget",
-      "label": "특수 가젯",
-      "icon": "../../images/icons/reinforce.png",
-      "width": "40px",
-      "height": "40px"
-    }
+    { "id": "reinforce", "label": "벽 강화", "icon": "../../images/icons/reinforce.png", "width": "10px", "height": "10px" },
+    { "id": "rotate", "label": "로테이션 공사", "icon": "../../images/icons/reinforce.png", "width": "32px", "height": "32px" },
+    { "id": "gadget", "label": "특수 가젯", "icon": "../../images/icons/reinforce.png", "width": "40px", "height": "40px" }
   ],
+  "floors": {
+    "floor_2f": {
+      "name": "2층",
+      "mapImage": "../../images/maps/coastline_2f.png",
+      "labels": [
+        { "pos": { "x": "38%", "y": "35%" }, "text": "VIP 라운지", "fontSize": "18px", "rotation": -10 },
+        { "pos": { "x": "57.4%", "y": "52.2%" }, "text": "물담배" },
+        { "pos": { "x": "57%", "y": "59.5%" }, "text": "당구장", "rotation": 90 },
+        { "pos": { "x": "80%", "y": "30%" }, "text": "선라이즈 바", "rotation": 10 }
+      ]
+    },
+    "floor_1f": {
+      "name": "1층",
+      "mapImage": "../../images/maps/coastline_1f.png",
+      "labels": [
+        { "pos": { "x": "50%", "y": "50%" }, "text": "주방" },
+        { "pos": { "x": "30%", "y": "60%" }, "text": "서비스 입구" }
+      ]
+    }
+  },
   "sites": {
     "hookah_billiards": {
       "name": "2F 물담배 / 당구장",
-      "mapImage": "../../images/maps/coastline_2f.png",
       "strategies": [
         {
           "type": "reinforce",
+          "floorId": "floor_2f",
           "pos": { "x": "45%", "y": "50%" },
-          "modalContent": {
-            "title": "물담배 외부 벽 강화",
-            "description": "VIP 라운지에서 들어오는 각을 막기 위해 필수적으로 강화해야 하는 벽입니다.",
-            "image": "https://via.placeholder.com/400x225.png?text=Example+Image",
-            "youtubeId": null
-          }
+          "modalContent": { "title": "물담배 외부 벽 강화", "description": "VIP 라운지에서 들어오는 각을 막기 위해 필수적으로 강화해야 하는 벽입니다." }
         },
         {
           "type": "rotate",
+          "floorId": "floor_2f",
           "pos": { "x": "55%", "y": "60%" },
-          "modalContent": {
-            "title": "물담배-당구장 로테이션",
-            "description": "두 사이트를 원활하게 오가기 위한 로테이션입니다. 앉아서 지나갈 수 있도록 아래쪽에 만듭니다.",
-            "image": "https://via.placeholder.com/400x225.png?text=Rotate+Example",
-            "youtubeId": "dQw4w9WgXcQ"
-          }
+          "modalContent": { "title": "물담배-당구장 로테이션", "description": "두 사이트를 원활하게 오가기 위한 로테이션입니다." }
         },
         {
           "type": "gadget",
-          "pos": { "x": "60%", "y": "40%" },
-          "modalContent": {
-            "title": "당구장 창문 미라 거울",
-            "description": "주방 쪽 옥상에서 들어오는 적을 견제하기 위한 미라 거울 위치입니다. 거울 옆은 소프트 파괴가 가능하도록 남겨둡니다.",
-            "image": "https://via.placeholder.com/400x225.png?text=Mira+Placement",
-            "youtubeId": null
-          }
-        }
-      ],
-      "labels": [
-        { 
-          "pos": { "x": "38%", "y": "35%" }, 
-          "text": "VIP 라운지",
-          "fontSize": "18px",
-          "rotation": -10
-        },
-        { 
-          "pos": { "x": "45%", "y": "65%" }, 
-          "text": "물담배"
-        },
-        { 
-          "pos": { "x": "57%", "y": "60%" }, 
-          "text": "당구장",
-          "fontSize": "10px",
-          "rotation": 90
-        },
-        { 
-          "pos": { "x": "80%", "y": "30%" }, 
-          "text": "선라이즈 바",
-          "rotation": 10 
+          "floorId": "floor_1f",
+          "pos": { "x": "42%", "y": "70%" },
+          "modalContent": { "title": "주방 해치 아래 버티컬 작업", "description": "1층 주방 해치에서 올라오는 적을 견제하기 위한 버티컬 공사 지점입니다." }
         }
       ]
     },
     "kitchen_service": {
       "name": "1F 주방 / 서비스",
-      "mapImage": "../../images/maps/coastline_1f.png",
-      "strategies": [],
-      "labels": []
+      "strategies": [
+        {
+          "type": "reinforce",
+          "floorId": "floor_1f",
+          "pos": { "x": "45%", "y": "55%" },
+          "modalContent": { "title": "주방 외부 벽 강화", "description": "외부에서 직접적인 진입을 막기 위해 강화합니다." }
+        }
+      ]
     }
   }
 }

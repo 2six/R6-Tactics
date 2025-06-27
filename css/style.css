@@ -102,12 +102,13 @@ body {
     color: white;
     /*background-color: rgba(0, 0, 0, 0.6);*/
     padding: 1px 1px;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
     white-space: nowrap;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    opacity: 0.8;
 }
 
 /* --- [추가됨] 좌표 도우미 스타일 --- */
