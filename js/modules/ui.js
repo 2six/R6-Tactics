@@ -13,8 +13,8 @@ const modalYoutubeWrapper = document.getElementById('modal-youtube-wrapper');
 
 // --- Map Control Variables ---
 let currentScale = 1;
-const MIN_SCALE = 0.5; // 최소 축소 배율
-const MAX_SCALE = 8.0; // 최대 확대 배율
+const MIN_SCALE = 0.5;
+const MAX_SCALE = 8.0;
 let currentTranslateX = 0, currentTranslateY = 0;
 let isPanning = false;
 let startX, startY, startTranslateX, startTranslateY;
@@ -22,53 +22,36 @@ let startX, startY, startTranslateX, startTranslateY;
 // --- Map Control Functions ---
 
 function applyTransform() {
-    // 줌과 패닝을 한 번에 적용
     mapViewer.style.transform = `translate(${currentTranslateX}px, ${currentTranslateY}px) scale(${currentScale})`;
 }
 
 function fitMapToContainer() {
     const areaWidth = mapArea.clientWidth;
     const areaHeight = mapArea.clientHeight;
-    
     const viewerBaseWidth = mapViewer.offsetWidth;
     const viewerBaseHeight = mapViewer.offsetHeight;
-
     if (viewerBaseWidth === 0 || viewerBaseHeight === 0) return;
-
     const scaleX = areaWidth / viewerBaseWidth;
     const scaleY = areaHeight / viewerBaseHeight;
-    
-    currentScale = Math.min(scaleX, scaleY) * 0.95; // 95%로 약간의 여백
-    
-    // 맵을 중앙에 위치시키기 위한 초기 translate 값 계산
+    currentScale = Math.min(scaleX, scaleY) * 0.95;
     currentTranslateX = (areaWidth - viewerBaseWidth * currentScale) / 2;
     currentTranslateY = (areaHeight - viewerBaseHeight * currentScale) / 2;
-
     applyTransform();
 }
 
 function handleWheelZoom(event) {
     event.preventDefault();
-    
     const zoomIntensity = 0.1;
     const direction = event.deltaY < 0 ? 1 : -1;
-    
     const newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, currentScale * (1 + direction * zoomIntensity)));
-    
-    // 마우스 포인터 위치를 기준으로 줌
     const rect = mapArea.getBoundingClientRect();
     const mouseX = event.clientX - rect.left;
     const mouseY = event.clientY - rect.top;
-
-    // 현재 마우스 포인터가 맵의 어느 지점을 가리키는지 계산
     const pointX = (mouseX - currentTranslateX) / currentScale;
     const pointY = (mouseY - currentTranslateY) / currentScale;
-
-    // 새로운 translate 값 계산
     currentTranslateX = mouseX - pointX * newScale;
     currentTranslateY = mouseY - pointY * newScale;
     currentScale = newScale;
-    
     applyTransform();
 }
 
@@ -110,7 +93,6 @@ export function initMapControls() {
 // --- UI Creation Functions ---
 
 export function createSiteSelector(sites, currentSiteId, onSiteChange) {
-    // (기존 코드와 동일)
     siteSelector.innerHTML = '';
     for (const siteId in sites) {
         const option = document.createElement('option');
@@ -125,7 +107,6 @@ export function createSiteSelector(sites, currentSiteId, onSiteChange) {
 }
 
 export function createFilterCheckboxes(strategyTypes, onFilterChange) {
-    // (기존 코드와 동일)
     filterCheckboxesContainer.innerHTML = '';
     strategyTypes.forEach(type => {
         const div = document.createElement('div');
@@ -147,30 +128,25 @@ export function createFilterCheckboxes(strategyTypes, onFilterChange) {
 
 export function updateMapBackground(imageUrl) {
     mapViewer.style.backgroundImage = `url(${imageUrl})`;
-    // 맵이 바뀔 때마다 줌/패닝 리셋 및 피팅
     fitMapToContainer();
 }
 
 export function displayStrategies(strategies, strategyTypes, activeFilters) {
-    mapViewer.innerHTML = ''; // 기존 아이콘과 라벨 모두 초기화
+    mapViewer.innerHTML = '';
     const typeMap = new Map(strategyTypes.map(t => [t.id, t]));
-
     strategies.forEach(strategy => {
         if (!activeFilters.includes(strategy.type)) return;
-
         const typeInfo = typeMap.get(strategy.type);
         if (!typeInfo) return;
-
         const icon = document.createElement('img');
         icon.className = 'strategy-icon';
         icon.src = typeInfo.icon;
         icon.style.left = strategy.pos.x;
         icon.style.top = strategy.pos.y;
         icon.addEventListener('click', (e) => {
-            e.stopPropagation(); // 아이콘 클릭이 맵 패닝으로 이어지지 않도록 함
+            e.stopPropagation();
             showModal(strategy.modalContent);
         });
-        
         mapViewer.appendChild(icon);
     });
 }
@@ -186,8 +162,8 @@ export function displayLabels(labels = []) {
     });
 }
 
+// --- Modal Functions ---
 
-// --- Modal Functions --- (기존 코드와 대부분 동일)
 function showModal(content) {
     modalTitle.textContent = content.title;
     modalDescription.textContent = content.description;
@@ -195,7 +171,6 @@ function showModal(content) {
     modalYoutubeWrapper.innerHTML = '';
     modalToggleContainer.classList.add('hidden');
     const hasImage = content.image, hasYoutube = content.youtubeId;
-
     if (hasImage) {
         const img = document.createElement('img');
         img.src = content.image;
@@ -214,10 +189,12 @@ function showModal(content) {
     }
     if (hasImage && hasYoutube) {
         modalToggleContainer.classList.remove('hidden');
+        const imgBtn = modalToggleContainer.querySelector('[data-media="image"]');
+        const ytBtn = modalToggleContainer.querySelector('[data-media="youtube"]');
+        imgBtn.classList.add('active');
+        ytBtn.classList.remove('active');
         modalImageWrapper.classList.remove('hidden');
         modalYoutubeWrapper.classList.add('hidden');
-        modalToggleContainer.querySelector('[data-media="image"]').classList.add('active');
-        modalToggleContainer.querySelector('[data-media="youtube"]').classList.remove('active');
     } else if (hasImage) {
         modalImageWrapper.classList.remove('hidden');
         modalYoutubeWrapper.classList.add('hidden');
@@ -228,9 +205,42 @@ function showModal(content) {
     modalContainer.classList.remove('hidden');
 }
 
-function hideModal() { /* (기존 코드와 동일) */ }
-function handleMediaToggle(event) { /* (기존 코드와 동일) */ }
+// *** 여기부터 ***
+// 모달 닫기 기능 복원
+function hideModal() {
+    modalContainer.classList.add('hidden');
+    // 비디오 재생 중지를 위해 wrapper의 내용을 비움 (iframe을 제거하면 재생이 멈춤)
+    modalImageWrapper.innerHTML = '';
+    modalYoutubeWrapper.innerHTML = '';
+}
 
+// 미디어 토글 기능 복원
+function handleMediaToggle(event) {
+    const button = event.target.closest('button');
+    if (!button) return;
+
+    const mediaType = button.dataset.media;
+
+    // 모든 버튼 비활성화
+    modalToggleContainer.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
+    // 클릭된 버튼 활성화
+    button.classList.add('active');
+
+    if (mediaType === 'image') {
+        modalImageWrapper.classList.remove('hidden');
+        modalYoutubeWrapper.classList.add('hidden');
+    } else if (mediaType === 'youtube') {
+        modalImageWrapper.classList.add('hidden');
+        modalYoutubeWrapper.classList.remove('hidden');
+    }
+}
+
+// 모달 이벤트 리스너 연결 (이 부분이 올바르게 작동해야 함)
 modalContainer.querySelector('.modal-close-btn').addEventListener('click', hideModal);
-modalContainer.addEventListener('click', (e) => { if (e.target === modalContainer) hideModal(); });
+modalContainer.addEventListener('click', (e) => {
+    if (e.target === modalContainer) {
+        hideModal();
+    }
+});
 modalToggleContainer.addEventListener('click', handleMediaToggle);
+// *** 여기까지 기능이 복원되었습니다. ***
