@@ -9,10 +9,18 @@
       "name": "2층",
       "mapImage": "../../images/maps/coastline_2f.png",
       "labels": [
-        { "pos": { "x": "38%", "y": "35%" }, "text": "VIP 라운지", "fontSize": "18px", "rotation": -10 },
-        { "pos": { "x": "57.4%", "y": "52.2%" }, "text": "물담배" },
+        { "pos": { "x": "54.4%", "y": "50.6%" }, "text": "물담배 발코니" },
+        { "pos": { "x": "57.2%", "y": "52%" }, "text": "물담배" },
         { "pos": { "x": "57%", "y": "59.5%" }, "text": "당구장", "rotation": 90 },
-        { "pos": { "x": "80%", "y": "30%" }, "text": "선라이즈 바", "rotation": 10 }
+        { "pos": { "x": "59.6%", "y": "59.4%" }, "text": "소파" },
+        { "pos": { "x": "59%", "y": "64%" }, "text": "아쿠아" },
+        { "pos": { "x": "60", "y": "61.7%" }, "text": "테이블", "fontsize": 8},
+        { "pos": { "x": "63.6%", "y": "63.6%" }, "text": "아쿠아복도" },
+        { "pos": { "x": "63.6%", "y": "50.7%" }, "text": "VIP" },
+        { "pos": { "x": "67.9%", "y": "48.8%" }, "text": "명전" },
+        { "pos": { "x": "71%", "y": "48.8%" }, "text": "화장실" },
+        { "pos": { "x": "69.2%", "y": "53%" }, "text": "펜트" },
+        { "pos": { "x": "69.2%", "y": "59.7%" }, "text": "영감" }
       ]
     },
     "floor_1f": {
@@ -38,7 +46,9 @@
           "type": "rotate",
           "floorId": "floor_2f",
           "pos": { "x": "55%", "y": "60%" },
-          "modalContent": { "title": "물담배-당구장 로테이션", "description": "두 사이트를 원활하게 오가기 위한 로테이션입니다." }
+          "modalContent": { "title": "물담배-당구장 로테이션", "description": "두 사이트를 원활하게 오가기 위한 로테이션입니다.",
+          "image": "https://via.placeholder.com/400x225.png?text=Rotate+Example",
+          "youtubeId": "dQw4w9WgXcQ"}
         },
         {
           "type": "gadget",
