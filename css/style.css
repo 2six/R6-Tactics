@@ -110,6 +110,8 @@ body {
     pointer-events: none;
     opacity: 0.8;
     white-space: pre-wrap;
+    text-align: center;
+    line-height: 1;
 }
 
 /* --- [추가됨] 좌표 도우미 스타일 --- */
