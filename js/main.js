@@ -1,5 +1,5 @@
 import { loadStrategyData } from './modules/data.js';
-import { createSiteSelector, createFilterCheckboxes, updateMapBackground, displayStrategies, displayLabels, initMapControls } from './modules/ui.js';
+import { createSiteSelector, createFilterCheckboxes, updateMapBackground, displayStrategies, displayLabels, initMapControls, initCoordHelper } from './modules/ui.js';
 
 const dataPath = 'data.json';
 let fullData = null;
