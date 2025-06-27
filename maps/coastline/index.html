@@ -40,9 +40,17 @@
             <button class="modal-close-btn">×</button>
             <h2 id="modal-title"></h2>
             <p id="modal-description"></p>
+            
+            <!-- 수정된 미디어 콘텐츠 영역 -->
             <div id="modal-media-content">
-                <!-- 이미지 또는 유튜브 영상이 여기에 표시됩니다 -->
+                <div id="modal-toggle-container" class="hidden">
+                    <button data-media="image" class="active">이미지 보기</button>
+                    <button data-media="youtube">영상 보기</button>
+                </div>
+                <div id="modal-image-wrapper"></div>
+                <div id="modal-youtube-wrapper" class="hidden"></div>
             </div>
+
         </div>
     </div>
 

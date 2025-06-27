@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #f0f2f5;
     color: #333;
+    overflow: hidden; /* 전체 페이지 스크롤 방지 */
 }
 
 .container {
@@ -18,6 +19,7 @@ body {
     background-color: #fff;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     overflow-y: auto;
+    z-index: 10;
 }
 
 .controls h1 {
@@ -52,15 +54,20 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    overflow: hidden; /* 줌 아웃 시 맵이 영역을 벗어나지 않도록 함 */
 }
 
 #map-viewer {
     position: relative;
-    width: 1000px; /* 맵 이미지의 기본 너비 */
-    height: 750px; /* 맵 이미지의 기본 높이 */
+    /* 맵 이미지의 원본 크기를 기준으로 설정해야 비율 계산이 정확합니다 */
+    width: 1000px; 
+    height: 750px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transform-origin: center center; /* 줌의 중심점을 설정 */
+    transition: transform 0.2s ease-out; /* 부드러운 줌 효과 */
+    flex-shrink: 0; /* 컨테이너가 작아져도 맵의 크기가 줄어들지 않도록 함 */
 }
 
 .strategy-icon {
@@ -68,9 +75,8 @@ body {
     width: 32px;
     height: 32px;
     cursor: pointer;
-    transition: transform 0.2s;
+    /* transform은 부모인 map-viewer에 의해 제어되므로 여기서 제거 */
     
-    /* PNG 픽셀 아트를 위한 핵심 속성 */
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-crisp-edges;
     image-rendering: pixelated;
@@ -78,7 +84,9 @@ body {
 }
 
 .strategy-icon:hover {
-    transform: scale(1.2);
+    /* 호버 효과는 줌과 충돌할 수 있으므로 단순화하거나 다른 방식으로 구현하는 것을 고려 */
+    border: 2px solid yellow; 
+    box-sizing: border-box;
 }
 
 /* 모달(팝업) 스타일 */
@@ -118,8 +126,26 @@ body {
     cursor: pointer;
 }
 
+#modal-toggle-container {
+    margin-bottom: 15px;
+}
+
+#modal-toggle-container button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+#modal-toggle-container button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
 #modal-media-content iframe,
 #modal-media-content img {
     max-width: 100%;
     margin-top: 15px;
+    display: block; /* 중앙 정렬 등을 위해 block으로 변경 */
 }

@@ -1,7 +1,6 @@
 import { loadStrategyData } from './modules/data.js';
-import { createSiteSelector, createFilterCheckboxes, updateMapBackground, displayStrategies } from './modules/ui.js';
+import { createSiteSelector, createFilterCheckboxes, updateMapBackground, displayStrategies, initMapControls } from './modules/ui.js';
 
-// data.json 파일의 경로를 현재 페이지(index.html) 기준으로 설정
 const dataPath = 'data.json';
 
 let fullData = null;
@@ -24,7 +23,6 @@ function renderView(siteId) {
     const activeFilters = getActiveFilters();
     displayStrategies(siteData.strategies, fullData.strategyTypes, activeFilters);
 
-    // URL 업데이트
     const url = new URL(window.location);
     url.searchParams.set('site', siteId);
     window.history.pushState({}, '', url);
@@ -50,7 +48,7 @@ async function init() {
     const siteIds = Object.keys(fullData.sites);
     
     if (!currentSiteId || !siteIds.includes(currentSiteId)) {
-        currentSiteId = siteIds[0]; // URL에 사이트 정보가 없으면 첫번째 사이트로
+        currentSiteId = siteIds[0];
     }
 
     createSiteSelector(fullData.sites, currentSiteId, (newSiteId) => {
@@ -60,16 +58,16 @@ async function init() {
     createFilterCheckboxes(fullData.strategyTypes, handleFilterChange);
 
     renderView(currentSiteId);
+    
+    // 맵 컨트롤(줌 등) 기능 초기화
+    initMapControls();
 }
 
-// 브라우저 뒤로가기/앞으로가기 버튼 처리
 window.addEventListener('popstate', () => {
     const params = new URLSearchParams(window.location.search);
     const siteId = params.get('site') || Object.keys(fullData.sites)[0];
     renderView(siteId);
-    // 드롭다운 선택도 동기화
     document.getElementById('site-selector').value = siteId;
 });
 
-// DOM이 로드되면 앱 시작
 document.addEventListener('DOMContentLoaded', init);
