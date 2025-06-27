@@ -59,6 +59,7 @@ function handleMouseDown(event) {
     event.preventDefault();
     isPanning = true;
     mapArea.classList.add('panning');
+    mapViewer.classList.add('panning-optimization'); // <<< [수정됨] 패닝 시작 시 최적화 클래스 추가
     startX = event.clientX;
     startY = event.clientY;
     startTranslateX = currentTranslateX;
@@ -78,6 +79,7 @@ function handleMouseMove(event) {
 function handleMouseUpOrLeave() {
     isPanning = false;
     mapArea.classList.remove('panning');
+    mapViewer.classList.remove('panning-optimization'); // <<< [수정됨] 패닝 종료 시 최적화 클래스 제거
 }
 
 export function initMapControls() {
@@ -205,27 +207,18 @@ function showModal(content) {
     modalContainer.classList.remove('hidden');
 }
 
-// *** 여기부터 ***
-// 모달 닫기 기능 복원
 function hideModal() {
     modalContainer.classList.add('hidden');
-    // 비디오 재생 중지를 위해 wrapper의 내용을 비움 (iframe을 제거하면 재생이 멈춤)
     modalImageWrapper.innerHTML = '';
     modalYoutubeWrapper.innerHTML = '';
 }
 
-// 미디어 토글 기능 복원
 function handleMediaToggle(event) {
     const button = event.target.closest('button');
     if (!button) return;
-
     const mediaType = button.dataset.media;
-
-    // 모든 버튼 비활성화
     modalToggleContainer.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
-    // 클릭된 버튼 활성화
     button.classList.add('active');
-
     if (mediaType === 'image') {
         modalImageWrapper.classList.remove('hidden');
         modalYoutubeWrapper.classList.add('hidden');
@@ -235,7 +228,6 @@ function handleMediaToggle(event) {
     }
 }
 
-// 모달 이벤트 리스너 연결 (이 부분이 올바르게 작동해야 함)
 modalContainer.querySelector('.modal-close-btn').addEventListener('click', hideModal);
 modalContainer.addEventListener('click', (e) => {
     if (e.target === modalContainer) {
@@ -243,4 +235,3 @@ modalContainer.addEventListener('click', (e) => {
     }
 });
 modalToggleContainer.addEventListener('click', handleMediaToggle);
-// *** 여기까지 기능이 복원되었습니다. ***

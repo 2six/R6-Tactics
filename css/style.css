@@ -4,7 +4,7 @@ body {
     margin: 0;
     background-color: #f0f2f5;
     color: #333;
-    overflow: hidden; /* 전체 페이지 스크롤 방지 */
+    overflow: hidden;
 }
 
 .container {
@@ -55,10 +55,10 @@ body {
     align-items: center;
     padding: 20px;
     overflow: hidden; 
-    cursor: grab; /* 패닝이 가능함을 나타내는 커서 */
+    cursor: grab;
 }
 .map-area.panning {
-    cursor: grabbing; /* 패닝 중임을 나타내는 커서 */
+    cursor: grabbing;
 }
 
 #map-viewer {
@@ -68,10 +68,17 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform-origin: top left; /* 패닝/줌의 기준점을 좌상단으로 변경 */
+    transform-origin: top left;
     transition: transform 0.2s ease-out; 
     flex-shrink: 0;
-    
+    /* 
+      기존에 여기에 있던 will-change와 backface-visibility를 제거했습니다.
+      이제 이 속성들은 아래의 .panning-optimization 클래스를 통해 동적으로 적용됩니다.
+    */
+}
+
+/* 렌더링 최적화를 위한 클래스 (JS로 동적 제어) */
+.panning-optimization {
     will-change: transform;
     backface-visibility: hidden;
 }
@@ -90,8 +97,6 @@ body {
     image-rendering: pixelated;
     image-rendering: crisp-edges;
 }
-
-/* .strategy-icon:hover 규칙이 삭제되었습니다. */
 
 .map-label {
     color: white;
