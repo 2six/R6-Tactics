@@ -186,6 +186,50 @@ export function displayLabels(labels = []) {
     });
 }
 
+export function initCoordHelper() {
+    // 1. 좌표를 표시할 div를 동적으로 생성
+    const coordDisplay = document.createElement('div');
+    coordDisplay.className = 'coord-helper-display';
+    document.body.appendChild(coordDisplay);
+
+    // 2. mapArea에 마우스 이동 이벤트 리스너 등록
+    mapArea.addEventListener('mousemove', (event) => {
+        // 3. 맵 뷰어의 원본 크기 가져오기
+        const viewerBaseWidth = mapViewer.offsetWidth;
+        const viewerBaseHeight = mapViewer.offsetHeight;
+        if (viewerBaseWidth === 0 || viewerBaseHeight === 0) return;
+
+        // 4. 맵 영역(mapArea) 기준 마우스 위치 계산
+        const rect = mapArea.getBoundingClientRect();
+        const mouseXInArea = event.clientX - rect.left;
+        const mouseYInArea = event.clientY - rect.top;
+
+        // 5. 줌/패닝을 고려하여 맵 이미지 위의 실제 픽셀 좌표 계산
+        const mouseXOnMap = (mouseXInArea - currentTranslateX) / currentScale;
+        const mouseYOnMap = (mouseYInArea - currentTranslateY) / currentScale;
+
+        // 6. 픽셀 좌표를 퍼센트(%)로 변환
+        const percentX = (mouseXOnMap / viewerBaseWidth) * 100;
+        const percentY = (mouseYOnMap / viewerBaseHeight) * 100;
+
+        // 7. 좌표가 맵 이미지 영역 안에 있을 때만 표시
+        if (percentX >= 0 && percentX <= 100 && percentY >= 0 && percentY <= 100) {
+            coordDisplay.style.display = 'block';
+            coordDisplay.textContent = `X: ${percentX.toFixed(1)}%, Y: ${percentY.toFixed(1)}%`;
+            // 좌표 표시창 위치를 마우스 커서 옆으로 이동
+            coordDisplay.style.left = `${event.clientX + 15}px`;
+            coordDisplay.style.top = `${event.clientY}px`;
+        } else {
+            coordDisplay.style.display = 'none';
+        }
+    });
+
+    // 마우스가 맵 영역을 벗어나면 좌표 표시창 숨김
+    mapArea.addEventListener('mouseleave', () => {
+        coordDisplay.style.display = 'none';
+    });
+}
+
 // --- Modal Functions ---
 
 function showModal(content) {

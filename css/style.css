@@ -110,6 +110,21 @@ body {
     pointer-events: none;
 }
 
+/* --- [추가됨] 좌표 도우미 스타일 --- */
+.coord-helper-display {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 9999;
+    pointer-events: none; /* 마우스 이벤트를 방해하지 않음 */
+    white-space: nowrap;
+}
 
 /* 모달(팝업) 스타일 */
 .hidden { display: none !important; }

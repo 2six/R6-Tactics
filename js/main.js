@@ -47,23 +47,28 @@ async function init() {
         alert('전략 데이터를 불러오는 데 실패했습니다.');
         return;
     }
+
     const params = new URLSearchParams(window.location.search);
     let currentSiteId = params.get('site');
     const siteIds = Object.keys(fullData.sites);
     if (!currentSiteId || !siteIds.includes(currentSiteId)) {
         currentSiteId = siteIds[0];
     }
-
+    
+    // --- [수정됨] URL 파라미터를 확인하여 테스트 모드 활성화 ---
+    const isTestMode = params.get('test') === 'true';
+    if (isTestMode) {
+        initCoordHelper();
+    }
+    
     createSiteSelector(fullData.sites, currentSiteId, (newSiteId) => {
         renderView(newSiteId);
     });
 
     createFilterCheckboxes(fullData.strategyTypes, handleFilterChange);
     
-    // 초기 뷰 렌더링
     renderView(currentSiteId);
     
-    // 맵 컨트롤(줌, 패닝 등) 기능 초기화
     initMapControls();
 }
 
