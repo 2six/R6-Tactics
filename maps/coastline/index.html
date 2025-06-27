@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R6S Strat - 해안선</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- 컨트롤 패널: 사이트 선택, 필터 -->
+        <aside class="controls">
+            <h1>해안선 (Coastline)</h1>
+            
+            <div class="control-group">
+                <label for="site-selector">방어 지역 선택</label>
+                <select id="site-selector"></select>
+            </div>
+
+            <div class="control-group">
+                <label>전략 필터</label>
+                <div id="filter-checkboxes">
+                    <!-- 체크박스는 JS로 동적 생성됩니다 -->
+                </div>
+            </div>
+        </aside>
+
+        <!-- 맵 뷰어: 배경 이미지와 아이콘들이 표시될 영역 -->
+        <main class="map-area">
+            <div id="map-viewer">
+                <!-- 아이콘은 JS로 동적 생성됩니다 -->
+            </div>
+        </main>
+    </div>
+
+    <!-- 상세 정보 팝업(모달) -->
+    <div id="modal-container" class="hidden">
+        <div class="modal-content">
+            <button class="modal-close-btn">×</button>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <div id="modal-media-content">
+                <!-- 이미지 또는 유튜브 영상이 여기에 표시됩니다 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/main.js" type="module"></script>
+</body>
+</html>

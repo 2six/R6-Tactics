@@ -1,0 +1,62 @@
+{
+    "strategyTypes": [
+      {
+        "id": "reinforce",
+        "label": "벽 강화",
+        "icon": "/images/icons/reinforce.png"
+      },
+      {
+        "id": "rotate",
+        "label": "로테이션 공사",
+        "icon": "/images/icons/reinforce.png" 
+      },
+      {
+        "id": "gadget",
+        "label": "특수 가젯",
+        "icon": "/images/icons/reinforce.png"
+      }
+    ],
+    "sites": {
+      "hookah_billiards": {
+        "name": "2F 물담배 / 당구장",
+        "mapImage": "/images/maps/coastline_2f.png",
+        "strategies": [
+          {
+            "type": "reinforce",
+            "pos": { "x": "45%", "y": "50%" },
+            "modalContent": {
+              "title": "물담배 외부 벽 강화",
+              "description": "VIP 라운지에서 들어오는 각을 막기 위해 필수적으로 강화해야 하는 벽입니다.",
+              "image": "https://via.placeholder.com/400x225.png?text=Example+Image",
+              "youtubeId": null
+            }
+          },
+          {
+            "type": "rotate",
+            "pos": { "x": "55%", "y": "60%" },
+            "modalContent": {
+              "title": "물담배-당구장 로테이션",
+              "description": "두 사이트를 원활하게 오가기 위한 로테이션입니다. 앉아서 지나갈 수 있도록 아래쪽에 만듭니다.",
+              "image": null,
+              "youtubeId": "dQw4w9WgXcQ"
+            }
+          },
+          {
+            "type": "gadget",
+            "pos": { "x": "60%", "y": "40%" },
+            "modalContent": {
+              "title": "당구장 창문 미라 거울",
+              "description": "주방 쪽 옥상에서 들어오는 적을 견제하기 위한 미라 거울 위치입니다. 거울 옆은 소프트 파괴가 가능하도록 남겨둡니다.",
+              "image": "https://via.placeholder.com/400x225.png?text=Mira+Placement",
+              "youtubeId": null
+            }
+          }
+        ]
+      },
+      "kitchen_service": {
+        "name": "1F 주방 / 서비스",
+        "mapImage": "/images/maps/coastline_1f.png",
+        "strategies": []
+      }
+    }
+  }

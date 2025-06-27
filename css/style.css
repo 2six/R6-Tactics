@@ -1,0 +1,125 @@
+/* 기본 설정 */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* 컨트롤 패널 스타일 */
+.controls {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+.controls h1 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.control-group {
+    margin-bottom: 20px;
+}
+
+.control-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#site-selector, .filter-checkbox label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#site-selector {
+    width: 100%;
+    padding: 8px;
+}
+
+/* 맵 영역 스타일 */
+.map-area {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#map-viewer {
+    position: relative;
+    width: 1000px; /* 맵 이미지의 기본 너비 */
+    height: 750px; /* 맵 이미지의 기본 높이 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.strategy-icon {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    
+    /* PNG 픽셀 아트를 위한 핵심 속성 */
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.strategy-icon:hover {
+    transform: scale(1.2);
+}
+
+/* 모달(팝업) 스타일 */
+.hidden {
+    display: none !important;
+}
+
+#modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 640px;
+    position: relative;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#modal-media-content iframe,
+#modal-media-content img {
+    max-width: 100%;
+    margin-top: 15px;
+}
