@@ -31,6 +31,7 @@ function applyTransform() {
     mapViewer.style.transform = `translate(${currentTranslateX}px, ${currentTranslateY}px) scale(${currentScale})`;
 }
 
+// [수정됨] top left 기준에 맞춰 초기 중앙 정렬을 계산하는 로직
 function fitMapToContainer() {
     const areaWidth = mapArea.clientWidth;
     const areaHeight = mapArea.clientHeight;
@@ -38,45 +39,32 @@ function fitMapToContainer() {
     const viewerBaseHeight = mapViewer.offsetHeight;
     if (viewerBaseWidth === 0) return;
 
-    // --- [수정됨] JS가 직접 중앙 정렬을 계산하는 로직 복원 ---
-    // 1. 크기 계산: 맵 뷰어의 가로 너비에 맞춤
     currentScale = areaWidth / viewerBaseWidth;
-
-    // 2. 위치 계산: JS가 직접 중앙 위치를 계산하여 적용
+    
+    // JS가 직접 중앙 위치를 계산하여 적용
     currentTranslateX = (areaWidth - viewerBaseWidth * currentScale) / 2;
     currentTranslateY = (areaHeight - viewerBaseHeight * currentScale) / 2;
     
     applyTransform();
 }
 
-// --- [수정됨] 올바른 "Zoom to Cursor" 로직으로 완벽하게 복원된 함수 ---
+// [수정됨] top left 기준에 맞춰 올바르게 작동하는 "Zoom to Cursor" 로직
 function handleWheelZoom(event) {
     event.preventDefault();
     
     const zoomIntensity = 0.1;
     const direction = event.deltaY < 0 ? 1 : -1;
     const newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, currentScale * (1 + direction * zoomIntensity)));
-
+    
     const rect = mapArea.getBoundingClientRect();
     const mouseX = event.clientX - rect.left;
     const mouseY = event.clientY - rect.top;
 
+    // 앵커 포인트 계산 (이 공식은 top left 기준에서 올바르게 작동합니다)
     const pointX = (mouseX - currentTranslateX) / currentScale;
     const pointY = (mouseY - currentTranslateY) / currentScale;
 
-    // --- [디버깅 코드 추가] ---
-    // 계산에 사용된 모든 값을 객체 형태로 출력하여 확인합니다.
-    console.log({
-        mouse: `(${mouseX.toFixed(2)}, ${mouseY.toFixed(2)})`,
-        oldScale: currentScale.toFixed(2),
-        newScale: newScale.toFixed(2),
-        oldTranslate: `(${currentTranslateX.toFixed(2)}, ${currentTranslateY.toFixed(2)})`,
-        anchorPoint: `(${pointX.toFixed(2)}, ${pointY.toFixed(2)})`,
-        newTranslateX: (mouseX - pointX * newScale).toFixed(2),
-        newTranslateY: (mouseY - pointY * newScale).toFixed(2),
-    });
-    console.log('---'); // 각 휠 이벤트를 구분하기 위한 선
-
+    // 새로운 이동량 계산
     currentTranslateX = mouseX - pointX * newScale;
     currentTranslateY = mouseY - pointY * newScale;
     

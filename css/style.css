@@ -90,7 +90,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform-origin: center;
+    transform-origin: top left; /* <<< [수정됨] center 에서 top left 로 변경 */
     transition: transform 0.2s ease-out; 
     flex-shrink: 0;
 }
