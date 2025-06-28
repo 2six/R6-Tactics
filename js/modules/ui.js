@@ -33,18 +33,16 @@ function applyTransform() {
 
 function fitMapToContainer() {
     const areaWidth = mapArea.clientWidth;
-    const areaHeight = mapArea.clientHeight;
     const viewerBaseWidth = mapViewer.offsetWidth;
-    const viewerBaseHeight = mapViewer.offsetHeight;
-    if (viewerBaseWidth === 0 || viewerBaseHeight === 0) return;
+    if (viewerBaseWidth === 0) return;
 
-    // --- [수정됨] 맵 초기 크기 및 위치 계산 로직 ---
-    // 1. 맵 뷰어의 가로 너비에 크기를 맞춤
+    // --- [수정됨] ---
+    // 1. 크기 계산: 맵 뷰어의 가로 너비에 맞춤
     currentScale = areaWidth / viewerBaseWidth;
 
-    // 2. 가로/세로 중앙에 오도록 위치 조정
-    currentTranslateX = (areaWidth - viewerBaseWidth * currentScale) / 2; // 실제로는 0이 됨
-    currentTranslateY = (areaHeight - viewerBaseHeight * currentScale) / 2;
+    // 2. 위치 계산: CSS Flexbox가 중앙 정렬을 담당하므로, JS는 위치를 0으로 설정
+    currentTranslateX = 0;
+    currentTranslateY = 0;
     
     applyTransform();
 }
@@ -54,15 +52,20 @@ function handleWheelZoom(event) {
     event.preventDefault();
     const zoomIntensity = 0.1;
     const direction = event.deltaY < 0 ? 1 : -1;
+    
     const newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, currentScale * (1 + direction * zoomIntensity)));
+    
     const rect = mapArea.getBoundingClientRect();
     const mouseX = event.clientX - rect.left;
     const mouseY = event.clientY - rect.top;
+
     const pointX = (mouseX - currentTranslateX) / currentScale;
     const pointY = (mouseY - currentTranslateY) / currentScale;
+
     currentTranslateX = mouseX - pointX * newScale;
     currentTranslateY = mouseY - pointY * newScale;
     currentScale = newScale;
+    
     applyTransform();
 }
 
