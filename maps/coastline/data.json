@@ -1,6 +1,6 @@
 {
   "strategyTypes": [
-    { "id": "reinforce", "label": "벽 강화", "icon": "../../images/icons/reinforce.png", "width": "8px", "height": "8px" },
+    { "id": "reinforce", "label": "벽 강화", "icon": "../../images/icons/blue.png", "width": "8px", "height": "8px" },
     { "id": "rotate", "label": "로테이션 공사", "icon": "../../images/icons/rotate.png", "width": "8px", "height": "8px" },
     { "id": "gadget", "label": "특수 가젯", "icon": "../../images/icons/reinforce.png", "width": "40px", "height": "40px" }
   ],
@@ -18,7 +18,7 @@
         { "pos": { "x": "59.7%", "y": "59.4%" }, "text": "소파", "fontSize": "8px" },
         { "pos": { "x": "58.3%", "y": "66.6%" }, "text": "아쿠아발코니" },
         { "pos": { "x": "59%", "y": "64%" }, "text": "아쿠아" },
-        { "pos": { "x": "60%", "y": "61.7%" }, "text": "테이블", "fontSize": "8px" },
+        { "pos": { "x": "59.9%", "y": "61.7%" }, "text": "테이블", "fontSize": "8px" },
         { "pos": { "x": "63.5%", "y": "63.6%" }, "text": "아쿠아복도" },
         { "pos": { "x": "65.9%", "y": "45.8%" }, "text": "VIP 발코니" },
         { "pos": { "x": "63.5%", "y": "50.7%" }, "text": "VIP" },
@@ -47,7 +47,7 @@
         { "pos": { "x": "63.6%", "y": "55.2%" }, "text": "주방복도" },
         { "pos": { "x": "63.6%", "y": "59.4%" }, "text": "정원" },
         { "pos": { "x": "65.5%", "y": "64.8%" }, "text": "경비실" },
-        { "pos": { "x": "63.6%", "y": "55.2%" }, "text": "직원출입구" },
+        { "pos": { "x": "67.2%", "y": "51.2%" }, "text": "직원출입구", "rotation": 90 },
         { "pos": { "x": "70.7%", "y": "49.2%" }, "text": "응접실" },
         { "pos": { "x": "70.3%", "y": "52.5%" }, "text": "화장실" },
         { "pos": { "x": "68.7%", "y": "56.3%" }, "text": "로비" },
@@ -63,6 +63,8 @@
           "type": "reinforce",
           "floorId": "floor_2f",
           "pos": { "x": "57.1%", "y": "56.2%" },
+          "width": "10px",
+          "height": "2px",
           "modalContent": { "title": "물담배-당구장 벽", "description": "물담배  홀딩" }
         },
         {

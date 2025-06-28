@@ -149,11 +149,10 @@ export function updateMapBackground(imageUrl) {
 }
 
 export function displayStrategies(strategies = [], strategyTypes, activeFilters, currentFloorId) {
-    mapViewer.innerHTML = ''; // 기존 아이콘/라벨 초기화
+    mapViewer.innerHTML = '';
     const typeMap = new Map(strategyTypes.map(t => [t.id, t]));
 
     strategies.forEach(strategy => {
-        // [수정됨] 현재 층에 해당하는 전략만 필터링
         if (strategy.floorId !== currentFloorId) return;
         if (!activeFilters.includes(strategy.type)) return;
 
@@ -163,12 +162,24 @@ export function displayStrategies(strategies = [], strategyTypes, activeFilters,
         const icon = document.createElement('img');
         icon.className = 'strategy-icon';
         icon.src = typeInfo.icon;
-        
-        if (typeInfo.width) icon.style.width = typeInfo.width;
-        if (typeInfo.height) icon.style.height = typeInfo.height;
 
+        // --- [수정됨] 크기와 회전 적용 로직 ---
+
+        // 1. 크기 적용 (개별 전략 값 우선)
+        icon.style.width = strategy.width || typeInfo.width;
+        icon.style.height = strategy.height || typeInfo.height;
+
+        // 2. 위치 적용
         icon.style.left = strategy.pos.x;
         icon.style.top = strategy.pos.y;
+
+        // 3. Transform 적용 (중앙 정렬 + 개별 회전)
+        let transformValue = 'translate(-50%, -50%)'; // 항상 중앙 정렬
+        if (strategy.rotation) {
+            transformValue += ` rotate(${strategy.rotation}deg)`;
+        }
+        icon.style.transform = transformValue;
+
         icon.addEventListener('click', (e) => {
             e.stopPropagation();
             showModal(strategy.modalContent);
@@ -184,19 +195,14 @@ export function displayLabels(labels = []) {
         labelEl.textContent = label.text;
         labelEl.style.left = label.pos.x;
         labelEl.style.top = label.pos.y;
-
-        // --- [수정됨] 라벨 폰트 크기 및 회전 적용 ---
         if (label.fontSize) {
             labelEl.style.fontSize = label.fontSize;
         }
-        
-        // 기본 위치 조정과 회전을 함께 적용
         let transformValue = 'translate(-50%, -50%)';
         if (label.rotation) {
             transformValue += ` rotate(${label.rotation}deg)`;
         }
         labelEl.style.transform = transformValue;
-
         mapViewer.appendChild(labelEl);
     });
 }
