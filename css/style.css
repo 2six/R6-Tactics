@@ -93,6 +93,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     transform-origin: center; /* <<< [수정됨] top left 에서 center 로 변경 */
+    vertical-align: middle;
     transition: transform 0.2s ease-out; 
     flex-shrink: 0;
 }
