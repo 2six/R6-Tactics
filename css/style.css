@@ -92,13 +92,9 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform-origin: top left;
+    transform-origin: center; /* <<< [수정됨] top left 에서 center 로 변경 */
     transition: transform 0.2s ease-out; 
     flex-shrink: 0;
-    /* 
-      기존에 여기에 있던 will-change와 backface-visibility를 제거했습니다.
-      이제 이 속성들은 아래의 .panning-optimization 클래스를 통해 동적으로 적용됩니다.
-    */
 }
 
 /* 렌더링 최적화를 위한 클래스 (JS로 동적 제어) */
