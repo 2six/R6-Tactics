@@ -2,7 +2,7 @@
   "strategyTypes": [
     { "id": "reinforce", "label": "강화", "icon": "../../images/icons/blue.png", "width": "10px", "height": "2px" },
     { "id": "break", "label": "파괴", "icon": "../../images/icons/red.png", "width": "10px", "height": "2px" },
-    { "id": "rotate", "label": "로테이션 공사", "icon": "../../images/icons/rotate.png", "width": "8px", "height": "8px" },
+    { "id": "rotate", "label": "로테이션", "icon": "../../images/icons/rotate.png", "width": "8px", "height": "8px" },
     { "id": "evilEye", "label": "악의 눈", "icon": "../../images/icons/Evil Eye.png", "width": "6px", "height": "6px" }
   ],
   "floors": {
@@ -111,7 +111,7 @@
         {
           "type": "reinforce",
           "floorId": "floor_2f",
-          "pos": { "x": "63.1%", "y": "47.3%" },
+          "pos": { "x": "63.1%", "y": "47.2%" },
           "width": "19px",
           "height": "2px",
           "modalContent": { "title": "VIP 외벽", "description": "VIP 진입 저지",
