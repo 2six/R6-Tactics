@@ -49,27 +49,25 @@ function fitMapToContainer() {
     applyTransform();
 }
 
-// --- [수정됨] 계산의 기준점을 mapViewer로 변경하여 문제를 해결합니다. ---
+// --- [수정됨] 올바른 "Zoom to Cursor" 로직으로 완벽하게 복원된 함수 ---
 function handleWheelZoom(event) {
     event.preventDefault();
     
+    // 1. 새로운 줌 배율 계산
     const zoomIntensity = 0.1;
     const direction = event.deltaY < 0 ? 1 : -1;
     const newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, currentScale * (1 + direction * zoomIntensity)));
     
-    // 2. 마우스 커서의 현재 위치 (맵 이미지 기준)
-    const rect = mapViewer.getBoundingClientRect(); // <<< mapArea에서 mapViewer로 변경
+    // 2. 마우스 커서의 현재 위치 (맵 영역 기준)
+    const rect = mapArea.getBoundingClientRect();
     const mouseX = event.clientX - rect.left;
     const mouseY = event.clientY - rect.top;
 
     // 3. 줌 하기 전, 마우스 커서 아래에 있는 원본 맵의 지점(앵커 포인트) 계산
-    // (줌/패닝이 적용된 맵 위에서의 상대 마우스 위치) / 현재 줌 배율
     const pointX = (mouseX - currentTranslateX) / currentScale;
     const pointY = (mouseY - currentTranslateY) / currentScale;
 
-    // 4. 새로운 맵 이동량 계산
-    // (이전 코드에서 이 부분은 더 복잡하게 계산했지만, 기준점을 mapViewer로 바꾸면 계산이 훨씬 간단하고 정확해집니다)
-    // 현재 이동량 + (앵커 포인트 * (이전 줌 배율 - 새로운 줌 배율))
+    // 4. 새로운 맵 이동량 계산 (앵커 포인트가 새로운 줌 배율에서도 같은 마우스 위치에 오도록 역산)
     currentTranslateX = mouseX - pointX * newScale;
     currentTranslateY = mouseY - pointY * newScale;
     
@@ -79,6 +77,7 @@ function handleWheelZoom(event) {
     // 6. 계산된 새로운 위치와 배율을 동시에 적용
     applyTransform();
 }
+
 function handleMouseDown(event) {
     event.preventDefault();
     isPanning = true;
