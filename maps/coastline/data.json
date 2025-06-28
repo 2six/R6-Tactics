@@ -1,7 +1,7 @@
 {
   "strategyTypes": [
-    { "id": "reinforce", "label": "벽 강화", "icon": "../../images/icons/reinforce.png", "width": "10px", "height": "10px" },
-    { "id": "rotate", "label": "로테이션 공사", "icon": "../../images/icons/reinforce.png", "width": "32px", "height": "32px" },
+    { "id": "reinforce", "label": "벽 강화", "icon": "../../images/icons/reinforce.png", "width": "8px", "height": "8px" },
+    { "id": "rotate", "label": "로테이션 공사", "icon": "../../images/icons/rotate.png", "width": "8px", "height": "8px" },
     { "id": "gadget", "label": "특수 가젯", "icon": "../../images/icons/reinforce.png", "width": "40px", "height": "40px" }
   ],
   "floors": {
@@ -62,14 +62,46 @@
         {
           "type": "reinforce",
           "floorId": "floor_2f",
-          "pos": { "x": "57.1%", "y": "56.4%" },
-          "modalContent": { "title": "물담배 외부 벽 강화", "description": "VIP 라운지에서 들어오는 각을 막기 위해 필수적으로 강화해야 하는 벽입니다." }
+          "pos": { "x": "57.1%", "y": "56.2%" },
+          "modalContent": { "title": "물담배-당구장 벽", "description": "물담배  홀딩" }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "floor_2f",
+          "pos": { "x": "61%", "y": "58.2%" },
+          "modalContent": { "title": "당구장 4벽", "description": "당구장 소파 뒤 홀딩" }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "floor_2f",
+          "pos": { "x": "61%", "y": "59.3%" },
+          "modalContent": { "title": "당구장 4벽", "description": "당구장 소파 뒤 홀딩" }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "floor_2f",
+          "pos": { "x": "61%", "y": "60.4%" },
+          "modalContent": { "title": "당구장 4벽", "description": "당구장 소파 뒤 홀딩" }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "floor_2f",
+          "pos": { "x": "58.9%", "y": "51.4%" },
+          "modalContent": { "title": "물담배 벽", "description": "당구장 소파 뒤 홀딩" }
         },
         {
           "type": "rotate",
           "floorId": "floor_2f",
-          "pos": { "x": "55%", "y": "60%" },
-          "modalContent": { "title": "물담배-당구장 로테이션", "description": "두 사이트를 원활하게 오가기 위한 로테이션입니다.",
+          "pos": { "x": "56%", "y": "56.2%" },
+          "modalContent": { "title": "물담배-당구장 로테이션", "description": "사이트 간 이동",
+          "image": "https://via.placeholder.com/400x225.png?text=Rotate+Example",
+          "youtubeId": "dQw4w9WgXcQ"}
+        },
+        {
+          "type": "rotate",
+          "floorId": "floor_2f",
+          "pos": { "x": "58.9%", "y": "49.8%" },
+          "modalContent": { "title": "물담배 계단 로테이션", "description": "계단에서 사이트 견제 및 이동",
           "image": "https://via.placeholder.com/400x225.png?text=Rotate+Example",
           "youtubeId": "dQw4w9WgXcQ"}
         },
