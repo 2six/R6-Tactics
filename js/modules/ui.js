@@ -53,28 +53,35 @@ function fitMapToContainer() {
 function handleWheelZoom(event) {
     event.preventDefault();
     
-    // 1. 새로운 줌 배율 계산
     const zoomIntensity = 0.1;
     const direction = event.deltaY < 0 ? 1 : -1;
     const newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, currentScale * (1 + direction * zoomIntensity)));
-    
-    // 2. 마우스 커서의 현재 위치 (맵 영역 기준)
+
     const rect = mapArea.getBoundingClientRect();
     const mouseX = event.clientX - rect.left;
     const mouseY = event.clientY - rect.top;
 
-    // 3. 줌 하기 전, 마우스 커서 아래에 있는 원본 맵의 지점(앵커 포인트) 계산
     const pointX = (mouseX - currentTranslateX) / currentScale;
     const pointY = (mouseY - currentTranslateY) / currentScale;
 
-    // 4. 새로운 맵 이동량 계산 (앵커 포인트가 새로운 줌 배율에서도 같은 마우스 위치에 오도록 역산)
+    // --- [디버깅 코드 추가] ---
+    // 계산에 사용된 모든 값을 객체 형태로 출력하여 확인합니다.
+    console.log({
+        mouse: `(${mouseX.toFixed(2)}, ${mouseY.toFixed(2)})`,
+        oldScale: currentScale.toFixed(2),
+        newScale: newScale.toFixed(2),
+        oldTranslate: `(${currentTranslateX.toFixed(2)}, ${currentTranslateY.toFixed(2)})`,
+        anchorPoint: `(${pointX.toFixed(2)}, ${pointY.toFixed(2)})`,
+        newTranslateX: (mouseX - pointX * newScale).toFixed(2),
+        newTranslateY: (mouseY - pointY * newScale).toFixed(2),
+    });
+    console.log('---'); // 각 휠 이벤트를 구분하기 위한 선
+
     currentTranslateX = mouseX - pointX * newScale;
     currentTranslateY = mouseY - pointY * newScale;
     
-    // 5. 줌 배율 업데이트
     currentScale = newScale;
     
-    // 6. 계산된 새로운 위치와 배율을 동시에 적용
     applyTransform();
 }
 
