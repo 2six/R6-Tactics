@@ -50,8 +50,8 @@
         { "pos": { "x": "63.5%", "y": "55.2%" }, "text": "VIP복도" },
         { "pos": { "x": "67.7%", "y": "48.8%" }, "text": "명전" },
         { "pos": { "x": "71%", "y": "48.8%" }, "text": "화장실", "fontSize": "8px"  },
-        { "pos": { "x": "69.2%", "y": "53%" }, "text": "펜트" },
-        { "pos": { "x": "69.2%", "y": "59.6%" }, "text": "영감" },
+        { "pos": { "x": "69.2%", "y": "52.2%" }, "text": "펜트하우스" },
+        { "pos": { "x": "69.2%", "y": "59%" }, "text": "영화\n감상실" },
         { "pos": { "x": "66.9%", "y": "59%" }, "text": "영감복도", "rotation": 90 }
       ]
     }
@@ -379,6 +379,63 @@
           "modalContent": { "title": "VIP 복도 벽", "description": "VIP 리테이크용",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/xxioG6O.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "floor_2f",
+          "pos": { "x": "70.4%", "y": "61.4%" },
+          "width": "5px",
+          "height": "5px",
+          "modalContent": { "title": "영화 감상실 바닥", "description": "로비 계단 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/5WFxAjl.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "floor_2f",
+          "pos": { "x": "68.8%", "y": "53.2%" },
+          "modalContent": { "title": "악의 눈 - 펜트하우스", "description": "펜트하우스 큰창, 내부, VIP",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/VAxa4jI.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/wna8mDx.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/sjjl5Zl.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "floor_2f",
+          "pos": { "x": "70.7%", "y": "64.6%" },
+          "modalContent": { "title": "악의 눈 - 로비 계단", "description": "로비 계단, 아쿠아 복도",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/AAH9ndk.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/boXG68A.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "floor_2f",
+          "pos": { "x": "61.3%", "y": "48.3%" },
+          "modalContent": { "title": "악의 눈 - VIP", "description": "VIP 내부, 펜트하우스 디폴트 설 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/ot8JIaJ.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/2b2XbFR.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "floor_2f",
+          "pos": { "x": "68.8%", "y": "55.8%" },
+          "modalContent": { "title": "악의 눈 - 펜트 드론 구멍", "description": "VIP 복도",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/K4rfctQ.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/F6cLTPs.jpeg" }
             ]
           }
         }
