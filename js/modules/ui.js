@@ -8,9 +8,14 @@ const filterCheckboxesContainer = document.getElementById('filter-checkboxes');
 const modalContainer = document.getElementById('modal-container');
 const modalTitle = document.getElementById('modal-title');
 const modalDescription = document.getElementById('modal-description');
-const modalToggleContainer = document.getElementById('modal-toggle-container');
-const modalImageWrapper = document.getElementById('modal-image-wrapper');
-const modalYoutubeWrapper = document.getElementById('modal-youtube-wrapper');
+const modalMediaSlider = document.getElementById('modal-media-slider');
+const filmstrip = modalMediaSlider.querySelector('.slider-filmstrip');
+const prevBtn = modalMediaSlider.querySelector('.slider-btn.prev');
+const nextBtn = modalMediaSlider.querySelector('.slider-btn.next');
+const counter = modalMediaSlider.querySelector('.slider-counter');
+
+let currentSlideIndex = 0;
+let totalSlides = 0;
 
 // --- Map Control Variables ---
 let currentScale = 1;
@@ -265,72 +270,87 @@ export function initCoordHelper() {
 
 // --- Modal Functions ---
 
+function updateSlider() {
+    filmstrip.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+    counter.textContent = `${currentSlideIndex + 1} / ${totalSlides}`;
+    prevBtn.style.display = currentSlideIndex === 0 ? 'none' : 'block';
+    nextBtn.style.display = currentSlideIndex === totalSlides - 1 ? 'none' : 'block';
+}
+
+function stopAllVideos() {
+    filmstrip.querySelectorAll('iframe').forEach(iframe => {
+        // iframe의 src를 비워서 재생을 멈춤
+        iframe.src = iframe.src; 
+    });
+}
+
 function showModal(content) {
     modalTitle.textContent = content.title;
     modalDescription.textContent = content.description;
-    modalImageWrapper.innerHTML = '';
-    modalYoutubeWrapper.innerHTML = '';
-    modalToggleContainer.classList.add('hidden');
-    const hasImage = content.image, hasYoutube = content.youtubeId;
-    if (hasImage) {
-        const img = document.createElement('img');
-        img.src = content.image;
-        modalImageWrapper.appendChild(img);
+    
+    // 슬라이더 초기화
+    filmstrip.innerHTML = '';
+    currentSlideIndex = 0;
+    
+    const media = content.media || [];
+    totalSlides = media.length;
+
+    if (totalSlides > 0) {
+        media.forEach(item => {
+            const slide = document.createElement('div');
+            slide.className = 'slider-item';
+
+            if (item.type === 'image') {
+                const img = document.createElement('img');
+                img.src = item.src;
+                slide.appendChild(img);
+            } else if (item.type === 'youtube') {
+                const iframe = document.createElement('iframe');
+                iframe.src = `https://www.youtube.com/embed/${item.src}`;
+                iframe.title = "YouTube video player";
+                iframe.frameBorder = "0";
+                iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.allowFullscreen = true;
+                slide.appendChild(iframe);
+            }
+            filmstrip.appendChild(slide);
+        });
+        
+        counter.style.display = totalSlides > 1 ? 'block' : 'none';
+        modalMediaSlider.classList.remove('hidden');
+        updateSlider();
+    } else {
+        modalMediaSlider.classList.add('hidden');
     }
-    if (hasYoutube) {
-        const iframe = document.createElement('iframe');
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${content.youtubeId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-        iframe.allowFullscreen = true;
-        modalYoutubeWrapper.appendChild(iframe);
-    }
-    if (hasImage && hasYoutube) {
-        modalToggleContainer.classList.remove('hidden');
-        const imgBtn = modalToggleContainer.querySelector('[data-media="image"]');
-        const ytBtn = modalToggleContainer.querySelector('[data-media="youtube"]');
-        imgBtn.classList.add('active');
-        ytBtn.classList.remove('active');
-        modalImageWrapper.classList.remove('hidden');
-        modalYoutubeWrapper.classList.add('hidden');
-    } else if (hasImage) {
-        modalImageWrapper.classList.remove('hidden');
-        modalYoutubeWrapper.classList.add('hidden');
-    } else if (hasYoutube) {
-        modalImageWrapper.classList.add('hidden');
-        modalYoutubeWrapper.classList.remove('hidden');
-    }
+
     modalContainer.classList.remove('hidden');
 }
 
 function hideModal() {
+    stopAllVideos();
     modalContainer.classList.add('hidden');
-    modalImageWrapper.innerHTML = '';
-    modalYoutubeWrapper.innerHTML = '';
 }
 
-function handleMediaToggle(event) {
-    const button = event.target.closest('button');
-    if (!button) return;
-    const mediaType = button.dataset.media;
-    modalToggleContainer.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-    if (mediaType === 'image') {
-        modalImageWrapper.classList.remove('hidden');
-        modalYoutubeWrapper.classList.add('hidden');
-    } else if (mediaType === 'youtube') {
-        modalImageWrapper.classList.add('hidden');
-        modalYoutubeWrapper.classList.remove('hidden');
+// 슬라이더 버튼 이벤트 리스너
+prevBtn.addEventListener('click', () => {
+    if (currentSlideIndex > 0) {
+        stopAllVideos();
+        currentSlideIndex--;
+        updateSlider();
     }
-}
+});
+nextBtn.addEventListener('click', () => {
+    if (currentSlideIndex < totalSlides - 1) {
+        stopAllVideos();
+        currentSlideIndex++;
+        updateSlider();
+    }
+});
 
+// 모달 닫기 이벤트 리스너
 modalContainer.querySelector('.modal-close-btn').addEventListener('click', hideModal);
 modalContainer.addEventListener('click', (e) => {
     if (e.target === modalContainer) {
         hideModal();
     }
 });
-modalToggleContainer.addEventListener('click', handleMediaToggle);
