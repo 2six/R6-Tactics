@@ -84,7 +84,9 @@ async function init() {
     createFilterCheckboxes(fullData.strategyTypes, handleFilterChange);
     
     renderView(); // 초기 렌더링
-    initMapControls(); // 맵 컨트롤 초기화는 렌더링 전에 수행해야 함 (크기 계산 때문)
+    setTimeout(() => {
+        initMapControls();
+    }, 0);
 }
 
 window.addEventListener('popstate', () => {
