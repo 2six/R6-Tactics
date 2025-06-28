@@ -80,19 +80,26 @@ body {
     cursor: grab;
 }
 .map-area.panning {
-    cursor: grabbing;
+    /*cursor: grabbing;*/
 }
 
-#map-viewer {
-    position: relative;
-    width: 1000px; 
+/* [수정됨] 줌/패닝을 담당하는 바깥쪽 컨테이너 */
+#map-container {
+    width: 1000px;
     height: 750px;
+    transform-origin: top left;
+    transition: transform 0.2s ease-out; 
+    flex-shrink: 0;
+}
+
+/* [수정됨] 배경 이미지와 아이콘을 담는 안쪽 컨테이너 */
+#map-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform-origin: top left; /* <<< [수정됨] center 에서 top left 로 변경 */
-    transition: transform 0.2s ease-out; 
-    flex-shrink: 0;
 }
 
 /* 렌더링 최적화를 위한 클래스 (JS로 동적 제어) */
@@ -108,10 +115,9 @@ body {
 
 .strategy-icon {
     cursor: pointer;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -webkit-crisp-edges;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
+    transform: translate(-50%, -50%);
     z-index: 10;
 }
 

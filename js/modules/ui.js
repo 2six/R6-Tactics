@@ -1,5 +1,6 @@
 const mapArea = document.querySelector('.map-area');
-const mapViewer = document.getElementById('map-viewer');
+const mapContainer = document.getElementById('map-container'); // <<< 제어 대상을 바깥쪽 컨테이너로 변경
+const mapContent = document.getElementById('map-content');   // <<< 컨텐츠가 추가될 안쪽 컨테이너
 const floorSelector = document.getElementById('floor-selector');
 const siteSelector = document.getElementById('site-selector');
 const filterCheckboxesContainer = document.getElementById('filter-checkboxes');
@@ -28,27 +29,26 @@ let startX, startY, startTranslateX, startTranslateY;
 // --- Map Control Functions ---
 
 function applyTransform() {
-    mapViewer.style.transform = `translate(${currentTranslateX}px, ${currentTranslateY}px) scale(${currentScale})`;
+    // [수정됨] 바깥쪽 컨테이너에 transform 적용
+    mapContainer.style.transform = `translate(${currentTranslateX}px, ${currentTranslateY}px) scale(${currentScale})`;
 }
 
-// [수정됨] top left 기준에 맞춰 초기 중앙 정렬을 계산하는 로직
 function fitMapToContainer() {
     const areaWidth = mapArea.clientWidth;
     const areaHeight = mapArea.clientHeight;
-    const viewerBaseWidth = mapViewer.offsetWidth;
-    const viewerBaseHeight = mapViewer.offsetHeight;
-    if (viewerBaseWidth === 0) return;
+    // [수정됨] 바깥쪽 컨테이너의 크기를 기준으로 계산
+    const containerBaseWidth = mapContainer.offsetWidth;
+    const containerBaseHeight = mapContainer.offsetHeight;
+    if (containerBaseWidth === 0) return;
 
-    currentScale = areaWidth / viewerBaseWidth;
+    currentScale = areaWidth / containerBaseWidth;
     
-    // JS가 직접 중앙 위치를 계산하여 적용
-    currentTranslateX = (areaWidth - viewerBaseWidth * currentScale) / 2;
-    currentTranslateY = (areaHeight - viewerBaseHeight * currentScale) / 2;
+    currentTranslateX = (areaWidth - containerBaseWidth * currentScale) / 2;
+    currentTranslateY = (areaHeight - containerBaseHeight * currentScale) / 2;
     
     applyTransform();
 }
 
-// [수정됨] top left 기준에 맞춰 올바르게 작동하는 "Zoom to Cursor" 로직
 function handleWheelZoom(event) {
     event.preventDefault();
     
@@ -60,11 +60,9 @@ function handleWheelZoom(event) {
     const mouseX = event.clientX - rect.left;
     const mouseY = event.clientY - rect.top;
 
-    // 앵커 포인트 계산 (이 공식은 top left 기준에서 올바르게 작동합니다)
     const pointX = (mouseX - currentTranslateX) / currentScale;
     const pointY = (mouseY - currentTranslateY) / currentScale;
 
-    // 새로운 이동량 계산
     currentTranslateX = mouseX - pointX * newScale;
     currentTranslateY = mouseY - pointY * newScale;
     
@@ -77,7 +75,7 @@ function handleMouseDown(event) {
     event.preventDefault();
     isPanning = true;
     mapArea.classList.add('panning');
-    mapViewer.classList.add('panning-optimization'); // <<< [수정됨] 패닝 시작 시 최적화 클래스 추가
+    mapContainer.classList.add('panning-optimization'); // <<< 제어 대상 변경
     startX = event.clientX;
     startY = event.clientY;
     startTranslateX = currentTranslateX;
@@ -97,7 +95,7 @@ function handleMouseMove(event) {
 function handleMouseUpOrLeave() {
     isPanning = false;
     mapArea.classList.remove('panning');
-    mapViewer.classList.remove('panning-optimization'); // <<< [수정됨] 패닝 종료 시 최적화 클래스 제거
+    mapContainer.classList.remove('panning-optimization'); // <<< 제어 대상 변경
 }
 
 export function initMapControls() {
@@ -186,12 +184,13 @@ export function createFilterCheckboxes(strategyTypes, onFilterChange) {
 }
 
 export function updateMapBackground(imageUrl) {
-    mapViewer.style.backgroundImage = `url(${imageUrl})`;
-    // fitMapToContainer(); // <<< [수정됨] 이 줄을 제거하여 뷰가 리셋되지 않도록 합니다.
+    // [수정됨] 안쪽 컨테이너에 배경 이미지 적용
+    mapContent.style.backgroundImage = `url(${imageUrl})`;
 }
 
 export function displayStrategies(strategies = [], strategyTypes, activeFilters, currentFloorId) {
-    mapViewer.innerHTML = '';
+    // [수정됨] 안쪽 컨테이너를 비우고 아이콘 추가
+    mapContent.innerHTML = '';
     const typeMap = new Map(strategyTypes.map(t => [t.id, t]));
 
     strategies.forEach(strategy => {
@@ -226,7 +225,7 @@ export function displayStrategies(strategies = [], strategyTypes, activeFilters,
             e.stopPropagation();
             showModal(strategy.modalContent);
         });
-        mapViewer.appendChild(icon);
+        mapContent.appendChild(icon);
     });
 }
 
@@ -245,7 +244,7 @@ export function displayLabels(labels = []) {
             transformValue += ` rotate(${label.rotation}deg)`;
         }
         labelEl.style.transform = transformValue;
-        mapViewer.appendChild(labelEl);
+        mapContent.appendChild(labelEl);
     });
 }
 
@@ -260,7 +259,7 @@ export function initCoordHelper() {
         // --- 여기부터 완전히 새로운 계산 로직 ---
 
         // 1. 줌/패닝이 적용된 맵 뷰어의 화면상 실제 크기와 위치를 가져옴
-        const mapRect = mapViewer.getBoundingClientRect();
+        const mapRect = mapContent.getBoundingClientRect(); // <<< 기준점을 안쪽 컨테이너로 변경
 
         // 2. 마우스 커서의 현재 화면상 위치
         const mouseX = event.clientX;
@@ -282,8 +281,8 @@ export function initCoordHelper() {
             const mouseYOnOriginalMap = mouseYOnScaledMap / currentScale;
 
             // 6. 원본 맵 이미지의 너비/높이 가져오기
-            const originalMapWidth = mapViewer.offsetWidth;
-            const originalMapHeight = mapViewer.offsetHeight;
+            const originalMapWidth = mapContent.offsetWidth; // <<< 기준점을 안쪽 컨테이너로 변경
+            const originalMapHeight = mapContent.offsetHeight; // <<< 기준점을 안쪽 컨테이너로 변경
 
             // 7. 픽셀 좌표를 퍼센트(%)로 변환
             const percentX = (mouseXOnOriginalMap / originalMapWidth) * 100;
