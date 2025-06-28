@@ -37,13 +37,18 @@ function fitMapToContainer() {
     const viewerBaseWidth = mapViewer.offsetWidth;
     const viewerBaseHeight = mapViewer.offsetHeight;
     if (viewerBaseWidth === 0 || viewerBaseHeight === 0) return;
-    const scaleX = areaWidth / viewerBaseWidth;
-    const scaleY = areaHeight / viewerBaseHeight;
-    currentScale = Math.min(scaleX, scaleY) * 0.95;
-    currentTranslateX = (areaWidth - viewerBaseWidth * currentScale) / 2;
+
+    // --- [수정됨] 맵 초기 크기 및 위치 계산 로직 ---
+    // 1. 맵 뷰어의 가로 너비에 크기를 맞춤
+    currentScale = areaWidth / viewerBaseWidth;
+
+    // 2. 가로/세로 중앙에 오도록 위치 조정
+    currentTranslateX = (areaWidth - viewerBaseWidth * currentScale) / 2; // 실제로는 0이 됨
     currentTranslateY = (areaHeight - viewerBaseHeight * currentScale) / 2;
+    
     applyTransform();
 }
+
 
 function handleWheelZoom(event) {
     event.preventDefault();
@@ -130,21 +135,47 @@ export function createSiteSelector(sites, currentSiteId, onSiteChange) {
 
 export function createFilterCheckboxes(strategyTypes, onFilterChange) {
     filterCheckboxesContainer.innerHTML = '';
+    
+    // [수정됨] 전략 필터 체크박스 생성
     strategyTypes.forEach(type => {
         const div = document.createElement('div');
-        div.className = 'filter-checkbox';
+        div.className = 'filter-checkbox-item'; // 새로운 클래스 이름 적용
+
         const input = document.createElement('input');
         input.type = 'checkbox';
         input.id = `filter-${type.id}`;
         input.value = type.id;
         input.checked = true;
+
         const label = document.createElement('label');
         label.htmlFor = `filter-${type.id}`;
         label.textContent = type.label;
-        div.appendChild(input);
+        
+        // [수정됨] 라벨을 먼저 추가
         div.appendChild(label);
+        div.appendChild(input);
         filterCheckboxesContainer.appendChild(div);
     });
+
+    // [수정됨] "층 라벨" 토글 체크박스 추가
+    const labelToggleDiv = document.createElement('div');
+    labelToggleDiv.className = 'filter-checkbox-item';
+
+    const labelToggleInput = document.createElement('input');
+    labelToggleInput.type = 'checkbox';
+    labelToggleInput.id = 'toggle-labels'; // 고유 ID
+    labelToggleInput.value = 'labels';
+    labelToggleInput.checked = true;
+
+    const labelToggleLabel = document.createElement('label');
+    labelToggleLabel.htmlFor = 'toggle-labels';
+    labelToggleLabel.textContent = '층 라벨';
+
+    labelToggleDiv.appendChild(labelToggleLabel);
+    labelToggleDiv.appendChild(labelToggleInput);
+    filterCheckboxesContainer.appendChild(labelToggleDiv);
+
+
     filterCheckboxesContainer.addEventListener('change', onFilterChange);
 }
 

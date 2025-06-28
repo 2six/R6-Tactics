@@ -42,9 +42,33 @@ body {
     margin-bottom: 5px;
 }
 
-#site-selector {
+#floor-selector, #site-selector {
     width: 100%;
     padding: 8px;
+}
+
+#filter-checkboxes {
+    display: flex;
+    flex-wrap: wrap; /* 체크박스가 많아지면 다음 줄로 넘어감 */
+    gap: 15px; /* 체크박스 사이의 가로 간격 */
+    align-items: center;
+}
+
+/* [수정됨] 개별 체크박스 아이템 스타일 */
+.filter-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* 라벨과 체크박스 사이의 간격 */
+    cursor: pointer;
+}
+
+.filter-checkbox-item label {
+    margin-bottom: 0; /* 기본 마진 제거 */
+    font-weight: normal;
+}
+
+.filter-checkbox-item input {
+    margin: 0;
 }
 
 /* 맵 영역 스타일 */

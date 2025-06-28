@@ -112,9 +112,9 @@
         {
           "type": "reinforce",
           "floorId": "floor_2f",
-          "pos": { "x": "58.9%", "y": "51.3%" },
-          "width": "2px",
-          "height": "10px",
+          "pos": { "x": "63.1%", "y": "47.1%" },
+          "width": "18px",
+          "height": "2px",
           "modalContent": { "title": "VIP 외벽", "description": "VIP 진입 저지",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/Yh5zBJc.png" }
