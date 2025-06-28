@@ -1,7 +1,9 @@
 {
   "strategyTypes": [
-    { "id": "reinforce", "label": "벽 강화", "icon": "../../images/icons/blue.png", "width": "8px", "height": "8px" },
+    { "id": "reinforce", "label": "강화", "icon": "../../images/icons/blue.png", "width": "10px", "height": "2px" },
+    { "id": "break", "label": "파괴", "icon": "../../images/icons/red.png", "width": "10px", "height": "2px" },
     { "id": "rotate", "label": "로테이션 공사", "icon": "../../images/icons/rotate.png", "width": "8px", "height": "8px" },
+    { "id": "evilEye", "label": "악의 눈", "icon": "../../images/icons/Evil Eye.png", "width": "8px", "height": "8px" },
     { "id": "gadget", "label": "특수 가젯", "icon": "../../images/icons/reinforce.png", "width": "40px", "height": "40px" }
   ],
   "floors": {
@@ -63,40 +65,35 @@
           "type": "reinforce",
           "floorId": "floor_2f",
           "pos": { "x": "57.1%", "y": "56.2%" },
-          "width": "10px",
+          "width": "9px",
           "height": "2px",
-          "modalContent": { "title": "물담배-당구장 벽", "description": "물담배  홀딩" }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "floor_2f",
-          "pos": { "x": "61%", "y": "58.2%" },
-          "modalContent": { "title": "당구장 4벽", "description": "당구장 소파 뒤 홀딩" }
+          "modalContent": { "title": "물담배-당구장 벽", "description": "물담배  홀딩",
+          "image": "https://i.imgur.com/7CqmcWU.jpeg"}
         },
         {
           "type": "reinforce",
           "floorId": "floor_2f",
           "pos": { "x": "61%", "y": "59.3%" },
-          "modalContent": { "title": "당구장 4벽", "description": "당구장 소파 뒤 홀딩" }
+          "width": "2px",
+          "height": "30px",
+          "modalContent": { "title": "당구장 4벽", "description": "당구장 소파 뒤 홀딩",
+          "image": "https://i.imgur.com/BtKtbIL.png"}
         },
         {
           "type": "reinforce",
           "floorId": "floor_2f",
-          "pos": { "x": "61%", "y": "60.4%" },
-          "modalContent": { "title": "당구장 4벽", "description": "당구장 소파 뒤 홀딩" }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "floor_2f",
-          "pos": { "x": "58.9%", "y": "51.4%" },
-          "modalContent": { "title": "물담배 벽", "description": "당구장 소파 뒤 홀딩" }
+          "pos": { "x": "58.9%", "y": "51.2%" },
+          "width": "2px",
+          "height": "12px",
+          "modalContent": { "title": "물담배 벽", "description": "물담배 복도 홀딩",
+          "image": "https://i.imgur.com/mBoOzQl.png"}
         },
         {
           "type": "rotate",
           "floorId": "floor_2f",
           "pos": { "x": "56%", "y": "56.2%" },
           "modalContent": { "title": "물담배-당구장 로테이션", "description": "사이트 간 이동",
-          "image": "https://via.placeholder.com/400x225.png?text=Rotate+Example",
+          "image": "https://i.imgur.com/7CqmcWU.jpeg",
           "youtubeId": "dQw4w9WgXcQ"}
         },
         {
@@ -104,14 +101,25 @@
           "floorId": "floor_2f",
           "pos": { "x": "58.9%", "y": "49.8%" },
           "modalContent": { "title": "물담배 계단 로테이션", "description": "계단에서 사이트 견제 및 이동",
-          "image": "https://via.placeholder.com/400x225.png?text=Rotate+Example",
+          "image": "https://i.imgur.com/mBoOzQl.png",
           "youtubeId": "dQw4w9WgXcQ"}
         },
         {
-          "type": "gadget",
-          "floorId": "floor_1f",
-          "pos": { "x": "42%", "y": "70%" },
-          "modalContent": { "title": "주방 해치 아래 버티컬 작업", "description": "1층 주방 해치에서 올라오는 적을 견제하기 위한 버티컬 공사 지점입니다." }
+          "type": "break",
+          "floorId": "floor_2f",
+          "pos": { "x": "58%", "y": "56.2%" },
+          "width": "9px",
+          "height": "2px",
+          "modalContent": { "title": "물담배-당구장 벽", "description": "투척물 넘기기",
+          "image": "https://i.imgur.com/7CqmcWU.jpeg"}
+        },
+        {
+          "type": "evilEye",
+          "floorId": "floor_2f",
+          "pos": { "x": "63%", "y": "56.3%" },
+          "modalContent": { "title": "악의 눈 - VIP 복도", "description": "물담배 입구, 당구장 큰창",
+          "image": "https://i.imgur.com/DOiBBck.png",
+          "youtubeId": "dQw4w9WgXcQ"}
         }
       ]
     },
