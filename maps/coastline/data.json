@@ -217,8 +217,8 @@
         {
           "type": "reinforce",
           "floorId": "floor_2f",
-          "pos": { "x": "57.1%", "y": "56.2%" },
-          "width": "9px",
+          "pos": { "x": "69.3%", "y": "62.4%" },
+          "width": "14px",
           "height": "2px",
           "modalContent": { "title": "영감 2벽", "description": "영화감상실 내부 보호",
             "media": [
@@ -241,10 +241,10 @@
         {
           "type": "reinforce",
           "floorId": "floor_2f",
-          "pos": { "x": "63.2%", "y": "47.2%" },
-          "width": "20px",
+          "pos": { "x": "68.4%", "y": "56.3%" },
+          "width": "12px",
           "height": "2px",
-          "modalContent": { "title": "영감-펜트 벽", "description": "펜트 큰창 레펠 각 보호",
+          "modalContent": { "title": "영감-펜트 벽", "description": "펜트 큰창->영화 감상실 각 지우기",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/Ge9w3oR.jpeg" }
             ]
@@ -253,10 +253,10 @@
         {
           "type": "reinforce",
           "floorId": "floor_2f",
-          "pos": { "x": "63.2%", "y": "47.2%" },
-          "width": "20px",
-          "height": "2px",
-          "modalContent": { "title": "영감 복도 벽", "description": "아쿠아 복도 각 보호",
+          "pos": { "x": "67.6%", "y": "61.8%" },
+          "width": "2px",
+          "height": "10px",
+          "modalContent": { "title": "영감 복도 벽", "description": "아쿠아 복도->영화 감상실 각 지우기",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/sE9QS1Q.jpeg" }
             ]
@@ -265,12 +265,120 @@
         {
           "type": "reinforce",
           "floorId": "floor_2f",
-          "pos": { "x": "63.2%", "y": "47.2%" },
-          "width": "20px",
-          "height": "2px",
-          "modalContent": { "title": "영감 복도 벽", "description": "VIP 복도 각 보호",
+          "pos": { "x": "67.6%", "y": "57.1%" },
+          "width": "2px",
+          "height": "10px",
+          "modalContent": { "title": "영감 복도 벽", "description": "VIP 복도->영화 감상실 각 지우기",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/sE9QS1Q.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "floor_2f",
+          "pos": { "x": "65.9%", "y": "52.1%" },
+          "width": "2px",
+          "height": "10px",
+          "modalContent": { "title": "펜트 3벽", "description": "펜트 큰 창 레펠 견제용 엄폐물",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "floor_2f",
+          "pos": { "x": "61.5%", "y": "54.1%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "VIP 복도 벽", "description": "당구장->VIP 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/0s5ur8B.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "floor_2f",
+          "pos": { "x": "65.4%", "y": "54.1%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "VIP 복도 벽", "description": "VIP->영감 복도 각 지우기 리테이크용",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/xxioG6O.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "floor_2f",
+          "pos": { "x": "70.2%", "y": "56.3%" },
+          "width": "12px",
+          "height": "2px",
+          "modalContent": { "title": "영감-펜트 벽 위쪽", "description": "투척물 넘기기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/Ge9w3oR.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "floor_2f",
+          "pos": { "x": "69.7%", "y": "48.7%" },
+          "width": "2px",
+          "height": "20px",
+          "modalContent": { "title": "화장실 발작", "description": "화장실 해치 낙하 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/M0EkVEK.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "floor_2f",
+          "pos": { "x": "65.9%", "y": "50.9%" },
+          "width": "2px",
+          "height": "10px",
+          "modalContent": { "title": "펜트 3벽 좌우", "description": "펜트 큰 창 레펠 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "floor_2f",
+          "pos": { "x": "65.9%", "y": "53.4%" },
+          "width": "2px",
+          "height": "10px",
+          "modalContent": { "title": "펜트 3벽 좌우", "description": "펜트 큰 창 레펠 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "floor_2f",
+          "pos": { "x": "61.5%", "y": "54.1%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "VIP 복도 벽", "description": "VIP 리테이크용",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/0s5ur8B.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "floor_2f",
+          "pos": { "x": "65.4%", "y": "54.1%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "VIP 복도 벽", "description": "VIP 리테이크용",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/xxioG6O.jpeg" }
             ]
           }
         }
