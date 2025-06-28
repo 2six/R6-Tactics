@@ -77,10 +77,10 @@ body {
     display: flex;
     padding: 20px;
     overflow: hidden; 
-    cursor: grab;
+    /*cursor: grab;*/
 }
 .map-area.panning {
-    /*cursor: grabbing;*/
+    cursor: grabbing;
 }
 
 /* [수정됨] 줌/패닝을 담당하는 바깥쪽 컨테이너 */
