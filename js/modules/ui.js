@@ -64,14 +64,14 @@ function handleWheelZoom(event) {
 
     // 3. 줌 하기 전, 마우스 커서 아래에 있는 원본 맵의 지점(앵커 포인트) 계산
     // (줌/패닝이 적용된 맵 위에서의 상대 마우스 위치) / 현재 줌 배율
-    const pointX = mouseX / currentScale;
-    const pointY = mouseY / currentScale;
+    const pointX = (mouseX - currentTranslateX) / currentScale;
+    const pointY = (mouseY - currentTranslateY) / currentScale;
 
     // 4. 새로운 맵 이동량 계산
     // (이전 코드에서 이 부분은 더 복잡하게 계산했지만, 기준점을 mapViewer로 바꾸면 계산이 훨씬 간단하고 정확해집니다)
     // 현재 이동량 + (앵커 포인트 * (이전 줌 배율 - 새로운 줌 배율))
-    currentTranslateX += pointX * (currentScale - newScale);
-    currentTranslateY += pointY * (currentScale - newScale);
+    currentTranslateX = mouseX - pointX * newScale;
+    currentTranslateY = mouseY - pointY * newScale;
     
     // 5. 줌 배율 업데이트
     currentScale = newScale;
@@ -79,7 +79,6 @@ function handleWheelZoom(event) {
     // 6. 계산된 새로운 위치와 배율을 동시에 적용
     applyTransform();
 }
-
 function handleMouseDown(event) {
     event.preventDefault();
     isPanning = true;
