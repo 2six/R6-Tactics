@@ -75,8 +75,6 @@ body {
 .map-area {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     overflow: hidden; 
     cursor: grab;
@@ -92,8 +90,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform-origin: center; /* <<< [수정됨] top left 에서 center 로 변경 */
-    vertical-align: middle;
+    transform-origin: center;
     transition: transform 0.2s ease-out; 
     flex-shrink: 0;
 }

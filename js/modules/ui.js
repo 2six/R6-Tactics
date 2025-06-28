@@ -33,16 +33,18 @@ function applyTransform() {
 
 function fitMapToContainer() {
     const areaWidth = mapArea.clientWidth;
+    const areaHeight = mapArea.clientHeight;
     const viewerBaseWidth = mapViewer.offsetWidth;
+    const viewerBaseHeight = mapViewer.offsetHeight;
     if (viewerBaseWidth === 0) return;
 
-    // --- [수정됨] ---
+    // --- [수정됨] JS가 직접 중앙 정렬을 계산하는 로직 복원 ---
     // 1. 크기 계산: 맵 뷰어의 가로 너비에 맞춤
     currentScale = areaWidth / viewerBaseWidth;
 
-    // 2. 위치 계산: CSS Flexbox가 중앙 정렬을 담당하므로, JS는 위치를 0으로 설정
-    currentTranslateX = 0;
-    currentTranslateY = 0;
+    // 2. 위치 계산: JS가 직접 중앙 위치를 계산하여 적용
+    currentTranslateX = (areaWidth - viewerBaseWidth * currentScale) / 2;
+    currentTranslateY = (areaHeight - viewerBaseHeight * currentScale) / 2;
     
     applyTransform();
 }
