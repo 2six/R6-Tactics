@@ -135,6 +135,24 @@ export function createSiteSelector(sites, currentSiteId, onSiteChange) {
 
 export function createFilterCheckboxes(strategyTypes, onFilterChange) {
     filterCheckboxesContainer.innerHTML = '';
+
+    // [수정됨] "층 라벨" 토글 체크박스 추가
+    const labelToggleDiv = document.createElement('div');
+    labelToggleDiv.className = 'filter-checkbox-item';
+
+    const labelToggleInput = document.createElement('input');
+    labelToggleInput.type = 'checkbox';
+    labelToggleInput.id = 'toggle-labels'; // 고유 ID
+    labelToggleInput.value = 'labels';
+    labelToggleInput.checked = true;
+
+    const labelToggleLabel = document.createElement('label');
+    labelToggleLabel.htmlFor = 'toggle-labels';
+    labelToggleLabel.textContent = '지명';
+
+    labelToggleDiv.appendChild(labelToggleLabel);
+    labelToggleDiv.appendChild(labelToggleInput);
+    filterCheckboxesContainer.appendChild(labelToggleDiv);
     
     // [수정됨] 전략 필터 체크박스 생성
     strategyTypes.forEach(type => {
@@ -156,25 +174,6 @@ export function createFilterCheckboxes(strategyTypes, onFilterChange) {
         div.appendChild(input);
         filterCheckboxesContainer.appendChild(div);
     });
-
-    // [수정됨] "층 라벨" 토글 체크박스 추가
-    const labelToggleDiv = document.createElement('div');
-    labelToggleDiv.className = 'filter-checkbox-item';
-
-    const labelToggleInput = document.createElement('input');
-    labelToggleInput.type = 'checkbox';
-    labelToggleInput.id = 'toggle-labels'; // 고유 ID
-    labelToggleInput.value = 'labels';
-    labelToggleInput.checked = true;
-
-    const labelToggleLabel = document.createElement('label');
-    labelToggleLabel.htmlFor = 'toggle-labels';
-    labelToggleLabel.textContent = '층 라벨';
-
-    labelToggleDiv.appendChild(labelToggleLabel);
-    labelToggleDiv.appendChild(labelToggleInput);
-    filterCheckboxesContainer.appendChild(labelToggleDiv);
-
 
     filterCheckboxesContainer.addEventListener('change', onFilterChange);
 }
