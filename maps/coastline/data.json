@@ -74,8 +74,8 @@
           "type": "reinforce",
           "floorId": "floor_2f",
           "pos": { "x": "60.925%", "y": "59.2%" },
-          "width": "2px",
-          "height": "25px",
+          "width": "3px",
+          "height": "26px",
           "modalContent": { "title": "당구장 4벽", "description": "당구장 소파 뒤 홀딩",
           "image": "https://i.imgur.com/BtKtbIL.png"}
         },
@@ -86,7 +86,7 @@
           "width": "2px",
           "height": "8px",
           "modalContent": { "title": "물담배 벽", "description": "물담배 복도 홀딩",
-          "image": "https://i.imgur.com/mBoOzQl.png"}
+          "image": "https://i.imgur.com/2kXXEnt.png"}
         },
         {
           "type": "reinforce",
@@ -95,7 +95,7 @@
           "width": "2px",
           "height": "10px",
           "modalContent": { "title": "물담배 벽", "description": "물담배 홀딩",
-          "image": "https://i.imgur.com/2kXXEnt.png"}
+          "image": "https://i.imgur.com/mBoOzQl.png"}
         },
         {
           "type": "rotate",
@@ -125,7 +125,7 @@
         {
           "type": "break",
           "floorId": "floor_2f",
-          "pos": { "x": "56.55%", "y": "62.4%" },
+          "pos": { "x": "56.5%", "y": "62.4%" },
           "width": "17px",
           "height": "2px",
           "modalContent": { "title": "아쿠아 발작", "description": "아쿠아 견제",
