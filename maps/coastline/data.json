@@ -73,7 +73,7 @@
         {
           "type": "reinforce",
           "floorId": "floor_2f",
-          "pos": { "x": "60.95%", "y": "59.3%" },
+          "pos": { "x": "60.925%", "y": "59.2%" },
           "width": "2px",
           "height": "25px",
           "modalContent": { "title": "당구장 4벽", "description": "당구장 소파 뒤 홀딩",
@@ -125,8 +125,8 @@
         {
           "type": "break",
           "floorId": "floor_2f",
-          "pos": { "x": "56.5%", "y": "62.3%" },
-          "width": "18px",
+          "pos": { "x": "56.55%", "y": "62.4%" },
+          "width": "17px",
           "height": "2px",
           "modalContent": { "title": "아쿠아 발작", "description": "아쿠아 견제",
           "image": "https://i.imgur.com/2JhTaWS.png"}
