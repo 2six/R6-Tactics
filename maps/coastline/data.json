@@ -1,8 +1,8 @@
 {
   "strategyTypes": [
     { "id": "reinforce", "label": "강화", "icon": "../../images/icons/blue.png", "width": "10px", "height": "2px" },
-    { "id": "rotate", "label": "로테이션", "icon": "../../images/icons/rotate.png", "width": "8px", "height": "8px" },
     { "id": "break", "label": "파괴", "icon": "../../images/icons/red.png", "width": "10px", "height": "2px" },
+    { "id": "rotate", "label": "로테이션", "icon": "../../images/icons/rotate.png", "width": "8px", "height": "8px" },
     { "id": "evilEye", "label": "악의 눈", "icon": "../../images/icons/Evil Eye.png", "width": "6px", "height": "6px" }
   ],
   "floors": {
@@ -51,7 +51,7 @@
         { "pos": { "x": "67.7%", "y": "48.8%" }, "text": "명전" },
         { "pos": { "x": "71%", "y": "48.8%" }, "text": "화장실", "fontSize": "8px"  },
         { "pos": { "x": "69.2%", "y": "52.2%" }, "text": "펜트하우스" },
-        { "pos": { "x": "69.2%", "y": "59%" }, "text": "영화\n감상실" },
+        { "pos": { "x": "69.3%", "y": "59%" }, "text": "영화\n감상실" },
         { "pos": { "x": "66.9%", "y": "59%" }, "text": "영감복도", "rotation": 90 }
       ]
     }
@@ -217,8 +217,8 @@
         {
           "type": "reinforce",
           "floorId": "floor_2f",
-          "pos": { "x": "69.4%", "y": "62.4%" },
-          "width": "15px",
+          "pos": { "x": "69.3%", "y": "62.4%" },
+          "width": "16px",
           "height": "2px",
           "modalContent": { "title": "영감 2벽", "description": "영화감상실 내부 보호",
             "media": [
@@ -290,7 +290,7 @@
           "type": "reinforce",
           "floorId": "floor_2f",
           "pos": { "x": "61.5%", "y": "54.1%" },
-          "width": "8px",
+          "width": "9px",
           "height": "2px",
           "modalContent": { "title": "VIP 복도 벽", "description": "당구장->VIP 각 지우기",
             "media": [
@@ -302,7 +302,7 @@
           "type": "reinforce",
           "floorId": "floor_2f",
           "pos": { "x": "65.4%", "y": "54.1%" },
-          "width": "8px",
+          "width": "9px",
           "height": "2px",
           "modalContent": { "title": "VIP 복도 벽", "description": "VIP->영감 복도 각 지우기 리테이크용",
             "media": [
@@ -314,6 +314,7 @@
           "type": "rotate",
           "floorId": "floor_2f",
           "pos": { "x": "65.9%", "y": "53.6%" },
+          "zIndex": 15,
           "modalContent": { "title": "VIP-펜트 로테이션", "description": "VIP-펜트 간 이동",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
@@ -359,7 +360,7 @@
         {
           "type": "break",
           "floorId": "floor_2f",
-          "pos": { "x": "65.9%", "y": "53.4%" },
+          "pos": { "x": "65.9%", "y": "53.3%" },
           "width": "2px",
           "height": "9px",
           "modalContent": { "title": "펜트 3벽 좌우", "description": "펜트 큰 창 레펠 견제",
@@ -371,8 +372,8 @@
         {
           "type": "break",
           "floorId": "floor_2f",
-          "pos": { "x": "62.4%", "y": "54.1%" },
-          "width": "8px",
+          "pos": { "x": "62.5%", "y": "54.1%" },
+          "width": "9px",
           "height": "2px",
           "modalContent": { "title": "VIP 복도 벽", "description": "VIP 리테이크용",
             "media": [
@@ -383,8 +384,8 @@
         {
           "type": "break",
           "floorId": "floor_2f",
-          "pos": { "x": "64.4%", "y": "54.1%" },
-          "width": "8px",
+          "pos": { "x": "64.5%", "y": "54.1%" },
+          "width": "9px",
           "height": "2px",
           "modalContent": { "title": "VIP 복도 벽", "description": "VIP 리테이크용",
             "media": [
@@ -395,9 +396,9 @@
         {
           "type": "break",
           "floorId": "floor_2f",
-          "pos": { "x": "70.4%", "y": "61.4%" },
-          "width": "5px",
-          "height": "5px",
+          "pos": { "x": "70.4%", "y": "61.3%" },
+          "width": "6px",
+          "height": "6px",
           "modalContent": { "title": "영화 감상실 바닥", "description": "로비 계단 견제",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/5WFxAjl.jpeg" }
@@ -407,7 +408,7 @@
         {
           "type": "evilEye",
           "floorId": "floor_2f",
-          "pos": { "x": "68.8%", "y": "53.2%" },
+          "pos": { "x": "68.8%", "y": "53.5%" },
           "modalContent": { "title": "악의 눈 - 펜트하우스", "description": "펜트하우스 큰창, 내부, VIP",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/VAxa4jI.jpeg" },
@@ -419,7 +420,7 @@
         {
           "type": "evilEye",
           "floorId": "floor_2f",
-          "pos": { "x": "70.7%", "y": "64.6%" },
+          "pos": { "x": "70.6%", "y": "64.5%" },
           "modalContent": { "title": "악의 눈 - 로비 계단", "description": "로비 계단, 아쿠아 복도",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/AAH9ndk.jpeg" },
@@ -430,7 +431,7 @@
         {
           "type": "evilEye",
           "floorId": "floor_2f",
-          "pos": { "x": "61.3%", "y": "48.3%" },
+          "pos": { "x": "61.4%", "y": "48.3%" },
           "modalContent": { "title": "악의 눈 - VIP", "description": "VIP 내부, 펜트하우스 디폴트 설 견제",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/ot8JIaJ.jpeg" },
@@ -441,7 +442,7 @@
         {
           "type": "evilEye",
           "floorId": "floor_2f",
-          "pos": { "x": "68.8%", "y": "55.8%" },
+          "pos": { "x": "68.8%", "y": "55.7%" },
           "modalContent": { "title": "악의 눈 - 펜트 드론 구멍", "description": "VIP 복도",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/K4rfctQ.jpeg" },

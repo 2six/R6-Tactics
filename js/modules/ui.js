@@ -189,7 +189,6 @@ export function updateMapBackground(imageUrl) {
 }
 
 export function displayStrategies(strategies = [], strategyTypes, activeFilters, currentFloorId) {
-    // [수정됨] 안쪽 컨테이너를 비우고 아이콘 추가
     mapContent.innerHTML = '';
     const typeMap = new Map(strategyTypes.map(t => [t.id, t]));
 
@@ -204,22 +203,25 @@ export function displayStrategies(strategies = [], strategyTypes, activeFilters,
         icon.className = 'strategy-icon';
         icon.src = typeInfo.icon;
 
-        // --- [수정됨] 크기와 회전 적용 로직 ---
-
-        // 1. 크기 적용 (개별 전략 값 우선)
+        // 크기 적용 (개별 전략 값 우선)
         icon.style.width = strategy.width || typeInfo.width;
         icon.style.height = strategy.height || typeInfo.height;
 
-        // 2. 위치 적용
+        // 위치 적용
         icon.style.left = strategy.pos.x;
         icon.style.top = strategy.pos.y;
 
-        // 3. Transform 적용 (중앙 정렬 + 개별 회전)
-        let transformValue = 'translate(-50%, -50%)'; // 항상 중앙 정렬
+        // Transform 적용 (중앙 정렬 + 개별 회전)
+        let transformValue = 'translate(-50%, -50%)';
         if (strategy.rotation) {
             transformValue += ` rotate(${strategy.rotation}deg)`;
         }
         icon.style.transform = transformValue;
+        
+        // --- [수정됨] z-index 적용 로직 ---
+        if (strategy.zIndex) {
+            icon.style.zIndex = strategy.zIndex;
+        }
 
         icon.addEventListener('click', (e) => {
             e.stopPropagation();
