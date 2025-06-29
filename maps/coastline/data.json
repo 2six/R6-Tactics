@@ -737,8 +737,8 @@
         {
           "type": "reinforce",
           "floorId": "1f",
-          "pos": { "x": "%", "y": "%" },
-          "width": "12px",
+          "pos": { "x": "58.2%", "y": "60.8%" },
+          "width": "15px",
           "height": "2px",
           "modalContent": { "title": "블루 2벽", "description": "사무실 진입 저지",
             "media": [
@@ -845,6 +845,7 @@
           "type": "rotate",
           "floorId": "2f",
           "pos": { "x": "56%", "y": "56.2%" },
+          "z-index": 15,
           "modalContent": { "title": "당구장-물담배 로테이션", "description": "",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
@@ -889,7 +890,7 @@
         {
           "type": "break",
           "floorId": "1f",
-          "pos": { "x": "66.1%", "y": "47.9%" },
+          "pos": { "x": "66.1%", "y": "48.0%" },
           "width": "2px",
           "height": "9px",
           "modalContent": { "title": "주방-직출 헤드홀", "description": "응접실 진입 견제",
@@ -903,7 +904,7 @@
           "floorId": "1f",
           "pos": { "x": "61.1%", "y": "58.5%" },
           "width": "2px",
-          "height": "20px",
+          "height": "28px",
           "modalContent": { "title": "블루바 4벽 헤드홀", "description": "블루바 외부에서 블루바 견제",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/fy0gi1s.jpeg" },
@@ -915,8 +916,8 @@
           "type": "break",
           "floorId": "1f",
           "pos": { "x": "63.5%", "y": "54.1%" },
-          "width": "2px",
-          "height": "20px",
+          "width": "15px",
+          "height": "2px",
           "modalContent": { "title": "주방 4벽 가운데", "description": "주방->블루바 / 선라복도->로비",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/TtuyKpE.jpeg" },
@@ -952,7 +953,7 @@
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "56.1%", "y": "53.9%" },
+          "pos": { "x": "56.1%", "y": "54.0%" },
           "width": "4px",
           "height": "3px",
           "modalContent": { "title": "물담배 버티컬", "description": "물담배->선라입구",
@@ -1012,7 +1013,7 @@
         {
           "type": "evilEye",
           "floorId": "1f",
-          "pos": { "x": "57.4%", "y": "56.9%" },
+          "pos": { "x": "57.4%", "y": "56.8%" },
           "modalContent": { "title": "악의 눈 - 블루바", "description": "블루바 내부, 창문",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/VwvISvN.jpeg" },
@@ -1034,11 +1035,11 @@
         {
           "type": "evilEye",
           "floorId": "1f",
-          "pos": { "x": "57.4%", "y": "51.6%" },
+          "pos": { "x": "%", "y": "51.6%" },
           "modalContent": { "title": "악의 눈 - 주방복도", "description": "블루바 내부",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/6APq6Ua.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/lvYWXBk.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/uPgeZXt.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/81f48MS.jpeg" }
             ]
           }
         }
