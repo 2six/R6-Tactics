@@ -372,7 +372,7 @@
         {
           "type": "break",
           "floorId": "floor_2f",
-          "pos": { "x": "62.5%", "y": "54.1%" },
+          "pos": { "x": "62.45%", "y": "54.1%" },
           "width": "9px",
           "height": "2px",
           "modalContent": { "title": "VIP 복도 벽", "description": "VIP 리테이크용",
@@ -420,7 +420,7 @@
         {
           "type": "evilEye",
           "floorId": "floor_2f",
-          "pos": { "x": "70.6%", "y": "64.5%" },
+          "pos": { "x": "70.7%", "y": "64.5%" },
           "modalContent": { "title": "악의 눈 - 로비 계단", "description": "로비 계단, 아쿠아 복도",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/AAH9ndk.jpeg" },
@@ -431,7 +431,7 @@
         {
           "type": "evilEye",
           "floorId": "floor_2f",
-          "pos": { "x": "61.4%", "y": "48.3%" },
+          "pos": { "x": "61.3%", "y": "48.3%" },
           "modalContent": { "title": "악의 눈 - VIP", "description": "VIP 내부, 펜트하우스 디폴트 설 견제",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/ot8JIaJ.jpeg" },
