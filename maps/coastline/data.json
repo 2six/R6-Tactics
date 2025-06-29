@@ -845,7 +845,7 @@
           "type": "rotate",
           "floorId": "2f",
           "pos": { "x": "56%", "y": "56.2%" },
-          "z-index": 15,
+          "zIndex": 15,
           "modalContent": { "title": "당구장-물담배 로테이션", "description": "",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
@@ -904,7 +904,7 @@
           "floorId": "1f",
           "pos": { "x": "61.1%", "y": "58.5%" },
           "width": "2px",
-          "height": "28px",
+          "height": "32px",
           "modalContent": { "title": "블루바 4벽 헤드홀", "description": "블루바 외부에서 블루바 견제",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/fy0gi1s.jpeg" },
@@ -915,8 +915,8 @@
         {
           "type": "break",
           "floorId": "1f",
-          "pos": { "x": "63.5%", "y": "54.1%" },
-          "width": "15px",
+          "pos": { "x": "63.6%", "y": "54.1%" },
+          "width": "16px",
           "height": "2px",
           "modalContent": { "title": "주방 4벽 가운데", "description": "주방->블루바 / 선라복도->로비",
             "media": [
