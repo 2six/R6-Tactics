@@ -588,7 +588,7 @@
         {
           "type": "break",
           "floorId": "1f",
-          "pos": { "x": "69.45%", "y": "50.8%" },
+          "pos": { "x": "69.4%", "y": "50.8%" },
           "width": "18px",
           "height": "2px",
           "modalContent": { "title": "화장실/직출 발작", "description": "응접실 진입 견제 및 직출 국설 견제",
@@ -600,7 +600,7 @@
         {
           "type": "break",
           "floorId": "1f",
-          "pos": { "x": "62.75%", "y": "54.1%" },
+          "pos": { "x": "62.8%", "y": "54.1%" },
           "width": "17px",
           "height": "2px",
           "modalContent": { "title": "주방 4벽 발작", "description": "주방 복도/정원에서 주방 진입 견제",
