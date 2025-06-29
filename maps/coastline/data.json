@@ -65,7 +65,7 @@
       "strategies": [
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "57.1%", "y": "56.2%" },
           "width": "9px",
           "height": "2px",
@@ -77,7 +77,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "60.925%", "y": "59.2%" },
           "width": "2px",
           "height": "26px",
@@ -89,7 +89,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "58.9%", "y": "51.3%" },
           "width": "2px",
           "height": "10px",
@@ -101,7 +101,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "58.9%", "y": "55.7%" },
           "width": "2px",
           "height": "8px",
@@ -113,7 +113,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "63.1%", "y": "47.2%" },
           "width": "20px",
           "height": "2px",
@@ -125,7 +125,7 @@
         },
         {
           "type": "rotate",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "56%", "y": "56.2%" },
           "modalContent": { "title": "사이트 로테이션", "description": "사이트 간 이동",
             "media": [
@@ -136,7 +136,7 @@
         },
         {
           "type": "rotate",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "58.9%", "y": "49.7%" },
           "modalContent": { "title": "물담배 계단 로테이션", "description": "계단에서 사이트 견제 및 이동",
             "media": [
@@ -146,7 +146,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "58%", "y": "56.2%" },
           "width": "9px",
           "height": "2px",
@@ -158,7 +158,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "56.5%", "y": "62.4%" },
           "width": "17px",
           "height": "2px",
@@ -170,7 +170,7 @@
         },
         {
           "type": "evilEye",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "63%", "y": "56.3%" },
           "modalContent": { "title": "악의 눈 - VIP 복도", "description": "물담배 입구, 당구장 큰창",
             "media": [
@@ -181,7 +181,7 @@
         },
         {
           "type": "evilEye",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "55.9%", "y": "53.1%" },
           "modalContent": { "title": "악의 눈 - 물담배", "description": "물담배 내부, 설치 저지",
             "media": [
@@ -192,7 +192,7 @@
         },
         {
           "type": "evilEye",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "57.4%", "y": "65.3%" },
           "modalContent": { "title": "악의 눈 - 아쿠아 1", "description": "아쿠아 내부, 당구장 폭탄 뒤 설치 저지",
             "media": [
@@ -203,7 +203,7 @@
         },
         {
           "type": "evilEye",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "60.7%", "y": "61.8%" },
           "modalContent": { "title": "악의 눈 - 아쿠아 2", "description": "아쿠아 큰 문, 아쿠아 내부",
             "media": [
@@ -219,7 +219,7 @@
       "strategies": [
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "69.3%", "y": "62.4%" },
           "width": "16px",
           "height": "2px",
@@ -231,7 +231,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "63.1%", "y": "47.2%" },
           "width": "20px",
           "height": "2px",
@@ -243,7 +243,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "68.3%", "y": "56.3%" },
           "width": "13px",
           "height": "2px",
@@ -255,7 +255,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "67.6%", "y": "61.7%" },
           "width": "2px",
           "height": "8px",
@@ -267,7 +267,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "67.6%", "y": "57.1%" },
           "width": "2px",
           "height": "10px",
@@ -279,7 +279,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "65.9%", "y": "52.1%" },
           "width": "2px",
           "height": "9px",
@@ -291,7 +291,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "61.5%", "y": "54.1%" },
           "width": "9px",
           "height": "2px",
@@ -303,7 +303,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "65.4%", "y": "54.1%" },
           "width": "9px",
           "height": "2px",
@@ -315,7 +315,7 @@
         },
         {
           "type": "rotate",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "65.9%", "y": "53.6%" },
           "zIndex": 15,
           "modalContent": { "title": "VIP-펜트 로테이션", "description": "VIP-펜트 간 이동",
@@ -326,7 +326,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "70.3%", "y": "56.3%" },
           "width": "13px",
           "height": "2px",
@@ -338,7 +338,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "69.7%", "y": "48.8%" },
           "width": "2px",
           "height": "21px",
@@ -350,7 +350,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "65.9%", "y": "50.9%" },
           "width": "2px",
           "height": "9px",
@@ -362,7 +362,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "65.9%", "y": "53.3%" },
           "width": "2px",
           "height": "9px",
@@ -374,7 +374,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "62.45%", "y": "54.1%" },
           "width": "9px",
           "height": "2px",
@@ -386,7 +386,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "64.5%", "y": "54.1%" },
           "width": "9px",
           "height": "2px",
@@ -398,7 +398,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "70.4%", "y": "61.3%" },
           "width": "6px",
           "height": "6px",
@@ -410,7 +410,7 @@
         },
         {
           "type": "evilEye",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "68.8%", "y": "53.5%" },
           "modalContent": { "title": "악의 눈 - 펜트하우스", "description": "펜트하우스 큰창, 내부, VIP",
             "media": [
@@ -422,7 +422,7 @@
         },
         {
           "type": "evilEye",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "70.7%", "y": "64.5%" },
           "modalContent": { "title": "악의 눈 - 로비 계단", "description": "로비 계단, 아쿠아 복도",
             "media": [
@@ -433,7 +433,7 @@
         },
         {
           "type": "evilEye",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "61.3%", "y": "48.3%" },
           "modalContent": { "title": "악의 눈 - VIP", "description": "VIP 내부, 펜트하우스 국설 견제",
             "media": [
@@ -444,7 +444,7 @@
         },
         {
           "type": "evilEye",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "68.8%", "y": "55.7%" },
           "modalContent": { "title": "악의 눈 - 펜트 드론 구멍", "description": "VIP 복도",
             "media": [
@@ -460,7 +460,7 @@
       "strategies": [
         {
           "type": "reinforce",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "63.1%", "y": "47.2%" },
           "width": "20px",
           "height": "2px",
@@ -472,7 +472,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_1f",
+          "floorId": "1f",
           "pos": { "x": "64.4%", "y": "54.1%" },
           "width": "16px",
           "height": "2px",
@@ -484,7 +484,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_1f",
+          "floorId": "1f",
           "pos": { "x": "67.6%", "y": "54.1%" },
           "width": "15px",
           "height": "2px",
@@ -496,7 +496,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_1f",
+          "floorId": "1f",
           "pos": { "x": "70.8%", "y": "50.8%" },
           "width": "10px",
           "height": "2px",
@@ -508,7 +508,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_1f",
+          "floorId": "1f",
           "pos": { "x": "66.1%", "y": "49.2%" },
           "width": "2px",
           "height": "9px",
@@ -520,7 +520,7 @@
         },
         {
           "type": "reinforce",
-          "floorId": "floor_1f",
+          "floorId": "1f",
           "pos": { "x": "59.0%", "y": "55.0%" },
           "width": "2px",
           "height": "16px",
@@ -532,7 +532,7 @@
         },
         {
           "type": "rotate",
-          "floorId": "floor_1f",
+          "floorId": "1f",
           "pos": { "x": "66.4%", "y": "54.1%" },
           "zIndex": 15,
           "modalContent": { "title": "직출 3벽 로테이션", "description": "직출<->로비 이동",
@@ -543,7 +543,7 @@
         },
         {
           "type": "rotate",
-          "floorId": "floor_1f",
+          "floorId": "1f",
           "pos": { "x": "66.1%", "y": "47.7%" },
           "zIndex": 15,
           "modalContent": { "title": "사이트 간 로테이션", "description": "주방<->직출 이동",
@@ -554,7 +554,7 @@
         },
         {
           "type": "rotate",
-          "floorId": "floor_1f",
+          "floorId": "1f",
           "pos": { "x": "71.9%", "y": "50.8%" },
           "zIndex": 15,
           "modalContent": { "title": "화장실 3벽 로테이션", "description": "화장실<->응접실 이동 및 응접실 외부 문 견제",
@@ -565,7 +565,7 @@
         },
         {
           "type": "rotate",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "65.9%", "y": "50.6%" },
           "zIndex": 15,
           "modalContent": { "title": "펜트 3벽 로테이션", "description": "펜트<->VIP 이동",
@@ -576,7 +576,7 @@
         },
         {
           "type": "rotate",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "68.1%", "y": "54.9%" },
           "zIndex": 15,
           "modalContent": { "title": "펜트 해치", "description": "펜트->로비 이동",
@@ -587,7 +587,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_1f",
+          "floorId": "1f",
           "pos": { "x": "69.45%", "y": "50.8%" },
           "width": "18px",
           "height": "2px",
@@ -599,9 +599,9 @@
         },
         {
           "type": "break",
-          "floorId": "floor_1f",
-          "pos": { "x": "62.7%", "y": "54.1%" },
-          "width": "16px",
+          "floorId": "1f",
+          "pos": { "x": "62.75%", "y": "54.1%" },
+          "width": "17px",
           "height": "2px",
           "modalContent": { "title": "주방 4벽 발작", "description": "주방 복도/정원에서 주방 진입 견제",
             "media": [
@@ -611,7 +611,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "62.5%", "y": "50.7%" },
           "width": "5px",
           "height": "5px",
@@ -624,7 +624,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "61.5%", "y": "52.4%" },
           "width": "5px",
           "height": "5px",
@@ -637,7 +637,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "68.2%", "y": "50.8%" },
           "width": "4px",
           "height": "4px",
@@ -649,7 +649,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "66.5%", "y": "51.4%" },
           "width": "5px",
           "height": "5px",
@@ -661,7 +661,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "71.8%", "y": "51.6%" },
           "width": "5px",
           "height": "8px",
@@ -673,7 +673,7 @@
         },
         {
           "type": "break",
-          "floorId": "floor_2f",
+          "floorId": "2f",
           "pos": { "x": "70.4%", "y": "55.1%" },
           "width": "5px",
           "height": "5px",
@@ -685,7 +685,7 @@
         },
         {
           "type": "evilEye",
-          "floorId": "floor_1f",
+          "floorId": "1f",
           "pos": { "x": "71.9%", "y": "49.3%" },
           "modalContent": { "title": "악의 눈 - 응접실", "description": "응접실 내부, 화장실 문",
             "media": [
@@ -697,7 +697,7 @@
         },
         {
           "type": "evilEye",
-          "floorId": "floor_1f",
+          "floorId": "1f",
           "pos": { "x": "69.3%", "y": "61.2%" },
           "modalContent": { "title": "악의 눈 - 로비 카운터", "description": "로비 내부, 로비 큰 문",
             "media": [
@@ -708,7 +708,7 @@
         },
         {
           "type": "evilEye",
-          "floorId": "floor_1f",
+          "floorId": "1f",
           "pos": { "x": "65.7%", "y": "53.6%" },
           "modalContent": { "title": "악의 눈 - 주방 싱크대", "description": "주방 내부",
             "media": [
