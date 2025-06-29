@@ -124,6 +124,18 @@
           }
         },
         {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "62.0%", "y": "54.1%" },
+          "width": "18px",
+          "height": "2px",
+          "modalContent": { "title": "VIP 복도 벽", "description": "VIP 외벽 열릴 시 VIP->복도,당구장 각 지우기",
+            "media": [
+              { "type": "image", "src": "" }
+            ]
+          }
+        },
+        {
           "type": "rotate",
           "floorId": "2f",
           "pos": { "x": "56%", "y": "56.2%" },
@@ -638,7 +650,7 @@
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "68.2%", "y": "50.8%" },
+          "pos": { "x": "68.2%", "y": "50.9%" },
           "width": "4px",
           "height": "4px",
           "modalContent": { "title": "펜트 바닥 버티컬 1", "description": "펜트->직출 국설 저지",
@@ -714,6 +726,23 @@
             "media": [
               { "type": "image", "src": "https://i.imgur.com/x5WgzSf.jpeg" },
               { "type": "image", "src": "https://i.imgur.com/3C4t9hV.jpeg" }
+            ]
+          }
+        }
+      ]
+    },
+    "4": {
+      "name": "1F 블루바 / 선라이즈바",
+      "strategies": [
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "63.1%", "y": "47.2%" },
+          "width": "20px",
+          "height": "2px",
+          "modalContent": { "title": "VIP 외벽", "description": "VIP 진입 저지",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/2d4WdXL.jpeg" }
             ]
           }
         }
