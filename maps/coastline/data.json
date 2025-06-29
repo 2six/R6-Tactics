@@ -6,7 +6,7 @@
     { "id": "evilEye", "label": "악의 눈", "icon": "../../images/icons/Evil Eye.png", "width": "6px", "height": "6px" }
   ],
   "floors": {
-    "floor_1f": {
+    "1f": {
       "name": "1층",
       "mapImage": "../../images/maps/coastline_1f.png",
       "labels": [
@@ -33,7 +33,7 @@
         { "pos": { "x": "66.9%", "y": "59.6%" }, "text": "로비벽뒤", "fontSize": "8px", "rotation": 90 }
       ]
     },
-    "floor_2f": {
+    "2f": {
       "name": "2층",
       "mapImage": "../../images/maps/coastline_2f.png",
       "labels": [
@@ -588,7 +588,7 @@
         {
           "type": "break",
           "floorId": "floor_1f",
-          "pos": { "x": "69.5%", "y": "50.8%" },
+          "pos": { "x": "69.45%", "y": "50.8%" },
           "width": "18px",
           "height": "2px",
           "modalContent": { "title": "화장실/직출 발작", "description": "응접실 진입 견제 및 직출 국설 견제",
