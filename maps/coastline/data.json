@@ -279,7 +279,7 @@
           "floorId": "floor_2f",
           "pos": { "x": "65.9%", "y": "52.1%" },
           "width": "2px",
-          "height": "10px",
+          "height": "9px",
           "modalContent": { "title": "펜트 3벽", "description": "펜트 큰 창 레펠 견제용 엄폐물",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
@@ -307,6 +307,16 @@
           "modalContent": { "title": "VIP 복도 벽", "description": "VIP->영감 복도 각 지우기 리테이크용",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/xxioG6O.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "floor_2f",
+          "pos": { "x": "65.9%", "y": "53.6%" },
+          "modalContent": { "title": "VIP-펜트 로테이션", "description": "VIP-펜트 간 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
             ]
           }
         },
@@ -339,7 +349,7 @@
           "floorId": "floor_2f",
           "pos": { "x": "65.9%", "y": "50.9%" },
           "width": "2px",
-          "height": "10px",
+          "height": "9px",
           "modalContent": { "title": "펜트 3벽 좌우", "description": "펜트 큰 창 레펠 견제",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
@@ -351,7 +361,7 @@
           "floorId": "floor_2f",
           "pos": { "x": "65.9%", "y": "53.4%" },
           "width": "2px",
-          "height": "10px",
+          "height": "9px",
           "modalContent": { "title": "펜트 3벽 좌우", "description": "펜트 큰 창 레펠 견제",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
@@ -362,8 +372,8 @@
           "type": "break",
           "floorId": "floor_2f",
           "pos": { "x": "62.4%", "y": "54.1%" },
-          "width": "2px",
-          "height": "8px",
+          "width": "8px",
+          "height": "2px",
           "modalContent": { "title": "VIP 복도 벽", "description": "VIP 리테이크용",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/0s5ur8B.jpeg" }
@@ -373,9 +383,9 @@
         {
           "type": "break",
           "floorId": "floor_2f",
-          "pos": { "x": "54.1%", "y": "54.1%" },
-          "width": "2px",
-          "height": "8px",
+          "pos": { "x": "64.4%", "y": "54.1%" },
+          "width": "8px",
+          "height": "2px",
           "modalContent": { "title": "VIP 복도 벽", "description": "VIP 리테이크용",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/xxioG6O.jpeg" }
