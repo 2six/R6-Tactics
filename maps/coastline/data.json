@@ -16,7 +16,7 @@
         { "pos": { "x": "56%", "y": "52%" }, "text": "선라이즈" },
         { "pos": { "x": "57.9%", "y": "50.4%" }, "text": "카운터", "fontSize": "8px" },
         { "pos": { "x": "57.7%", "y": "55.1%" }, "text": "소파", "fontSize": "8px" },
-        { "pos": { "x": "60%", "y": "53.1%" }, "text": "선라복도", "rotation": 90 },
+        { "pos": { "x": "60.1%", "y": "53.1%" }, "text": "선라복도", "rotation": 90 },
         { "pos": { "x": "58.4%", "y": "58.2%" }, "text": "블루바" },
         { "pos": { "x": "58.4%", "y": "63.8%" }, "text": "사무실" },
         { "pos": { "x": "63.6%", "y": "49.4%" }, "text": "주방" },
@@ -485,8 +485,8 @@
         {
           "type": "reinforce",
           "floorId": "floor_1f",
-          "pos": { "x": "67.7%", "y": "54.1%" },
-          "width": "16px",
+          "pos": { "x": "67.6%", "y": "54.1%" },
+          "width": "15px",
           "height": "2px",
           "modalContent": { "title": "직원 출입구 3벽", "description": "로비 큰 문->직출 각 지우기",
             "media": [
@@ -497,7 +497,7 @@
         {
           "type": "reinforce",
           "floorId": "floor_1f",
-          "pos": { "x": "70.8%", "y": "50.7%" },
+          "pos": { "x": "70.8%", "y": "50.8%" },
           "width": "10px",
           "height": "2px",
           "modalContent": { "title": "화장실 3벽 가운데", "description": "응접실 외부 문 견제용 엄폐물",
@@ -509,9 +509,9 @@
         {
           "type": "reinforce",
           "floorId": "floor_1f",
-          "pos": { "x": "66.0%", "y": "49.2%" },
+          "pos": { "x": "66.1%", "y": "49.2%" },
           "width": "2px",
-          "height": "10px",
+          "height": "9px",
           "modalContent": { "title": "주방-직출 벽", "description": "응접실 외부->주방 각 지우기",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/vnTTqkx.jpeg" }
@@ -523,7 +523,7 @@
           "floorId": "floor_1f",
           "pos": { "x": "59.0%", "y": "55.0%" },
           "width": "2px",
-          "height": "14px",
+          "height": "16px",
           "modalContent": { "title": "선라이즈 2벽", "description": "선라이즈->주방 각 지우기",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/ZgYsoTH.jpeg" }
@@ -544,7 +544,7 @@
         {
           "type": "rotate",
           "floorId": "floor_1f",
-          "pos": { "x": "66.0%", "y": "47.5%" },
+          "pos": { "x": "66.1%", "y": "47.7%" },
           "zIndex": 15,
           "modalContent": { "title": "사이트 간 로테이션", "description": "주방<->직출 이동",
             "media": [
@@ -555,7 +555,7 @@
         {
           "type": "rotate",
           "floorId": "floor_1f",
-          "pos": { "x": "66.0%", "y": "47.5%" },
+          "pos": { "x": "71.9%", "y": "50.8%" },
           "zIndex": 15,
           "modalContent": { "title": "화장실 3벽 로테이션", "description": "화장실<->응접실 이동 및 응접실 외부 문 견제",
             "media": [
@@ -577,7 +577,7 @@
         {
           "type": "rotate",
           "floorId": "floor_2f",
-          "pos": { "x": "68.1%", "y": "54.8%" },
+          "pos": { "x": "68.1%", "y": "54.9%" },
           "zIndex": 15,
           "modalContent": { "title": "펜트 해치", "description": "펜트->로비 이동",
             "media": [
@@ -588,8 +588,8 @@
         {
           "type": "break",
           "floorId": "floor_1f",
-          "pos": { "x": "69.3%", "y": "50.7%" },
-          "width": "16px",
+          "pos": { "x": "69.5%", "y": "50.8%" },
+          "width": "18px",
           "height": "2px",
           "modalContent": { "title": "화장실/직출 발작", "description": "응접실 진입 견제 및 직출 국설 견제",
             "media": [
@@ -612,7 +612,7 @@
         {
           "type": "break",
           "floorId": "floor_2f",
-          "pos": { "x": "62.3%", "y": "50.5%" },
+          "pos": { "x": "62.5%", "y": "50.7%" },
           "width": "5px",
           "height": "5px",
           "modalContent": { "title": "VIP 바닥 버티컬 1", "description": "VIP->주방 창문 견제 및 진입 저지",
@@ -625,7 +625,7 @@
         {
           "type": "break",
           "floorId": "floor_2f",
-          "pos": { "x": "61.4%", "y": "52.2%" },
+          "pos": { "x": "61.5%", "y": "52.4%" },
           "width": "5px",
           "height": "5px",
           "modalContent": { "title": "VIP 바닥 버티컬 2", "description": "VIP->주방 문 진입 견제",
@@ -686,7 +686,7 @@
         {
           "type": "evilEye",
           "floorId": "floor_1f",
-          "pos": { "x": "71.8%", "y": "49.3%" },
+          "pos": { "x": "71.9%", "y": "49.3%" },
           "modalContent": { "title": "악의 눈 - 응접실", "description": "응접실 내부, 화장실 문",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/F3XeeKx.jpeg" },
@@ -698,7 +698,7 @@
         {
           "type": "evilEye",
           "floorId": "floor_1f",
-          "pos": { "x": "69.3%", "y": "61.1%" },
+          "pos": { "x": "69.3%", "y": "61.2%" },
           "modalContent": { "title": "악의 눈 - 로비 카운터", "description": "로비 내부, 로비 큰 문",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/VqybRUO.jpeg" },
@@ -709,7 +709,7 @@
         {
           "type": "evilEye",
           "floorId": "floor_1f",
-          "pos": { "x": "65.7%", "y": "53.5%" },
+          "pos": { "x": "65.7%", "y": "53.6%" },
           "modalContent": { "title": "악의 눈 - 주방 싱크대", "description": "주방 내부",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/x5WgzSf.jpeg" },
