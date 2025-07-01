@@ -22,7 +22,7 @@
     },
     "1f": {
       "name": "1층",
-      "mapImage": "https://i.imgur.com/o4tNg3P.jpeg",
+      "mapImage": "https://i.imgur.com/tk4QJXl.jpeg",
       "labels": [
         { "pos": { "x": "64.8%", "y": "48.4%" }, "text": "빨간\n계단", "fontSize": "8px" },
         { "pos": { "x": "60.8%", "y": "35.2%" }, "text": "천문계단", "fontSize": "8px" },
