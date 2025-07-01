@@ -8,7 +8,7 @@
   "floors": {
     "1f": {
       "name": "1층",
-      "mapImage": "../../images/maps/coastline_1f.png",
+      "mapImage": "https://i.imgur.com/Ea2oIjT.jpeg",
       "labels": [
         { "pos": { "x": "60%", "y": "48.8%" }, "text": "물담배\n계단", "fontSize": "8px" },
         { "pos": { "x": "69.3%", "y": "65.4%" }, "text": "로비계단" },
@@ -35,7 +35,7 @@
     },
     "2f": {
       "name": "2층",
-      "mapImage": "../../images/maps/coastline_2f.png",
+      "mapImage": "https://i.imgur.com/iL5SAfJ.jpeg",
       "labels": [
         { "pos": { "x": "60%", "y": "48.8%" }, "text": "물담배\n계단", "fontSize": "8px" },
         { "pos": { "x": "69.3%", "y": "65.5%" }, "text": "로비계단" },
