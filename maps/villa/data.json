@@ -99,7 +99,7 @@
           "type": "reinforce",
           "floorId": "2f",
           "pos": { "x": "61.7%", "y": "55.0%" },
-          "width": "7px",
+          "width": "8px",
           "height": "2px",
           "modalContent": { "title": "비행기 2벽 왼쪽", "description": "작업실 문->금고 문 각 지우기",
             "media": [
@@ -146,7 +146,7 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "62.3%", "y": "45.6%" },
+          "pos": { "x": "62.2%", "y": "45.6%" },
           "width": "2px",
           "height": "16px",
           "modalContent": { "title": "층계참 2벽", "description": "2층 반대쪽 로머 복귀 보호",
@@ -181,7 +181,7 @@
           "type": "break",
           "floorId": "2f",
           "pos": { "x": "60.9%", "y": "55.0%" },
-          "width": "7px",
+          "width": "8px",
           "height": "2px",
           "modalContent": { "title": "비행기 2벽 오른쪽 헤드홀", "description": "작업실 문 견제",
             "media": [
