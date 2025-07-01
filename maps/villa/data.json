@@ -72,7 +72,7 @@
         { "pos": { "x": "58.6%", "y": "54.2%" }, "text": "휴게실" },
         { "pos": { "x": "58.2%", "y": "56.2%" }, "text": "카운터", "fontSize": "8px" },
         { "pos": { "x": "57.3%", "y": "47.6%" }, "text": "ㄱ자복도", "fontSize": "8px" },
-        { "pos": { "x": "56.2%", "y": "49.6%" }, "text": "자\n복\n도", "fontSize": "8px" },
+        { "pos": { "x": "56.2%", "y": "49.7%" }, "text": "자\n복\n도", "fontSize": "8px" },
         { "pos": { "x": "56.2%", "y": "58.5%" }, "text": "마리아", "fontSize": "8px" },
         { "pos": { "x": "56.1%", "y": "54.4%" }, "text": "마리아복도", "fontSize": "8px", "rotation": 90 },
         { "pos": { "x": "61.9%", "y": "61.1%" }, "text": "작업실발코니" }
@@ -86,7 +86,7 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "60.3%", "y": "56.3%" },
+          "pos": { "x": "60.4%", "y": "56.3%" },
           "width": "2px",
           "height": "16px",
           "modalContent": { "title": "휴게실 2벽", "description": "작업실 외부->휴게실 각 지우기",
@@ -98,8 +98,8 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "61.6%", "y": "55.0%" },
-          "width": "8px",
+          "pos": { "x": "61.7%", "y": "55.0%" },
+          "width": "7px",
           "height": "2px",
           "modalContent": { "title": "비행기 2벽 왼쪽", "description": "작업실 문->금고 문 각 지우기",
             "media": [
@@ -122,7 +122,7 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "56.8%", "y": "51.8%" },
+          "pos": { "x": "56.8%", "y": "51.7%" },
           "width": "2px",
           "height": "8px",
           "modalContent": { "title": "휴게실 복도 오른쪽 벽", "description": "ㄱ자 레펠->휴게실 각 지우기",
@@ -134,9 +134,9 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "58.6%", "y": "50.4%" },
+          "pos": { "x": "58.6%", "y": "50.5%" },
           "width": "2px",
-          "height": "8px",
+          "height": "9px",
           "modalContent": { "title": "금고 벽", "description": "금고 보호",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/oy08up5.jpeg" }
@@ -146,9 +146,9 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "62.2%", "y": "45.6%" },
+          "pos": { "x": "62.3%", "y": "45.6%" },
           "width": "2px",
-          "height": "14px",
+          "height": "16px",
           "modalContent": { "title": "층계참 2벽", "description": "2층 반대쪽 로머 복귀 보호",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/a7SsRfI.jpeg" }
@@ -160,7 +160,7 @@
           "floorId": "2f",
           "pos": { "x": "66.6%", "y": "40.9%" },
           "width": "2px",
-          "height": "14px",
+          "height": "16px",
           "modalContent": { "title": "조각상 3벽 오른쪽", "description": "2층 반대 진입 견제",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/P0Con1F.jpeg" }
@@ -170,7 +170,7 @@
         {
           "type": "rotate",
           "floorId": "2f",
-          "pos": { "x": "60.3%", "y": "51.7%" },
+          "pos": { "x": "60.4%", "y": "51.7%" },
           "modalContent": { "title": "사이트 로테이션", "description": "사이트 간 이동",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/W7zxCoJ.jpeg" }
@@ -180,8 +180,8 @@
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "60.8%", "y": "55.0%" },
-          "width": "8px",
+          "pos": { "x": "60.9%", "y": "55.0%" },
+          "width": "7px",
           "height": "2px",
           "modalContent": { "title": "비행기 2벽 오른쪽 헤드홀", "description": "작업실 문 견제",
             "media": [
@@ -230,7 +230,7 @@
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "60.3%", "y": "54.0%" },
+          "pos": { "x": "60.4%", "y": "54.0%" },
           "width": "2px",
           "height": "14px",
           "modalContent": { "title": "휴게실-비행기 벽 위쪽", "description": "투척물 넘기기 및 샌즈 문 견제",
@@ -244,9 +244,9 @@
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "66.6%", "y": "39.3%" },
+          "pos": { "x": "66.6%", "y": "39.4%" },
           "width": "2px",
-          "height": "7px",
+          "height": "8px",
           "modalContent": { "title": "조각상 3벽 왼쪽 무릎작", "description": "옷장 진입 견제",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/P0Con1F.jpeg" },
@@ -257,7 +257,7 @@
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "58.8%", "y": "54.8%" },
+          "pos": { "x": "59.0%", "y": "55.3%" },
           "modalContent": { "title": "악의 눈 - 휴게실", "description": "휴게실 내부, 샌즈 문",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/gWn37v8.jpeg" },
@@ -269,7 +269,7 @@
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "63.8%", "y": "59.0%" },
+          "pos": { "x": "63.8%", "y": "59.1%" },
           "modalContent": { "title": "악의 눈 - 작업실", "description": "작업실 내부\n트랩도어 부수기",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/qTm0tra.jpeg" },
@@ -293,7 +293,7 @@
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "59.0%", "y": "47.9%" },
+          "pos": { "x": "59.0%", "y": "48.0%" },
           "modalContent": { "title": "악의 눈 - ㄱ자 1", "description": "ㄱ자 복도, 층계참",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/Wyul3Sm.jpeg" },
@@ -317,7 +317,7 @@
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "57.3%", "y": "47.1%" },
+          "pos": { "x": "57.3%", "y": "47.2%" },
           "modalContent": { "title": "악의 눈 - ㄱ자 2", "description": "ㄱ자 복도, ㄱ자 창문, 층계참",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/vvMdZnR.jpeg" },
