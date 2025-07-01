@@ -270,7 +270,7 @@
           "type": "evilEye",
           "floorId": "2f",
           "pos": { "x": "63.8%", "y": "59.1%" },
-          "modalContent": { "title": "악의 눈 - 작업실", "description": "작업실 내부\n트랩도어 부수기",
+          "modalContent": { "title": "악의 눈 - 작업실", "description": "작업실 내부 (트랩도어 부수기)",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/qTm0tra.jpeg" },
               { "type": "image", "src": "https://i.imgur.com/SzuUsXQ.jpeg" }
@@ -294,7 +294,7 @@
           "type": "evilEye",
           "floorId": "2f",
           "pos": { "x": "59.0%", "y": "48.0%" },
-          "modalContent": { "title": "악의 눈 - ㄱ자 1", "description": "ㄱ자 복도, 층계참",
+          "modalContent": { "title": "악의 눈 - ㄱ자 1", "description": "ㄱ자 복도, 층계참 (의자 부수고 왼쪽 45도에서 올라가기)",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/Wyul3Sm.jpeg" },
               { "type": "image", "src": "https://i.imgur.com/EeoJg0P.jpeg" },
@@ -318,7 +318,7 @@
           "type": "evilEye",
           "floorId": "2f",
           "pos": { "x": "57.3%", "y": "47.2%" },
-          "modalContent": { "title": "악의 눈 - ㄱ자 2", "description": "ㄱ자 복도, ㄱ자 창문, 층계참",
+          "modalContent": { "title": "악의 눈 - ㄱ자 2", "description": "ㄱ자 복도, ㄱ자 창문, 층계참 (딱붙어서 초록 창 저 부분에 에임두고 AS 스페이스 꾹)",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/vvMdZnR.jpeg" },
               { "type": "image", "src": "https://i.imgur.com/ZWbPO11.jpeg" },
