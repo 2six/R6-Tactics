@@ -63,8 +63,8 @@
         { "pos": { "x": "61.5%", "y": "41.6%" }, "text": "트로피\n(사슴)" },
         { "pos": { "x": "65.4%", "y": "41.6%" }, "text": "조각상", "rotation": 90 },
         { "pos": { "x": "69.1%", "y": "41.6%" }, "text": "안방" },
-        { "pos": { "x": "61.2%", "y": "45.5%" }, "text": "트로피\n입구", "fontSize": "6px" },
-        { "pos": { "x": "63.2%", "y": "47.3%" }, "text": "층계참", "rotation": 90 },
+        { "pos": { "x": "61.2%", "y": "45.6%" }, "text": "트로피\n입구", "fontSize": "6px" },
+        { "pos": { "x": "63.3%", "y": "47.3%" }, "text": "층계참", "rotation": 90 },
         { "pos": { "x": "63.3%", "y": "50.4%" }, "text": "샌즈", "fontSize": "8px" },
         { "pos": { "x": "60.4%", "y": "49.8%" }, "text": "금고" },
         { "pos": { "x": "62.3%", "y": "53.0%" }, "text": "비행기" },
@@ -146,9 +146,9 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "62.2%", "y": "45.6%" },
+          "pos": { "x": "62.2%", "y": "45.5%" },
           "width": "2px",
-          "height": "16px",
+          "height": "17px",
           "modalContent": { "title": "층계참 2벽", "description": "2층 반대쪽 로머 복귀 보호",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/a7SsRfI.jpeg" }
@@ -255,6 +255,19 @@
           }
         },
         {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "67.9%", "y": "38.1%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "화장실 3벽 오른쪽 발작", "description": "옷장 진입 견제",
+            "media": [
+              { "type": "image", "src": "" },              
+              { "type": "image", "src": "https://i.imgur.com/Dlv1fsc.jpeg" }
+            ]
+          }
+        },
+        {
           "type": "evilEye",
           "floorId": "2f",
           "pos": { "x": "59.0%", "y": "55.3%" },
@@ -331,241 +344,158 @@
       ]
     },
     "2": {
-      "name": "2F 영화감상실 / 펜트하우스",
+      "name": "2F 조각상 / 트로피",
       "strategies": [
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "69.3%", "y": "62.4%" },
-          "width": "16px",
-          "height": "2px",
-          "modalContent": { "title": "영감 2벽", "description": "영화감상실 내부 보호",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/PDpoRuU.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "2f",
-          "pos": { "x": "63.1%", "y": "47.2%" },
-          "width": "20px",
-          "height": "2px",
-          "modalContent": { "title": "VIP 외벽", "description": "VIP 진입 저지",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/UpAbpd0.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "2f",
-          "pos": { "x": "68.3%", "y": "56.3%" },
-          "width": "13px",
-          "height": "2px",
-          "modalContent": { "title": "영감-펜트 벽", "description": "펜트 큰창->영화 감상실 각 지우기",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/Ge9w3oR.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "2f",
-          "pos": { "x": "67.6%", "y": "61.7%" },
+          "pos": { "x": "66.6%", "y": "40.9%" },
           "width": "2px",
-          "height": "8px",
-          "modalContent": { "title": "영감 복도 벽", "description": "아쿠아 복도->영화 감상실 각 지우기",
+          "height": "16px",
+          "modalContent": { "title": "조각상 3벽 오른쪽", "description": "2층 반대 진입 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/sE9QS1Q.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/P0Con1F.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "67.6%", "y": "57.1%" },
+          "pos": { "x": "62.2%", "y": "45.5%" },
           "width": "2px",
-          "height": "10px",
-          "modalContent": { "title": "영감 복도 벽", "description": "VIP 복도->영화 감상실 각 지우기",
+          "height": "17px",
+          "modalContent": { "title": "층계참 2벽", "description": "2층 반대쪽 로머 복귀 보호",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/sE9QS1Q.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/un17Pv1.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "65.9%", "y": "52.1%" },
+          "pos": { "x": "67.9%", "y": "36.5%" },
           "width": "2px",
-          "height": "9px",
-          "modalContent": { "title": "펜트 3벽", "description": "펜트 큰 창 레펠 견제용 엄폐물",
+          "height": "17px",
+          "modalContent": { "title": "화장실 3벽 왼쪽", "description": "옷장->화장실->천문 각 지우기",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/JpvfdZX.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "61.5%", "y": "54.1%" },
-          "width": "9px",
+          "pos": { "x": "62.0%", "y": "38.7%" },
+          "width": "14px",
           "height": "2px",
-          "modalContent": { "title": "VIP 복도 벽", "description": "당구장->VIP 각 지우기",
+          "modalContent": { "title": "트로피 3벽 오른쪽", "description": "천문 레펠->트로피 각 지우기",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/0s5ur8B.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "2f",
-          "pos": { "x": "65.4%", "y": "54.1%" },
-          "width": "9px",
-          "height": "2px",
-          "modalContent": { "title": "VIP 복도 벽", "description": "VIP->영감 복도 각 지우기 리테이크용",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/xxioG6O.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/MMRZBW7.jpeg" }
             ]
           }
         },
         {
           "type": "rotate",
           "floorId": "2f",
-          "pos": { "x": "65.9%", "y": "53.6%" },
+          "pos": { "x": "60.7%", "y": "38.7%" },
           "zIndex": 15,
-          "modalContent": { "title": "VIP-펜트 로테이션", "description": "VIP-펜트 간 이동",
+          "modalContent": { "title": "트로피-천문 로테이션", "description": "트로피<->천문 간 이동",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/MMRZBW7.jpeg" }
             ]
           }
         },
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "70.3%", "y": "56.3%" },
-          "width": "13px",
-          "height": "2px",
-          "modalContent": { "title": "영감-펜트 벽 위쪽", "description": "투척물 넘기기",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/Ge9w3oR.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "69.7%", "y": "48.8%" },
+          "pos": { "x": "66.6%", "y": "39.4%" },
           "width": "2px",
-          "height": "21px",
-          "modalContent": { "title": "화장실 발작", "description": "화장실 해치 낙하 견제",
+          "height": "8px",
+          "modalContent": { "title": "조각상 3벽 왼쪽 무릎작", "description": "옷장 진입 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/M0EkVEK.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/un17Pv1.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/ex7G9El.jpeg" }
             ]
           }
         },
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "65.9%", "y": "50.9%" },
+          "pos": { "x": "67.9%", "y": "38.1%" },
           "width": "2px",
-          "height": "9px",
-          "modalContent": { "title": "펜트 3벽 좌우", "description": "펜트 큰 창 레펠 견제",
+          "height": "8px",
+          "modalContent": { "title": "화장실 3벽 오른쪽 발작", "description": "옷장 진입 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/JpvfdZX.jpeg" },              
+              { "type": "image", "src": "https://i.imgur.com/ex7G9El.jpeg" }
             ]
           }
         },
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "65.9%", "y": "53.3%" },
+          "pos": { "x": "66.6%", "y": "39.4%" },
           "width": "2px",
-          "height": "9px",
-          "modalContent": { "title": "펜트 3벽 좌우", "description": "펜트 큰 창 레펠 견제",
+          "height": "8px",
+          "modalContent": { "title": "천문 벽 머리작", "description": "트로피->조각상 문/화장실 문",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "62.45%", "y": "54.1%" },
-          "width": "9px",
-          "height": "2px",
-          "modalContent": { "title": "VIP 복도 벽", "description": "VIP 리테이크용",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/0s5ur8B.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "64.5%", "y": "54.1%" },
-          "width": "9px",
-          "height": "2px",
-          "modalContent": { "title": "VIP 복도 벽", "description": "VIP 리테이크용",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/xxioG6O.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "70.4%", "y": "61.3%" },
-          "width": "6px",
-          "height": "6px",
-          "modalContent": { "title": "영화 감상실 바닥", "description": "로비 계단 견제",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/5WFxAjl.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/un17Pv1.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/un17Pv1.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/ex7G9El.jpeg" }
             ]
           }
         },
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "68.8%", "y": "53.5%" },
-          "modalContent": { "title": "악의 눈 - 펜트하우스", "description": "펜트하우스 큰창, 내부, VIP",
+          "pos": { "x": "69.8%", "y": "40.1%" },
+          "modalContent": { "title": "악의 눈 - 안방", "description": "안방 내부",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/VAxa4jI.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/wna8mDx.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/sjjl5Zl.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/9Q6XgZ7.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/jnDU7YA.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/dvBRXSz.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/BrbHktX.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/tobE28G.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/D3pRYYX.jpeg" }
             ]
           }
         },
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "70.7%", "y": "64.5%" },
-          "modalContent": { "title": "악의 눈 - 로비 계단", "description": "로비 계단, 아쿠아 복도",
+          "pos": { "x": "62.9%", "y": "43.5%" },
+          "modalContent": { "title": "악의 눈 - 트로피", "description": "트로피 내부, 조각상 일부 (국설자리 저지 가능)",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/AAH9ndk.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/boXG68A.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/brhjsTC.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/4GMGKOQ.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/4aSEG9n.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/nugakwa.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/DF2uDU5.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/e8jXN5p.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/UJxGlFZ.jpeg" }
             ]
           }
         },
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "61.3%", "y": "48.3%" },
-          "modalContent": { "title": "악의 눈 - VIP", "description": "VIP 내부, 펜트하우스 국설 견제",
+          "pos": { "x": "64.1%", "y": "47.2%" },
+          "modalContent": { "title": "악의 눈 - 빨계", "description": "ㄱ자 복도, 층계참, 빨간 계단",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/ot8JIaJ.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/2b2XbFR.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/xfIwBnw.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/32Oig40.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/cMV5Z9x.jpeg" }
             ]
           }
         },
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "68.8%", "y": "55.7%" },
-          "modalContent": { "title": "악의 눈 - 펜트 드론 구멍", "description": "VIP 복도",
+          "pos": { "x": "66.5%", "y": "38.1%" },
+          "modalContent": { "title": "악의 눈 - 화장실", "description": "화장실 내부, 천문 계단 위쪽",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/K4rfctQ.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/F6cLTPs.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/AykZ8tj.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/vjvhUOD.jpeg" }
             ]
           }
         }
