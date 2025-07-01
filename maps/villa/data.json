@@ -8,7 +8,7 @@
   "floors": {
     "0f": {
       "name": "지하",
-      "mapImage": "https://i.imgur.com/VMJGIjb.png",
+      "mapImage": "https://i.imgur.com/VMJGIjb.jpeg",
       "labels": [
         { "pos": { "x": "60.5%", "y": "36.3%" }, "text": "뒤쪽\n계단", "fontSize": "8px" },
         { "pos": { "x": "64.0%", "y": "48.3%" }, "text": "빨간\n계단", "fontSize": "8px" },
@@ -22,7 +22,7 @@
     },
     "1f": {
       "name": "1층",
-      "mapImage": "https://i.imgur.com/tk4QJXl.png",
+      "mapImage": "https://i.imgur.com/tk4QJXl.jpeg",
       "labels": [
         { "pos": { "x": "64.9%", "y": "48.4%" }, "text": "빨간\n계단", "fontSize": "8px" },
         { "pos": { "x": "60.8%", "y": "35.2%" }, "text": "천문계단", "fontSize": "8px" },
@@ -52,7 +52,7 @@
     },
     "2f": {
       "name": "2층",
-      "mapImage": "https://i.imgur.com/BrDLqxL.png",
+      "mapImage": "https://i.imgur.com/BrDLqxL.jpeg",
       "labels": [
         { "pos": { "x": "65.3%", "y": "48.3%" }, "text": "빨간\n계단", "fontSize": "8px" },
         { "pos": { "x": "61.9%", "y": "34.8%" }, "text": "천문계단", "fontSize": "8px" },
@@ -60,12 +60,12 @@
         { "pos": { "x": "62.5%", "y": "37.2%" }, "text": "천문" },
         { "pos": { "x": "66.2%", "y": "37.2%" }, "text": "화장실" },
         { "pos": { "x": "68.9%", "y": "37.2%" }, "text": "옷장" },
-        { "pos": { "x": "61.5%", "y": "41.6%" }, "text": "트로프\n사슴" },
+        { "pos": { "x": "61.5%", "y": "41.6%" }, "text": "트로피\n(사슴)" },
         { "pos": { "x": "65.4%", "y": "41.6%" }, "text": "조각상", "rotation": 90 },
         { "pos": { "x": "69.1%", "y": "41.6%" }, "text": "안방" },
-        { "pos": { "x": "61.2%", "y": "45.5%" }, "text": "이중문", "fontSize": "8px" },
+        { "pos": { "x": "61.2%", "y": "45.5%" }, "text": "트로피\n입구", "fontSize": "6px" },
         { "pos": { "x": "63.2%", "y": "47.3%" }, "text": "층계참", "rotation": 90 },
-        { "pos": { "x": "63.3%", "y": "50.3%" }, "text": "샌즈", "fontSize": "8px" },
+        { "pos": { "x": "63.3%", "y": "50.4%" }, "text": "샌즈", "fontSize": "8px" },
         { "pos": { "x": "60.4%", "y": "49.8%" }, "text": "금고" },
         { "pos": { "x": "62.3%", "y": "53.0%" }, "text": "비행기" },
         { "pos": { "x": "62.3%", "y": "57.4%" }, "text": "작업실" },

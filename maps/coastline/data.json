@@ -95,7 +95,7 @@
           "height": "10px",
           "modalContent": { "title": "물담배 벽", "description": "물담배 복도 홀딩",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/mBoOzQl.png" }
+              { "type": "image", "src": "https://i.imgur.com/mBoOzQl.jpeg" }
             ]
           }
         },
@@ -107,7 +107,7 @@
           "height": "8px",
           "modalContent": { "title": "물담배 벽", "description": "물담배 홀딩",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/2kXXEnt.png" }
+              { "type": "image", "src": "https://i.imgur.com/2kXXEnt.jpeg" }
             ]
           }
         },
@@ -119,7 +119,7 @@
           "height": "2px",
           "modalContent": { "title": "VIP 외벽", "description": "VIP 진입 저지",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/Yh5zBJc.png" }
+              { "type": "image", "src": "https://i.imgur.com/Yh5zBJc.jpeg" }
             ]
           }
         },
@@ -131,7 +131,7 @@
           "height": "2px",
           "modalContent": { "title": "VIP 복도 벽", "description": "VIP 외벽 열릴 시 VIP->복도,당구장 각 지우기",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/Kt36sps.png" }
+              { "type": "image", "src": "https://i.imgur.com/Kt36sps.jpeg" }
             ]
           }
         },
@@ -186,8 +186,8 @@
           "pos": { "x": "63%", "y": "56.3%" },
           "modalContent": { "title": "악의 눈 - VIP 복도", "description": "물담배 입구, 당구장 큰창",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/DOiBBck.png" },
-              { "type": "image", "src": "https://i.imgur.com/gmpsV7b.png" }
+              { "type": "image", "src": "https://i.imgur.com/DOiBBck.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/gmpsV7b.jpeg" }
             ]
           }
         },
@@ -197,8 +197,8 @@
           "pos": { "x": "55.9%", "y": "53.1%" },
           "modalContent": { "title": "악의 눈 - 물담배", "description": "물담배 내부, 설치 저지",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/YBqs9a3.png" },
-              { "type": "image", "src": "https://i.imgur.com/93LxuKM.png" }
+              { "type": "image", "src": "https://i.imgur.com/YBqs9a3.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/93LxuKM.jpeg" }
             ]
           }
         },
@@ -208,8 +208,8 @@
           "pos": { "x": "57.4%", "y": "65.3%" },
           "modalContent": { "title": "악의 눈 - 아쿠아 1", "description": "아쿠아 내부, 당구장 폭탄 뒤 설치 저지",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/jmAhCsZ.png" },
-              { "type": "image", "src": "https://i.imgur.com/eGyCvwY.png" }
+              { "type": "image", "src": "https://i.imgur.com/jmAhCsZ.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/eGyCvwY.jpeg" }
             ]
           }
         },
@@ -219,8 +219,8 @@
           "pos": { "x": "60.7%", "y": "61.8%" },
           "modalContent": { "title": "악의 눈 - 아쿠아 2", "description": "아쿠아 큰 문, 아쿠아 내부",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/V5sdu6K.png" },
-              { "type": "image", "src": "https://i.imgur.com/gtZFdvD.png" }
+              { "type": "image", "src": "https://i.imgur.com/V5sdu6K.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/gtZFdvD.jpeg" }
             ]
           }
         }
