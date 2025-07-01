@@ -131,7 +131,7 @@
           "height": "2px",
           "modalContent": { "title": "VIP 복도 벽", "description": "VIP 외벽 열릴 시 VIP->복도,당구장 각 지우기",
             "media": [
-              { "type": "image", "src": "" }
+              { "type": "image", "src": "https://i.imgur.com/Kt36sps.png" }
             ]
           }
         },

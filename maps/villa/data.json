@@ -22,7 +22,7 @@
     },
     "1f": {
       "name": "1층",
-      "mapImage": "https://i.imgur.com/tk4QJXl.jpeg",
+      "mapImage": "https://i.imgur.com/tk4QJXl.png",
       "labels": [
         { "pos": { "x": "64.9%", "y": "48.4%" }, "text": "빨간\n계단", "fontSize": "8px" },
         { "pos": { "x": "60.8%", "y": "35.2%" }, "text": "천문계단", "fontSize": "8px" },
@@ -52,7 +52,7 @@
     },
     "2f": {
       "name": "2층",
-      "mapImage": "https://i.imgur.com/BrDLqxL.jpeg",
+      "mapImage": "https://i.imgur.com/BrDLqxL.png",
       "labels": [
         { "pos": { "x": "65.3%", "y": "48.3%" }, "text": "빨간\n계단", "fontSize": "8px" },
         { "pos": { "x": "61.9%", "y": "34.8%" }, "text": "천문계단", "fontSize": "8px" },
