@@ -63,7 +63,7 @@
         { "pos": { "x": "61.5%", "y": "41.6%" }, "text": "트로피\n(사슴)" },
         { "pos": { "x": "65.4%", "y": "41.6%" }, "text": "조각상", "rotation": 90 },
         { "pos": { "x": "69.1%", "y": "41.6%" }, "text": "안방" },
-        { "pos": { "x": "61.2%", "y": "45.6%" }, "text": "트로피\n입구", "fontSize": "6px" },
+        { "pos": { "x": "61.2%", "y": "45.6%" }, "text": "이중문", "fontSize": "6px" },
         { "pos": { "x": "63.3%", "y": "47.3%" }, "text": "층계참", "rotation": 90 },
         { "pos": { "x": "63.3%", "y": "50.4%" }, "text": "샌즈", "fontSize": "8px" },
         { "pos": { "x": "60.4%", "y": "49.8%" }, "text": "금고" },
@@ -366,7 +366,7 @@
           "height": "17px",
           "modalContent": { "title": "층계참 2벽", "description": "2층 반대쪽 로머 복귀 보호",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/un17Pv1.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/bpi6L0o.jpeg" }
             ]
           }
         },
@@ -386,7 +386,7 @@
           "type": "reinforce",
           "floorId": "2f",
           "pos": { "x": "62.0%", "y": "38.7%" },
-          "width": "14px",
+          "width": "16px",
           "height": "2px",
           "modalContent": { "title": "트로피 3벽 오른쪽", "description": "천문 레펠->트로피 각 지우기",
             "media": [
@@ -434,9 +434,9 @@
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "66.6%", "y": "39.4%" },
-          "width": "2px",
-          "height": "8px",
+          "pos": { "x": "63.8%", "y": "40.2%" },
+          "width": "9px",
+          "height": "2px",
           "modalContent": { "title": "천문 벽 머리작", "description": "트로피->조각상 문/화장실 문",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/un17Pv1.jpeg" },
