@@ -52,7 +52,7 @@
     },
     "2f": {
       "name": "2층",
-      "mapImage": "https://i.imgur.com/BrDLqxL.jpeg",
+      "mapImage": "https://i.imgur.com/8DtWkjq.jpeg",
       "labels": [
         { "pos": { "x": "65.3%", "y": "48.3%" }, "text": "빨간\n계단", "fontSize": "8px" },
         { "pos": { "x": "61.9%", "y": "34.8%" }, "text": "천문계단", "fontSize": "8px" },
@@ -74,7 +74,8 @@
         { "pos": { "x": "57.3%", "y": "47.6%" }, "text": "ㄱ자복도", "fontSize": "8px" },
         { "pos": { "x": "56.2%", "y": "49.6%" }, "text": "자\n복\n도", "fontSize": "8px" },
         { "pos": { "x": "56.2%", "y": "58.5%" }, "text": "마리아", "fontSize": "8px" },
-        { "pos": { "x": "56.1%", "y": "54.4%" }, "text": "마리아복도", "fontSize": "8px", "rotation": 90 }
+        { "pos": { "x": "56.1%", "y": "54.4%" }, "text": "마리아복도", "fontSize": "8px", "rotation": 90 },
+        { "pos": { "x": "61.9%", "y": "61.1%" }, "text": "작업실발코니" }
       ]
     }
   },
@@ -85,161 +86,245 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "57.1%", "y": "56.2%" },
-          "width": "9px",
+          "pos": { "x": "60.3%", "y": "56.3%" },
+          "width": "2px",
+          "height": "16px",
+          "modalContent": { "title": "휴게실 2벽", "description": "작업실 외부->휴게실 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/Q5mCHTn.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "61.6%", "y": "55.0%" },
+          "width": "8px",
           "height": "2px",
-          "modalContent": { "title": "당구장-물담배 벽", "description": "물담배 홀딩",
+          "modalContent": { "title": "비행기 2벽 왼쪽", "description": "작업실 문->금고 문 각 지우기",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/7CqmcWU.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/Pvq28Dc.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "60.925%", "y": "59.2%" },
-          "width": "2px",
-          "height": "26px",
-          "modalContent": { "title": "당구장 4벽", "description": "당구장 소파 뒤 홀딩",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/BtKtbIL.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "2f",
-          "pos": { "x": "58.9%", "y": "51.3%" },
-          "width": "2px",
-          "height": "10px",
-          "modalContent": { "title": "물담배 벽", "description": "물담배 복도 홀딩",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/mBoOzQl.png" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "2f",
-          "pos": { "x": "58.9%", "y": "55.7%" },
+          "pos": { "x": "56.8%", "y": "56.9%" },
           "width": "2px",
           "height": "8px",
-          "modalContent": { "title": "물담배 벽", "description": "물담배 홀딩",
+          "modalContent": { "title": "휴게실 복도 왼쪽 벽", "description": "휴게실 보호",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/2kXXEnt.png" }
+              { "type": "image", "src": "https://i.imgur.com/YfJhkbl.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "63.1%", "y": "47.2%" },
-          "width": "20px",
-          "height": "2px",
-          "modalContent": { "title": "VIP 외벽", "description": "VIP 진입 저지",
+          "pos": { "x": "56.8%", "y": "51.8%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "휴게실 복도 오른쪽 벽", "description": "ㄱ자 레펠->휴게실 각 지우기",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/Yh5zBJc.png" }
+              { "type": "image", "src": "https://i.imgur.com/vu0jn4d.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "62.0%", "y": "54.1%" },
-          "width": "18px",
-          "height": "2px",
-          "modalContent": { "title": "VIP 복도 벽", "description": "VIP 외벽 열릴 시 VIP->복도,당구장 각 지우기",
+          "pos": { "x": "58.6%", "y": "50.4%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "금고 벽", "description": "금고 보호",
             "media": [
-              { "type": "image", "src": "" }
+              { "type": "image", "src": "https://i.imgur.com/oy08up5.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "62.2%", "y": "45.6%" },
+          "width": "2px",
+          "height": "14px",
+          "modalContent": { "title": "층계참 2벽", "description": "2층 반대쪽 로머 복귀 보호",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/a7SsRfI.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "66.6%", "y": "40.9%" },
+          "width": "2px",
+          "height": "14px",
+          "modalContent": { "title": "조각상 3벽 오른쪽", "description": "2층 반대 진입 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/P0Con1F.jpeg" }
             ]
           }
         },
         {
           "type": "rotate",
           "floorId": "2f",
-          "pos": { "x": "56%", "y": "56.2%" },
+          "pos": { "x": "60.3%", "y": "51.7%" },
           "modalContent": { "title": "사이트 로테이션", "description": "사이트 간 이동",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/7CqmcWU.jpeg" },
-              { "type": "youtube", "src": "dQw4w9WgXcQ"}
-            ]
-          }
-        },
-        {
-          "type": "rotate",
-          "floorId": "2f",
-          "pos": { "x": "58.9%", "y": "49.7%" },
-          "modalContent": { "title": "물담배 계단 로테이션", "description": "계단에서 사이트 견제 및 이동",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/mBoOzQl.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/W7zxCoJ.jpeg" }
             ]
           }
         },
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "58%", "y": "56.2%" },
-          "width": "9px",
+          "pos": { "x": "60.8%", "y": "55.0%" },
+          "width": "8px",
           "height": "2px",
-          "modalContent": { "title": "물담배-당구장 위쪽", "description": "투척물 넘기기",
+          "modalContent": { "title": "비행기 2벽 오른쪽 헤드홀", "description": "작업실 문 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/7CqmcWU.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/Pvq28Dc.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/6J2PhFg.jpeg" }
             ]
           }
         },
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "56.5%", "y": "62.4%" },
-          "width": "17px",
+          "pos": { "x": "56.8%", "y": "55.9%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "휴게실 복도 왼쪽 벽 발작", "description": "복도 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/YfJhkbl.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "56.8%", "y": "52.8%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "휴게실 복도 오른쪽 벽 발작", "description": "복도 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/vu0jn4d.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "58.7%", "y": "56.6%" },
+          "width": "3px",
           "height": "2px",
-          "modalContent": { "title": "아쿠아 발작", "description": "아쿠아 견제",
+          "modalContent": { "title": "카운터 뒤 바닥", "description": "중계 1층 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/2JhTaWS.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/nAU7OTS.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/CsBt66n.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "60.3%", "y": "54.0%" },
+          "width": "2px",
+          "height": "14px",
+          "modalContent": { "title": "휴게실-비행기 벽 위쪽", "description": "투척물 넘기기 및 샌즈 문 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/W7zxCoJ.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/kyF2llb.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/XCnqWP2.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "66.6%", "y": "39.3%" },
+          "width": "2px",
+          "height": "7px",
+          "modalContent": { "title": "조각상 3벽 왼쪽 무릎작", "description": "옷장 진입 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/P0Con1F.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/Dlv1fsc.jpeg" }
             ]
           }
         },
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "63%", "y": "56.3%" },
-          "modalContent": { "title": "악의 눈 - VIP 복도", "description": "물담배 입구, 당구장 큰창",
+          "pos": { "x": "58.8%", "y": "54.8%" },
+          "modalContent": { "title": "악의 눈 - 휴게실", "description": "휴게실 내부, 샌즈 문",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/DOiBBck.png" },
-              { "type": "image", "src": "https://i.imgur.com/gmpsV7b.png" }
+              { "type": "image", "src": "https://i.imgur.com/gWn37v8.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/hazm7q4.png" },
+              { "type": "image", "src": "https://i.imgur.com/VSLnbzb.jpeg" }
             ]
           }
         },
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "55.9%", "y": "53.1%" },
-          "modalContent": { "title": "악의 눈 - 물담배", "description": "물담배 내부, 설치 저지",
+          "pos": { "x": "63.8%", "y": "59.0%" },
+          "modalContent": { "title": "악의 눈 - 작업실", "description": "작업실 내부\n트랩도어 부수기",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/YBqs9a3.png" },
-              { "type": "image", "src": "https://i.imgur.com/93LxuKM.png" }
+              { "type": "image", "src": "https://i.imgur.com/qTm0tra.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/SzuUsXQ.jpeg" }
             ]
           }
         },
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "57.4%", "y": "65.3%" },
-          "modalContent": { "title": "악의 눈 - 아쿠아 1", "description": "아쿠아 내부, 당구장 폭탄 뒤 설치 저지",
+          "pos": { "x": "55.9%", "y": "56.1%" },
+          "modalContent": { "title": "악의 눈 - 마리아", "description": "중계 1.5층, 마리아 복도, ㄱ자",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/jmAhCsZ.png" },
-              { "type": "image", "src": "https://i.imgur.com/eGyCvwY.png" }
+              { "type": "image", "src": "https://i.imgur.com/vU1xoCO.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/DdkQQxm.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/u5ePdLK.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/fwcgjM6.jpeg" }
             ]
           }
         },
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "60.7%", "y": "61.8%" },
-          "modalContent": { "title": "악의 눈 - 아쿠아 2", "description": "아쿠아 큰 문, 아쿠아 내부",
+          "pos": { "x": "59.0%", "y": "47.9%" },
+          "modalContent": { "title": "악의 눈 - ㄱ자 1", "description": "ㄱ자 복도, 층계참",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/V5sdu6K.png" },
-              { "type": "image", "src": "https://i.imgur.com/gtZFdvD.png" }
+              { "type": "image", "src": "https://i.imgur.com/Wyul3Sm.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/EeoJg0P.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/1f6BOqJ.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "64.1%", "y": "47.2%" },
+          "modalContent": { "title": "악의 눈 - 빨계", "description": "ㄱ자 복도, 층계참, 빨간 계단",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/OSOvc2O.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/QG88xVL.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/mYwtpDN.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "57.3%", "y": "47.1%" },
+          "modalContent": { "title": "악의 눈 - ㄱ자 2", "description": "ㄱ자 복도, ㄱ자 창문, 층계참",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/vvMdZnR.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/ZWbPO11.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/NdvioAB.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/Hr202ld.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/c8JHEXH.jpeg" }
             ]
           }
         }
