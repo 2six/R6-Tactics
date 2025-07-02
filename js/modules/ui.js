@@ -39,23 +39,49 @@ function applyTransform() {
     mapContainer.style.transform = `translate(${currentTranslateX}px, ${currentTranslateY}px) scale(${currentScale})`;
 }
 
-// [수정됨] 함수의 이름과 기능 확장
+// [수정됨] "관심 영역" 기반으로 초기 뷰를 계산하는 함수
 export function setInitialMapView(initialView) {
-    if (initialView && initialView.scale && initialView.translateX !== undefined && initialView.translateY !== undefined) {
-        // 1. config.json에 정의된 초기 뷰 사용
-        currentScale = initialView.scale;
-        currentTranslateX = initialView.translateX;
-        currentTranslateY = initialView.translateY;
-    } else {
-        // 2. 초기 뷰가 없으면 기본 동작 (가로 폭에 맞춰 중앙 정렬)
-        const areaWidth = mapArea.clientWidth;
-        const areaHeight = mapArea.clientHeight;
-        const containerBaseWidth = mapContainer.offsetWidth;
-        const containerBaseHeight = mapContainer.offsetHeight;
-        if (containerBaseWidth === 0) return;
+    const areaWidth = mapArea.clientWidth;
+    const areaHeight = mapArea.clientHeight;
+    const containerBaseWidth = mapContainer.offsetWidth;
+    const containerBaseHeight = mapContainer.offsetHeight;
+    if (containerBaseWidth === 0) return;
 
+    if (initialView && initialView.aoi) {
+        // 1. config.json에 정의된 '관심 영역' 뷰 사용
+        const aoi = initialView.aoi;
+        
+        // 퍼센트 값을 소수점으로 변환
+        const x1 = parseFloat(aoi.x1) / 100;
+        const y1 = parseFloat(aoi.y1) / 100;
+        const x2 = parseFloat(aoi.x2) / 100;
+        const y2 = parseFloat(aoi.y2) / 100;
+
+        // 관심 영역의 너비와 높이 (맵 원본 크기 기준 비율)
+        const aoiWidthRatio = x2 - x1;
+        const aoiHeightRatio = y2 - y1;
+
+        // 관심 영역의 중심점 (맵 원본 크기 기준 비율)
+        const aoiCenterXRatio = x1 + aoiWidthRatio / 2;
+        const aoiCenterYRatio = y1 + aoiHeightRatio / 2;
+
+        // a. 필요한 확대 배율 계산
+        // 화면에 관심 영역을 꽉 채우기 위한 가로/세로 배율
+        const scaleX = areaWidth / (aoiWidthRatio * containerBaseWidth);
+        const scaleY = areaHeight / (aoiHeightRatio * containerBaseHeight);
+        
+        // 두 배율 중 더 작은 값을 선택해야 영역이 잘리지 않음
+        currentScale = Math.min(scaleX, scaleY) * 0.95; // 5% 여백
+
+        // b. 필요한 위치 이동량 계산
+        // (화면 중심점) - (확대된 관심 영역의 중심점)
+        currentTranslateX = (areaWidth / 2) - (aoiCenterXRatio * containerBaseWidth * currentScale);
+        currentTranslateY = (areaHeight / 2) - (aoiCenterYRatio * containerBaseHeight * currentScale);
+
+    } else {
+        // 2. 초기 뷰가 없으면 기본 동작 (전체 맵을 가로 폭에 맞춰 중앙 정렬)
         currentScale = areaWidth / containerBaseWidth;
-        currentTranslateX = (areaWidth - containerBaseWidth * currentScale) / 2;
+        currentTranslateX = 0;
         currentTranslateY = (areaHeight - containerBaseHeight * currentScale) / 2;
     }
     
@@ -122,7 +148,7 @@ export function initMapControls(initialView) {
     mapArea.addEventListener('mouseleave', handleMouseUpOrLeave);
     
     // [수정됨] 창 크기 변경 시에는 항상 기본 뷰로 돌아가도록 설정 (또는 initialView를 다시 적용할 수도 있음)
-    window.addEventListener('resize', () => setInitialMapView(null)); 
+    window.addEventListener('resize', () => setInitialMapView(initialView)); 
 }
 
 // --- UI Creation Functions ---
