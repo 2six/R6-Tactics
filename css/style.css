@@ -32,6 +32,21 @@ body {
     margin-bottom: 25px; /* 그룹 간 간격 조정 */
 }
 
+/* [추가됨] 맵 선택 드롭다운 스타일 */
+#map-selector {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#map-title {
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
 .control-group label {
     display: block;
     margin-bottom: 10px; /* 라벨과 컨텐츠 간 간격 조정 */

@@ -2,6 +2,10 @@ const mapArea = document.querySelector('.map-area');
 const mapContainer = document.getElementById('map-container');
 const mapContent = document.getElementById('map-content');
 
+// [수정됨] 맵 관련 UI 요소 추가
+const mapSelectorContainer = document.getElementById('map-selector-container');
+const mapTitle = document.getElementById('map-title');
+
 // [수정됨] 제어 대상을 버튼 컨테이너로 변경
 const floorButtonsContainer = document.getElementById('floor-buttons');
 const siteButtonsContainer = document.getElementById('site-buttons');
@@ -112,6 +116,32 @@ export function initMapControls() {
 }
 
 // --- UI Creation Functions ---
+
+export function createMapSelector(maps, currentMapId) {
+    const select = document.createElement('select');
+    select.id = 'map-selector';
+
+    maps.forEach(map => {
+        const option = document.createElement('option');
+        option.value = map.path;
+        option.textContent = map.name;
+        if (map.id === currentMapId) {
+            option.selected = true;
+        }
+        select.appendChild(option);
+    });
+
+    select.addEventListener('change', () => {
+        window.location.href = select.value; // 선택된 맵의 경로로 페이지 이동
+    });
+
+    mapSelectorContainer.appendChild(select);
+}
+
+// [추가됨] 맵 타이틀 설정 함수
+export function setMapTitle(name) {
+    mapTitle.textContent = name;
+}
 
 // [수정됨] 층 선택 버튼 그룹 생성 함수
 export function createFloorSelector(floors, currentFloorId, onFloorChange) {

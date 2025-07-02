@@ -11,17 +11,24 @@
     <div class="container">
         <!-- 컨트롤 패널 -->
         <aside class="controls">
-            <h1>해안선 (Coastline)</h1>
+            <!-- [수정됨] 맵 선택 드롭다운 UI 추가 -->
+            <div id="map-selector-container" class="control-group">
+                <!-- 맵 선택 드롭다운은 JS로 동적 생성됩니다 -->
+            </div>
+            
+            <h1 id="map-title"></h1> <!-- 맵 이름 표시를 위해 ID 추가 -->
             
             <!-- [수정됨] 층 선택 UI 추가 -->
             <div class="control-group">
-                <label for="floor-selector">층 선택</label>
-                <select id="floor-selector"></select>
+                <label>층 선택</label>
+                <!-- [수정됨] 드롭다운을 버튼 컨테이너로 교체 -->
+                <div id="floor-buttons" class="button-group horizontal"></div>
             </div>
 
             <div class="control-group">
-                <label for="site-selector">방어 지역 선택</label>
-                <select id="site-selector"></select>
+                <label>방어 지역 선택</label>
+                <!-- [수정됨] 드롭다운을 버튼 컨테이너로 교체 -->
+                <div id="site-buttons" class="button-group vertical"></div>
             </div>
 
             <div class="control-group">

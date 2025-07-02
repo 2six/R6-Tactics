@@ -1,13 +1,18 @@
+import { loadStrategyData } from './modules/data.js';
 import { 
-    loadStrategyData 
-} from './modules/data.js';
-import { 
+    createMapSelector, setMapTitle, // [수정됨] 새로운 함수 import
     createFloorSelector, createSiteSelector, createFilterCheckboxes, 
     updateMapBackground, displayStrategies, displayLabels, 
     initMapControls, initCoordHelper 
 } from './modules/ui.js';
 
-const dataPath = 'data.json';
+// [수정됨] 현재 맵의 ID를 경로에서 추출
+const pathParts = window.location.pathname.split('/').filter(p => p);
+const currentMapId = pathParts[pathParts.length - 1];
+
+const configPath = '/config.json'; // 최상위 설정 파일 경로
+const dataPath = `data.json`; // 현재 맵의 데이터 파일 경로
+
 let fullData = null;
 let currentFloorId, currentSiteId; // 현재 상태를 전역에서 관리
 
@@ -51,12 +56,28 @@ function handleFilterChange() {
 }
 
 async function init() {
+    // [수정됨] 1. 전체 맵 설정을 먼저 불러옴
+    const config = await loadStrategyData(configPath);
+    if (!config || !config.maps) {
+        alert('맵 설정 파일을 불러오는 데 실패했습니다.');
+        return;
+    }
+    createMapSelector(config.maps, currentMapId);
+    
+    // [수정됨] 2. 현재 맵의 데이터를 불러옴
     fullData = await loadStrategyData(dataPath);
     if (!fullData) {
         alert('전략 데이터를 불러오는 데 실패했습니다.');
         return;
     }
 
+    // [수정됨] 3. 맵 타이틀 설정
+    const currentMapInfo = config.maps.find(map => map.id === currentMapId);
+    if (currentMapInfo) {
+        setMapTitle(currentMapInfo.name);
+    }
+
+    // [수정됨] 4. 나머지 UI 및 로직 초기화
     const params = new URLSearchParams(window.location.search);
     const floorIds = Object.keys(fullData.floors);
     const siteIds = Object.keys(fullData.sites);
@@ -83,7 +104,8 @@ async function init() {
 
     createFilterCheckboxes(fullData.strategyTypes, handleFilterChange);
     
-    renderView(); // 초기 렌더링
+    renderView();
+    
     setTimeout(() => {
         initMapControls();
     }, 0);

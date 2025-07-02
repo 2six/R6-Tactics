@@ -1,0 +1,14 @@
+{
+    "maps": [
+      {
+        "id": "coastline",
+        "name": "해안선",
+        "path": "/maps/coastline/"
+      },
+      {
+        "id": "villa",
+        "name": "빌라",
+        "path": "/maps/villa/"
+      }
+    ]
+  }
