@@ -7,7 +7,7 @@
         "thumbnail": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5GfAQ3pXCJnDqiqaDH3Zic/db1722cd699bb864ee8f7b0db951b0c3/r6-maps-coastline.jpg",
         "initialView": {
           "scale": 4,
-          "translateX": -2050,
+          "translateX": -1850,
           "translateY": -1200
         }
       },
@@ -18,7 +18,7 @@
         "thumbnail": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/Io6dxNeHbCbJoF9WLJf9s/ebf89b009affba37df84dcf1934c74e0/r6-maps-villa.jpg",
         "initialView": {
           "scale": 4.15,
-          "translateX": -2100,
+          "translateX": -1900,
           "translateY": -1050
         }
       }
