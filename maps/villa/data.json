@@ -28,7 +28,7 @@
         { "pos": { "x": "60.8%", "y": "35.2%" }, "text": "천문계단", "fontSize": "8px" },
         { "pos": { "x": "57.7%", "y": "60.7%" }, "text": "중앙\n계단", "fontSize": "8px" },
         { "pos": { "x": "68.6%", "y": "37.6%" }, "text": "식료품계단", "fontSize": "6px" },
-        { "pos": { "x": "62.9%", "y": "39.5%" }, "text": "도자기" },
+        { "pos": { "x": "63.0%", "y": "39.5%" }, "text": "도자기", "fontSize": "8px" },
         { "pos": { "x": "64.3%", "y": "36.6%" }, "text": "주방" },
         { "pos": { "x": "65.8%", "y": "40.8%" }, "text": "식당" },
         { "pos": { "x": "65.8%", "y": "44.9%" }, "text": "추모실" },
@@ -435,13 +435,13 @@
           "type": "break",
           "floorId": "2f",
           "pos": { "x": "63.8%", "y": "40.2%" },
-          "width": "9px",
+          "width": "10px",
           "height": "2px",
           "modalContent": { "title": "천문 벽 머리작", "description": "트로피->조각상 문/화장실 문",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/un17Pv1.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/un17Pv1.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/ex7G9El.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/Tk7zOPs.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/FDlAuy2.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/bCcwSfQ.jpeg" }
             ]
           }
         },
@@ -504,7 +504,7 @@
       ]
     },
     "3": {
-      "name": "1F 주방 / 직원출입구",
+      "name": "1F 거실 / 서재",
       "strategies": [
         {
           "type": "reinforce",
