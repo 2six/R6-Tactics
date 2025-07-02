@@ -126,7 +126,6 @@ body {
     padding: 20px;
     background-color: #121212; /* 맵 배경보다 약간 더 어두운 배경 */
     overflow: hidden; 
-    cursor: grab;
 }
 .map-area.panning {
     cursor: grabbing;
