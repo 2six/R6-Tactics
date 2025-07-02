@@ -182,12 +182,12 @@
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "60.925%", "y": "56.9%" },
+          "pos": { "x": "60.925%", "y": "56.8%" },
           "width": "2px",
-          "height": "7px",
-          "modalContent": { "title": "아쿠아 발작", "description": "아쿠아 견제",
+          "height": "8px",
+          "modalContent": { "title": "당구장 4벽 왼쪽 머리작", "description": "당구장->VIP복도, VIP복도->당구장 큰창",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/2JhTaWS.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/BtKtbIL.jpeg" }
             ]
           }
         },
