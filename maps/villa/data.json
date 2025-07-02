@@ -500,6 +500,19 @@
               { "type": "image", "src": "https://i.imgur.com/vjvhUOD.jpeg" }
             ]
           }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "66.5%", "y": "38.1%" },
+          "modalContent": { "title": "악의 눈 - 천문", "description": "화장실 내부, 천문 계단 위쪽",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/3fqbWik.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/j2jIrc2.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/GTsRKfx.png" },
+              { "type": "image", "src": "https://i.imgur.com/yU4zE0w.png" }
+            ]
+          }
         }
       ]
     },
@@ -773,309 +786,212 @@
         {
           "type": "reinforce",
           "floorId": "1f",
-          "pos": { "x": "58.2%", "y": "60.8%" },
-          "width": "15px",
-          "height": "2px",
-          "modalContent": { "title": "블루 2벽", "description": "사무실->블루바 진입 저지",
+          "pos": { "x": "67.6%", "y": "41.7%" },
+          "width": "2px",
+          "height": "14px",
+          "modalContent": { "title": "세탁실 2벽", "description": "식당 내부 보호",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/laZAXgJ.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/4JmCeZc.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
           "floorId": "1f",
-          "pos": { "x": "57.0%", "y": "56.2%" },
-          "width": "8px",
-          "height": "2px",
-          "modalContent": { "title": "블루바-선라이즈 4벽 가운데", "description": "블루바 창문->선라이즈 소파 각 지우기",
+          "pos": { "x": "63.9%", "y": "43.7%" },
+          "width": "2px",
+          "height": "12px",
+          "modalContent": { "title": "추모실 복도 2벽", "description": "추모실 내부 보호 (위쪽 열면 2층 트로피->추모 견제 가능)",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/8L7qeJ9.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/ZPhabBl.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/61qxKQS.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
           "floorId": "1f",
-          "pos": { "x": "57.9%", "y": "56.2%" },
-          "width": "7px",
-          "height": "2px",
-          "modalContent": { "title": "블루바-선라이즈 4벽 가운데", "description": "블루바 창문->선라이즈 소파 각 지우기",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/8L7qeJ9.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "1f",
-          "pos": { "x": "59.0%", "y": "55.6%" },
+          "pos": { "x": "63.9%", "y": "39.5%" },
           "width": "2px",
           "height": "8px",
-          "modalContent": { "title": "선라이즈-복도 2벽", "description": "로비->선라이즈 소파 각 지우기",
+          "modalContent": { "title": "도자기 3벽 가운데", "description": "괘종시계->식당 각 지우기",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/9kSstjq.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/Bf7PdYg.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
           "floorId": "1f",
-          "pos": { "x": "53.8%", "y": "49.2%" },
-          "width": "14px",
-          "height": "2px",
-          "modalContent": { "title": "선라입구 왼쪽 2벽", "description": "선라입구 외부 문->소파 각 지우기",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/bK1L5ds.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "1f",
-          "pos": { "x": "66.1%", "y": "49.2%" },
+          "pos": { "x": "67.1%", "y": "37.6%" },
           "width": "2px",
-          "height": "9px",
-          "modalContent": { "title": "주방-직출 벽", "description": "응접실 진입 적과 교전을 위한 엄폐물",
+          "height": "7px",
+          "modalContent": { "title": "식료품 벽", "description": "식료품 창문->주방 각 지우기 (위쪽 열기)",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/7dWU2UF.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/FuVSQ0z.jpeg" }
             ]
           }
         },
         {
-          "type": "reinforce",
-          "floorId": "2f",
-          "pos": { "x": "57.1%", "y": "56.2%" },
-          "width": "9px",
-          "height": "2px",
-          "modalContent": { "title": "당구장-물담배 벽", "description": "물담배 진입 저지",
+          "type": "rotate",
+          "floorId": "1f",
+          "pos": { "x": "64.3%", "y": "42.7%" },
+          "modalContent": { "title": "식당-추모 로테이션", "description": "식당<->추모 간 이동",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/ZPhabBl.jpeg" }
             ]
           }
         },
         {
-          "type": "reinforce",
+          "type": "rotate",
+          "floorId": "1f",
+          "pos": { "x": "63.9%", "y": "40.3%" },
+          "modalContent": { "title": "식당-도자기 로테이션", "description": "식당<->도자기 간 이동 (위로 뚫기)",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/Bf7PdYg.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "1f",
+          "pos": { "x": "63.9%", "y": "38.7%" },
+          "width": "2px",
+          "height": "6px",
+          "modalContent": { "title": "도자기 3벽 오른쪽 머리작", "description": "도자기->세탁실 문, 식당/주방->도자기 문",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/Bf7PdYg.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/IcN1NaY.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/jWFh6sd.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/QRYMKnZ.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/XbbStWE.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
           "floorId": "2f",
-          "pos": { "x": "56.3%", "y": "54.8%" },
+          "pos": { "x": "69.5%", "y": "43.6%" },
           "width": "7px",
           "height": "7px",
-          "modalContent": { "title": "물담배 트랩도어", "description": "열면 물담배에서 선라입구 견제 가능하긴 하지만 그냥 닫는게 좋음",
+          "modalContent": { "title": "안방 해치", "description": "안방->세탁실 견제 및 이동",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "rotate",
-          "floorId": "1f",
-          "pos": { "x": "55.9%", "y": "56.1%" },
-          "modalContent": { "title": "사이트 로테이션", "description": "사이트 간 이동",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/8L7qeJ9.jpeg" },
-              { "type": "youtube", "src": "dQw4w9WgXcQ"}
-            ]
-          }
-        },
-        {
-          "type": "rotate",
-          "floorId": "2f",
-          "pos": { "x": "56%", "y": "56.2%" },
-          "zIndex": 15,
-          "modalContent": { "title": "당구장-물담배 로테이션", "description": "",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "rotate",
-          "floorId": "2f",
-          "pos": { "x": "56.1%", "y": "65.0%" },
-          "modalContent": { "title": "아쿠아 해치", "description": "아쿠아->사무실 이동",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/FaWyN50.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/p4Z9Y9V.jpeg" }
             ]
           }
         },
         {
           "type": "break",
-          "floorId": "1f",
-          "pos": { "x": "55.8%", "y": "49.2%" },
-          "width": "12px",
+          "floorId": "2f",
+          "pos": { "x": "63.8%", "y": "40.2%" },
+          "width": "10px",
           "height": "2px",
-          "modalContent": { "title": "선라입구 오른쪽 벽 발작", "description": "선라입구 창문 진입 견제",
+          "modalContent": { "title": "천문 벽 발작", "description": "천문->1층 복도",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/bK1L5ds.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "1f",
-          "pos": { "x": "58.6%", "y": "56.2%" },
-          "width": "7px",
-          "height": "2px",
-          "modalContent": { "title": "블루바-선라이즈 4벽 헤드홀", "description": "블루바 창문 견제",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/8L7qeJ9.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/7JkGcfk.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "1f",
-          "pos": { "x": "66.1%", "y": "48.0%" },
-          "width": "2px",
-          "height": "9px",
-          "modalContent": { "title": "주방-직출 헤드홀", "description": "응접실 진입 견제",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/7dWU2UF.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "1f",
-          "pos": { "x": "61.1%", "y": "58.5%" },
-          "width": "2px",
-          "height": "32px",
-          "modalContent": { "title": "블루바 4벽 헤드홀", "description": "블루바 외부에서 블루바 견제",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/fy0gi1s.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/4UAYsPE.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "1f",
-          "pos": { "x": "63.6%", "y": "54.1%" },
-          "width": "16px",
-          "height": "2px",
-          "modalContent": { "title": "주방 4벽 가운데", "description": "주방->블루바 / 선라복도->로비",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/TtuyKpE.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/aUB5MtK.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/FeEd905.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/msx7wWC.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/F69sPu5.jpeg" }
             ]
           }
         },
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "58%", "y": "56.2%" },
-          "width": "9px",
-          "height": "2px",
-          "modalContent": { "title": "물담배-당구장 헤드홀", "description": "물담배 진입 견제",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "56.2%", "y": "56.2%" },
-          "width": "9px",
-          "height": "2px",
-          "modalContent": { "title": "물담배-당구장 헤드홀", "description": "물담배 진입 견제",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "56.1%", "y": "54.0%" },
-          "width": "4px",
-          "height": "3px",
-          "modalContent": { "title": "물담배 버티컬", "description": "물담배->선라입구",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/eHN8kGV.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/7faA7Dy.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "56.0%", "y": "56.9%" },
+          "pos": { "x": "67.0%", "y": "37.3%" },
           "width": "4px",
           "height": "4px",
-          "modalContent": { "title": "당구장 버티컬", "description": "당구장->사무실 문, 블루바 창문 진입 견제",
+          "modalContent": { "title": "화장실 3벽 가운데 그림쪽 바닥", "description": "화장실->식료품 문, 식료품 내부",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/bPIUDXG.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/9Ch2ml5.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/AyDr6c4.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/p0PladC.jpeg" }
             ]
           }
         },
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "58.0%", "y": "56.9%" },
-          "width": "4px",
+          "pos": { "x": "62.2%", "y": "38.0%" },
+          "width": "3px",
           "height": "3px",
-          "modalContent": { "title": "당구장 버티컬", "description": "당구장->블루바 국설 저지",
+          "modalContent": { "title": "천문 해치 옆 바닥", "description": "천문->도자기 문",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/LS3IiSj.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/PkSeSc7.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/lvmFZUd.jpeg" }
             ]
           }
         },
         {
-          "type": "break",
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "65.6%", "y": "40.4%" },
+          "modalContent": { "title": "악의 눈 - 식당", "description": "식당 내부, 도자기 문",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/V53RmLl.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/5b1nXAZ.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/Ot54IoE.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "62.4%", "y": "37.6%" },
+          "modalContent": { "title": "악의 눈 - 주방 1", "description": "주방 내부",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/MgizUcD.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/zFDaG8g.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/o5S35ki.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "62.4%", "y": "36.5%" },
+          "modalContent": { "title": "악의 눈 - 주방 2", "description": "주방 내부, 도자기 일부",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/7OTS1ZV.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/bxNsviU.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/fUPfh4z.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "69.3%", "y": "43.9%" },
+          "modalContent": { "title": "악의 눈 - 세탁실", "description": "세탁실 내부",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/fEsMhOM.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/OOK0RTV.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/hzFvhA3.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "63.3%", "y": "41.5%" },
+          "modalContent": { "title": "악의 눈 - 추모복도", "description": "1층 복도, 괘종시계",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/tnQJQ6r.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/EptCuwf.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/YMpuYTs.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "56.5%", "y": "62.4%" },
-          "width": "17px",
-          "height": "2px",
-          "modalContent": { "title": "아쿠아 발작", "description": "아쿠아 견제",
+          "pos": { "x": "62.9%", "y": "43.5%" },
+          "modalContent": { "title": "악의 눈 - 트로피", "description": "트로피 내부, 조각상 일부 (국설자리 저지 가능)",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/lEa7oaA.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "evilEye",
-          "floorId": "1f",
-          "pos": { "x": "57.4%", "y": "51.6%" },
-          "modalContent": { "title": "악의 눈 - 선라이즈", "description": "선라이즈 내부",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/KeqCvz7.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/feYB8kQ.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "evilEye",
-          "floorId": "1f",
-          "pos": { "x": "57.4%", "y": "56.8%" },
-          "modalContent": { "title": "악의 눈 - 블루바", "description": "블루바 내부, 창문",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/VwvISvN.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/kowLWYF.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "evilEye",
-          "floorId": "1f",
-          "pos": { "x": "69.3%", "y": "61.2%" },
-          "modalContent": { "title": "악의 눈 - 로비 카운터", "description": "로비 내부, 로비 큰 문",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/WYxIWac.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/V73mdVy.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "evilEye",
-          "floorId": "1f",
-          "pos": { "x": "62.9%", "y": "56.1%" },
-          "modalContent": { "title": "악의 눈 - 주방복도", "description": "블루바 내부",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/uPgeZXt.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/81f48MS.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/Wen0bdT.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/3oOxyR5.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/nugakwa.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/DF2uDU5.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/e8jXN5p.jpeg" },
+              { "type": "youtube", "src": "zyQMbq-16DM" }
             ]
           }
         }
