@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R6S Strat - 오리건</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- 컨트롤 패널 -->
+        <aside class="controls">
+            <!-- [수정됨] 맵 선택 드롭다운 UI 추가 -->
+            <div id="map-selector-container" class="control-group">
+                <!-- 맵 선택 드롭다운은 JS로 동적 생성됩니다 -->
+            </div>
+            
+            <h1 id="map-title"></h1> <!-- 맵 이름 표시를 위해 ID 추가 -->
+            
+            <!-- [수정됨] 층 선택 UI 추가 -->
+            <div class="control-group">
+                <label>층 선택</label>
+                <!-- [수정됨] 드롭다운을 버튼 컨테이너로 교체 -->
+                <div id="floor-buttons" class="button-group horizontal"></div>
+            </div>
+
+            <div class="control-group">
+                <label>방어 지역 선택</label>
+                <!-- [수정됨] 드롭다운을 버튼 컨테이너로 교체 -->
+                <div id="site-buttons" class="button-group vertical"></div>
+            </div>
+
+            <div class="control-group">
+                <label>전략 필터</label>
+                <div id="filter-checkboxes"></div>
+            </div>
+        </aside>
+
+        <!-- 맵 뷰어 -->
+        <main class="map-area">
+            <!-- [수정됨] 맵 뷰어를 두 개의 div로 분리 -->
+            <div id="map-container">
+                <div id="map-content">
+                    <!-- 아이콘과 라벨은 여기에 동적으로 추가됩니다 -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 상세 정보 팝업(모달) -->
+    <div id="modal-container" class="hidden">
+        <div class="modal-content">
+            <button class="modal-close-btn">×</button>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            
+            <!-- [수정됨] 통합 미디어 슬라이더를 위한 단순화된 구조 -->
+            <div id="modal-media-slider" class="hidden">
+                <div class="slider-viewport">
+                    <div class="slider-filmstrip">
+                        <!-- 미디어 아이템들은 JS로 동적 생성됩니다 -->
+                    </div>
+                </div>
+                <button class="slider-btn prev">&lt;</button>
+                <button class="slider-btn next">&gt;</button>
+                <div class="slider-counter"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../js/main.js" type="module"></script>
+</body>
+</html>

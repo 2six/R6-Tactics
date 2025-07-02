@@ -1,0 +1,1084 @@
+{
+  "strategyTypes": [
+    { "id": "reinforce", "label": "강화", "icon": "../../images/icons/blue.png", "width": "10px", "height": "2px" },
+    { "id": "break", "label": "파괴", "icon": "../../images/icons/red.png", "width": "10px", "height": "2px" },
+    { "id": "rotate", "label": "로테이션", "icon": "../../images/icons/rotate.png", "width": "8px", "height": "8px" },
+    { "id": "evilEye", "label": "악의 눈", "icon": "../../images/icons/Evil Eye.png", "width": "6px", "height": "6px" }
+  ],
+  "floors": {
+    "0f": {
+      "name": "지하",
+      "mapImage": "https://i.imgur.com/7uLbQTR.jpeg",
+      "labels": [
+        { "pos": { "x": "60%", "y": "48.8%" }, "text": "물담배\n계단", "fontSize": "8px" },
+        { "pos": { "x": "69.3%", "y": "65.4%" }, "text": "로비계단" },
+        { "pos": { "x": "54.8%", "y": "47.7%" }, "text": "선라입구" },
+        { "pos": { "x": "56%", "y": "52%" }, "text": "선라이즈" },
+        { "pos": { "x": "57.9%", "y": "50.4%" }, "text": "카운터", "fontSize": "8px" },
+        { "pos": { "x": "57.7%", "y": "55.1%" }, "text": "소파", "fontSize": "8px" },
+        { "pos": { "x": "60.1%", "y": "53.1%" }, "text": "선라복도", "rotation": 90 },
+        { "pos": { "x": "58.4%", "y": "58.2%" }, "text": "블루바" },
+        { "pos": { "x": "58.4%", "y": "63.8%" }, "text": "사무실" },
+        { "pos": { "x": "63.6%", "y": "49.4%" }, "text": "주방" },
+        { "pos": { "x": "64.8%", "y": "53%" }, "text": "싱크대", "fontSize": "8px" },
+        { "pos": { "x": "63.6%", "y": "55.2%" }, "text": "주방복도" },
+        { "pos": { "x": "63.6%", "y": "59.4%" }, "text": "정원" },
+        { "pos": { "x": "65.5%", "y": "64.8%" }, "text": "경비실" },
+        { "pos": { "x": "62.3%", "y": "63.4%" }, "text": "경비\n복도", "fontSize": "8px" },
+        { "pos": { "x": "67.4%", "y": "50.8%" }, "text": "직원출입구", "rotation": 90 },
+        { "pos": { "x": "70.7%", "y": "49.2%" }, "text": "응접실" },
+        { "pos": { "x": "70.3%", "y": "52.5%" }, "text": "화장실" },
+        { "pos": { "x": "68.7%", "y": "56.3%" }, "text": "로비" },
+        { "pos": { "x": "68.5%", "y": "60%" }, "text": "카운터", "fontSize": "8px", "rotation": 90 },
+        { "pos": { "x": "66.9%", "y": "59.6%" }, "text": "로비벽뒤", "fontSize": "8px", "rotation": 90 }
+      ]
+    },
+    "1f": {
+      "name": "2층",
+      "mapImage": "https://i.imgur.com/4qyq0wX.jpeg",
+      "labels": [
+        { "pos": { "x": "60%", "y": "48.8%" }, "text": "물담배\n계단", "fontSize": "8px" },
+        { "pos": { "x": "69.3%", "y": "65.5%" }, "text": "로비계단" },
+        { "pos": { "x": "54.4%", "y": "50.6%" }, "text": "물담배발코니", "rotation": 90 },
+        { "pos": { "x": "57.2%", "y": "52%" }, "text": "물담배" },
+        { "pos": { "x": "60%", "y": "53%" }, "text": "물담배복도", "rotation": 90 },
+        { "pos": { "x": "57%", "y": "59.5%" }, "text": "당구장", "rotation": 90 },
+        { "pos": { "x": "59.7%", "y": "59.4%" }, "text": "소파", "fontSize": "8px" },
+        { "pos": { "x": "58.3%", "y": "66.6%" }, "text": "아쿠아발코니" },
+        { "pos": { "x": "59%", "y": "64%" }, "text": "아쿠아" },
+        { "pos": { "x": "59.9%", "y": "61.7%" }, "text": "테이블", "fontSize": "8px" },
+        { "pos": { "x": "63.5%", "y": "63.6%" }, "text": "아쿠아복도" },
+        { "pos": { "x": "65.9%", "y": "45.8%" }, "text": "VIP 발코니" },
+        { "pos": { "x": "63.5%", "y": "50.7%" }, "text": "VIP" },
+        { "pos": { "x": "63.5%", "y": "55.2%" }, "text": "VIP복도" },
+        { "pos": { "x": "67.7%", "y": "48.8%" }, "text": "명전" },
+        { "pos": { "x": "71%", "y": "48.8%" }, "text": "화장실", "fontSize": "8px"  },
+        { "pos": { "x": "69.2%", "y": "52.2%" }, "text": "펜트하우스" },
+        { "pos": { "x": "69.3%", "y": "59%" }, "text": "영화\n감상실" },
+        { "pos": { "x": "66.9%", "y": "59%" }, "text": "영감복도", "rotation": 90 }
+      ]
+    },
+    "2f": {
+      "name": "2층",
+      "mapImage": "https://i.imgur.com/dWjGcG0.jpeg",
+      "labels": [
+        { "pos": { "x": "60%", "y": "48.8%" }, "text": "물담배\n계단", "fontSize": "8px" },
+        { "pos": { "x": "69.3%", "y": "65.5%" }, "text": "로비계단" },
+        { "pos": { "x": "54.4%", "y": "50.6%" }, "text": "물담배발코니", "rotation": 90 },
+        { "pos": { "x": "57.2%", "y": "52%" }, "text": "물담배" },
+        { "pos": { "x": "60%", "y": "53%" }, "text": "물담배복도", "rotation": 90 },
+        { "pos": { "x": "57%", "y": "59.5%" }, "text": "당구장", "rotation": 90 },
+        { "pos": { "x": "59.7%", "y": "59.4%" }, "text": "소파", "fontSize": "8px" },
+        { "pos": { "x": "58.3%", "y": "66.6%" }, "text": "아쿠아발코니" },
+        { "pos": { "x": "59%", "y": "64%" }, "text": "아쿠아" },
+        { "pos": { "x": "59.9%", "y": "61.7%" }, "text": "테이블", "fontSize": "8px" },
+        { "pos": { "x": "63.5%", "y": "63.6%" }, "text": "아쿠아복도" },
+        { "pos": { "x": "65.9%", "y": "45.8%" }, "text": "VIP 발코니" },
+        { "pos": { "x": "63.5%", "y": "50.7%" }, "text": "VIP" },
+        { "pos": { "x": "63.5%", "y": "55.2%" }, "text": "VIP복도" },
+        { "pos": { "x": "67.7%", "y": "48.8%" }, "text": "명전" },
+        { "pos": { "x": "71%", "y": "48.8%" }, "text": "화장실", "fontSize": "8px"  },
+        { "pos": { "x": "69.2%", "y": "52.2%" }, "text": "펜트하우스" },
+        { "pos": { "x": "69.3%", "y": "59%" }, "text": "영화\n감상실" },
+        { "pos": { "x": "66.9%", "y": "59%" }, "text": "영감복도", "rotation": 90 }
+      ]
+    }
+  },
+  "sites": {
+    "1": {
+      "name": "2F 당구장 / 물담배",
+      "strategies": [
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "57.1%", "y": "56.2%" },
+          "width": "9px",
+          "height": "2px",
+          "modalContent": { "title": "당구장-물담배 벽", "description": "물담배 홀딩",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/7CqmcWU.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "60.925%", "y": "59.2%" },
+          "width": "2px",
+          "height": "26px",
+          "modalContent": { "title": "당구장 4벽", "description": "당구장 소파 뒤 홀딩",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/BtKtbIL.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "58.9%", "y": "51.3%" },
+          "width": "2px",
+          "height": "10px",
+          "modalContent": { "title": "물담배 벽", "description": "물담배 복도 홀딩",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/mBoOzQl.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "58.9%", "y": "55.7%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "물담배 벽", "description": "물담배 홀딩",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/2kXXEnt.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "63.1%", "y": "47.2%" },
+          "width": "20px",
+          "height": "2px",
+          "modalContent": { "title": "VIP 외벽", "description": "VIP 진입 저지",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/Yh5zBJc.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "62.0%", "y": "54.1%" },
+          "width": "18px",
+          "height": "2px",
+          "modalContent": { "title": "VIP 복도 벽", "description": "VIP 외벽 열릴 시 VIP->복도,당구장 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/Kt36sps.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "2f",
+          "pos": { "x": "56%", "y": "56.2%" },
+          "modalContent": { "title": "사이트 로테이션", "description": "사이트 간 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/7CqmcWU.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "2f",
+          "pos": { "x": "58.9%", "y": "49.7%" },
+          "modalContent": { "title": "물담배 계단 로테이션", "description": "계단에서 사이트 견제 및 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/mBoOzQl.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "58%", "y": "56.2%" },
+          "width": "9px",
+          "height": "2px",
+          "modalContent": { "title": "물담배-당구장 위쪽", "description": "투척물 넘기기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/7CqmcWU.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "56.5%", "y": "62.4%" },
+          "width": "17px",
+          "height": "2px",
+          "modalContent": { "title": "아쿠아 발작", "description": "아쿠아 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/2JhTaWS.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "60.925%", "y": "56.9%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "당구장 4벽 왼쪽 머리작", "description": "당구장->VIP복도, VIP복도->당구장 큰창",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/BtKtbIL.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "63%", "y": "56.3%" },
+          "modalContent": { "title": "악의 눈 - VIP 복도", "description": "물담배 입구, 당구장 큰창",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/DOiBBck.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/gmpsV7b.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "55.9%", "y": "53.1%" },
+          "modalContent": { "title": "악의 눈 - 물담배", "description": "물담배 내부, 설치 저지",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/YBqs9a3.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/93LxuKM.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "57.4%", "y": "65.3%" },
+          "modalContent": { "title": "악의 눈 - 아쿠아 1", "description": "아쿠아 내부, 당구장 폭탄 뒤 설치 저지",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/jmAhCsZ.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/eGyCvwY.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "60.7%", "y": "61.8%" },
+          "modalContent": { "title": "악의 눈 - 아쿠아 2", "description": "아쿠아 큰 문, 아쿠아 내부",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/V5sdu6K.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/gtZFdvD.jpeg" }
+            ]
+          }
+        }
+      ]
+    },
+    "2": {
+      "name": "2F 영화감상실 / 펜트하우스",
+      "strategies": [
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "69.3%", "y": "62.4%" },
+          "width": "16px",
+          "height": "2px",
+          "modalContent": { "title": "영감 2벽", "description": "영화감상실 내부 보호",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/PDpoRuU.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "63.1%", "y": "47.2%" },
+          "width": "20px",
+          "height": "2px",
+          "modalContent": { "title": "VIP 외벽", "description": "VIP 진입 저지",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/UpAbpd0.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "68.3%", "y": "56.3%" },
+          "width": "13px",
+          "height": "2px",
+          "modalContent": { "title": "영감-펜트 벽", "description": "펜트 큰창->영화 감상실 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/Ge9w3oR.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "67.6%", "y": "61.7%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "영감 복도 벽", "description": "아쿠아 복도->영화 감상실 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/sE9QS1Q.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "67.6%", "y": "57.1%" },
+          "width": "2px",
+          "height": "10px",
+          "modalContent": { "title": "영감 복도 벽", "description": "VIP 복도->영화 감상실 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/sE9QS1Q.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "65.9%", "y": "52.1%" },
+          "width": "2px",
+          "height": "9px",
+          "modalContent": { "title": "펜트 3벽", "description": "펜트 큰 창 레펠 견제용 엄폐물",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "61.5%", "y": "54.1%" },
+          "width": "9px",
+          "height": "2px",
+          "modalContent": { "title": "VIP 복도 벽", "description": "당구장->VIP 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/0s5ur8B.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "65.4%", "y": "54.1%" },
+          "width": "9px",
+          "height": "2px",
+          "modalContent": { "title": "VIP 복도 벽", "description": "VIP->영감 복도 각 지우기 리테이크용",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/xxioG6O.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "2f",
+          "pos": { "x": "65.9%", "y": "53.6%" },
+          "zIndex": 15,
+          "modalContent": { "title": "VIP-펜트 로테이션", "description": "VIP-펜트 간 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "70.3%", "y": "56.3%" },
+          "width": "13px",
+          "height": "2px",
+          "modalContent": { "title": "영감-펜트 벽 위쪽", "description": "투척물 넘기기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/Ge9w3oR.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "69.7%", "y": "48.8%" },
+          "width": "2px",
+          "height": "21px",
+          "modalContent": { "title": "화장실 발작", "description": "화장실 해치 낙하 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/M0EkVEK.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "65.9%", "y": "50.9%" },
+          "width": "2px",
+          "height": "9px",
+          "modalContent": { "title": "펜트 3벽 좌우", "description": "펜트 큰 창 레펠 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "65.9%", "y": "53.3%" },
+          "width": "2px",
+          "height": "9px",
+          "modalContent": { "title": "펜트 3벽 좌우", "description": "펜트 큰 창 레펠 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/00M064F.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "62.45%", "y": "54.1%" },
+          "width": "9px",
+          "height": "2px",
+          "modalContent": { "title": "VIP 복도 벽", "description": "VIP 리테이크용",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/0s5ur8B.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "64.5%", "y": "54.1%" },
+          "width": "9px",
+          "height": "2px",
+          "modalContent": { "title": "VIP 복도 벽", "description": "VIP 리테이크용",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/xxioG6O.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "70.4%", "y": "61.3%" },
+          "width": "6px",
+          "height": "6px",
+          "modalContent": { "title": "영화 감상실 바닥", "description": "로비 계단 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/5WFxAjl.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "68.8%", "y": "53.5%" },
+          "modalContent": { "title": "악의 눈 - 펜트하우스", "description": "펜트하우스 큰창, 내부, VIP",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/VAxa4jI.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/wna8mDx.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/sjjl5Zl.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "70.7%", "y": "64.5%" },
+          "modalContent": { "title": "악의 눈 - 로비 계단", "description": "로비 계단, 아쿠아 복도",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/AAH9ndk.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/boXG68A.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "61.3%", "y": "48.3%" },
+          "modalContent": { "title": "악의 눈 - VIP", "description": "VIP 내부, 펜트하우스 국설 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/ot8JIaJ.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/2b2XbFR.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "68.8%", "y": "55.7%" },
+          "modalContent": { "title": "악의 눈 - 펜트 드론 구멍", "description": "VIP 복도",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/K4rfctQ.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/F6cLTPs.jpeg" }
+            ]
+          }
+        }
+      ]
+    },
+    "3": {
+      "name": "1F 주방 / 직원출입구",
+      "strategies": [
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "63.1%", "y": "47.2%" },
+          "width": "20px",
+          "height": "2px",
+          "modalContent": { "title": "VIP 외벽", "description": "VIP 진입 저지",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/2d4WdXL.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "64.4%", "y": "54.1%" },
+          "width": "16px",
+          "height": "2px",
+          "modalContent": { "title": "주방 4벽 왼쪽", "description": "로비 큰 문->주방 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/s8Xzp7o.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "67.6%", "y": "54.1%" },
+          "width": "15px",
+          "height": "2px",
+          "modalContent": { "title": "직원 출입구 3벽", "description": "로비 큰 문->직출 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/vXoENJD.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "70.8%", "y": "50.8%" },
+          "width": "10px",
+          "height": "2px",
+          "modalContent": { "title": "화장실 3벽 가운데", "description": "응접실 외부 문 견제용 엄폐물",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/7rhOtEz.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "66.1%", "y": "49.2%" },
+          "width": "2px",
+          "height": "9px",
+          "modalContent": { "title": "주방-직출 벽", "description": "응접실 외부->주방 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/vnTTqkx.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "59.0%", "y": "55.0%" },
+          "width": "2px",
+          "height": "16px",
+          "modalContent": { "title": "선라이즈 2벽", "description": "선라이즈->주방 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/ZgYsoTH.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "1f",
+          "pos": { "x": "66.4%", "y": "54.1%" },
+          "zIndex": 15,
+          "modalContent": { "title": "직출 3벽 로테이션", "description": "직출<->로비 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/vXoENJD.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "1f",
+          "pos": { "x": "66.1%", "y": "47.7%" },
+          "zIndex": 15,
+          "modalContent": { "title": "사이트 간 로테이션", "description": "주방<->직출 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/vnTTqkx.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "1f",
+          "pos": { "x": "71.9%", "y": "50.8%" },
+          "zIndex": 15,
+          "modalContent": { "title": "화장실 3벽 로테이션", "description": "화장실<->응접실 이동 및 응접실 외부 문 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/7rhOtEz.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "2f",
+          "pos": { "x": "65.9%", "y": "50.6%" },
+          "zIndex": 15,
+          "modalContent": { "title": "펜트 3벽 로테이션", "description": "펜트<->VIP 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/fvnHeSV.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "2f",
+          "pos": { "x": "68.1%", "y": "54.9%" },
+          "zIndex": 15,
+          "modalContent": { "title": "펜트 해치", "description": "펜트->로비 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/BMmN7r2.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "1f",
+          "pos": { "x": "69.4%", "y": "50.8%" },
+          "width": "18px",
+          "height": "2px",
+          "modalContent": { "title": "화장실/직출 발작", "description": "응접실 진입 견제 및 직출 국설 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/7rhOtEz.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "1f",
+          "pos": { "x": "62.8%", "y": "54.1%" },
+          "width": "17px",
+          "height": "2px",
+          "modalContent": { "title": "주방 4벽 발작", "description": "주방 복도/정원에서 주방 진입 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/s8Xzp7o.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "62.5%", "y": "50.7%" },
+          "width": "5px",
+          "height": "5px",
+          "modalContent": { "title": "VIP 바닥 버티컬 1", "description": "VIP->주방 창문 견제 및 진입 저지",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/oDHESEd.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/4yC8yeo.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "61.5%", "y": "52.4%" },
+          "width": "5px",
+          "height": "5px",
+          "modalContent": { "title": "VIP 바닥 버티컬 2", "description": "VIP->주방 문 진입 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/oDHESEd.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/5BRbA01.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "68.2%", "y": "50.9%" },
+          "width": "4px",
+          "height": "4px",
+          "modalContent": { "title": "펜트 바닥 버티컬 1", "description": "펜트->직출 국설 저지",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/uy4nGKF.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "66.5%", "y": "51.4%" },
+          "width": "5px",
+          "height": "5px",
+          "modalContent": { "title": "펜트 바닥 버티컬 2", "description": "펜트->직출 구석 설치 저지",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/8zKTkga.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "71.8%", "y": "51.6%" },
+          "width": "5px",
+          "height": "8px",
+          "modalContent": { "title": "펜트 바닥 버티컬 3", "description": "펜트->응접실 외부 문 진입 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/fdMXxzS.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "70.4%", "y": "55.1%" },
+          "width": "5px",
+          "height": "5px",
+          "modalContent": { "title": "펜트 바닥 버티컬 4", "description": "펜트->로비 큰 문 진입 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/cv6IG8f.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "71.9%", "y": "49.3%" },
+          "modalContent": { "title": "악의 눈 - 응접실", "description": "응접실 내부, 화장실 문",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/F3XeeKx.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/PAT8O7B.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/r4X2pgg.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "69.3%", "y": "61.2%" },
+          "modalContent": { "title": "악의 눈 - 로비 카운터", "description": "로비 내부, 로비 큰 문",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/VqybRUO.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/SxpUnRd.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "65.7%", "y": "53.6%" },
+          "modalContent": { "title": "악의 눈 - 주방 싱크대", "description": "주방 내부",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/x5WgzSf.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/3C4t9hV.jpeg" }
+            ]
+          }
+        }
+      ]
+    },
+    "4": {
+      "name": "1F 블루바 / 선라이즈바",
+      "strategies": [
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "58.2%", "y": "60.8%" },
+          "width": "15px",
+          "height": "2px",
+          "modalContent": { "title": "블루 2벽", "description": "사무실->블루바 진입 저지",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/laZAXgJ.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "57.0%", "y": "56.2%" },
+          "width": "8px",
+          "height": "2px",
+          "modalContent": { "title": "블루바-선라이즈 4벽 가운데", "description": "블루바 창문->선라이즈 소파 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/8L7qeJ9.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "57.9%", "y": "56.2%" },
+          "width": "7px",
+          "height": "2px",
+          "modalContent": { "title": "블루바-선라이즈 4벽 가운데", "description": "블루바 창문->선라이즈 소파 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/8L7qeJ9.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "59.0%", "y": "55.6%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "선라이즈-복도 2벽", "description": "로비->선라이즈 소파 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/9kSstjq.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "53.8%", "y": "49.2%" },
+          "width": "14px",
+          "height": "2px",
+          "modalContent": { "title": "선라입구 왼쪽 2벽", "description": "선라입구 외부 문->소파 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/bK1L5ds.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "66.1%", "y": "49.2%" },
+          "width": "2px",
+          "height": "9px",
+          "modalContent": { "title": "주방-직출 벽", "description": "응접실 진입 적과 교전을 위한 엄폐물",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/7dWU2UF.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "57.1%", "y": "56.2%" },
+          "width": "9px",
+          "height": "2px",
+          "modalContent": { "title": "당구장-물담배 벽", "description": "물담배 진입 저지",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "56.3%", "y": "54.8%" },
+          "width": "7px",
+          "height": "7px",
+          "modalContent": { "title": "물담배 트랩도어", "description": "열면 물담배에서 선라입구 견제 가능하긴 하지만 그냥 닫는게 좋음",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "1f",
+          "pos": { "x": "55.9%", "y": "56.1%" },
+          "modalContent": { "title": "사이트 로테이션", "description": "사이트 간 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/8L7qeJ9.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "2f",
+          "pos": { "x": "56%", "y": "56.2%" },
+          "zIndex": 15,
+          "modalContent": { "title": "당구장-물담배 로테이션", "description": "",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "2f",
+          "pos": { "x": "56.1%", "y": "65.0%" },
+          "modalContent": { "title": "아쿠아 해치", "description": "아쿠아->사무실 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/FaWyN50.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "1f",
+          "pos": { "x": "55.8%", "y": "49.2%" },
+          "width": "12px",
+          "height": "2px",
+          "modalContent": { "title": "선라입구 오른쪽 벽 발작", "description": "선라입구 창문 진입 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/bK1L5ds.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "1f",
+          "pos": { "x": "58.6%", "y": "56.2%" },
+          "width": "7px",
+          "height": "2px",
+          "modalContent": { "title": "블루바-선라이즈 4벽 헤드홀", "description": "블루바 창문 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/8L7qeJ9.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/7JkGcfk.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "1f",
+          "pos": { "x": "66.1%", "y": "48.0%" },
+          "width": "2px",
+          "height": "9px",
+          "modalContent": { "title": "주방-직출 헤드홀", "description": "응접실 진입 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/7dWU2UF.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "1f",
+          "pos": { "x": "61.1%", "y": "58.5%" },
+          "width": "2px",
+          "height": "32px",
+          "modalContent": { "title": "블루바 4벽 헤드홀", "description": "블루바 외부에서 블루바 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/fy0gi1s.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/4UAYsPE.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "1f",
+          "pos": { "x": "63.6%", "y": "54.1%" },
+          "width": "16px",
+          "height": "2px",
+          "modalContent": { "title": "주방 4벽 가운데", "description": "주방->블루바 / 선라복도->로비",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/TtuyKpE.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/aUB5MtK.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/FeEd905.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "58%", "y": "56.2%" },
+          "width": "9px",
+          "height": "2px",
+          "modalContent": { "title": "물담배-당구장 헤드홀", "description": "물담배 진입 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "56.2%", "y": "56.2%" },
+          "width": "9px",
+          "height": "2px",
+          "modalContent": { "title": "물담배-당구장 헤드홀", "description": "물담배 진입 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "56.1%", "y": "54.0%" },
+          "width": "4px",
+          "height": "3px",
+          "modalContent": { "title": "물담배 버티컬", "description": "물담배->선라입구",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/eHN8kGV.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/7faA7Dy.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "56.0%", "y": "56.9%" },
+          "width": "4px",
+          "height": "4px",
+          "modalContent": { "title": "당구장 버티컬", "description": "당구장->사무실 문, 블루바 창문 진입 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/bPIUDXG.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "58.0%", "y": "56.9%" },
+          "width": "4px",
+          "height": "3px",
+          "modalContent": { "title": "당구장 버티컬", "description": "당구장->블루바 국설 저지",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/LS3IiSj.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "56.5%", "y": "62.4%" },
+          "width": "17px",
+          "height": "2px",
+          "modalContent": { "title": "아쿠아 발작", "description": "아쿠아 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/lEa7oaA.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "57.4%", "y": "51.6%" },
+          "modalContent": { "title": "악의 눈 - 선라이즈", "description": "선라이즈 내부",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/KeqCvz7.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/feYB8kQ.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "57.4%", "y": "56.8%" },
+          "modalContent": { "title": "악의 눈 - 블루바", "description": "블루바 내부, 창문",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/VwvISvN.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/kowLWYF.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "69.3%", "y": "61.2%" },
+          "modalContent": { "title": "악의 눈 - 로비 카운터", "description": "로비 내부, 로비 큰 문",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/WYxIWac.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/V73mdVy.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "62.9%", "y": "56.1%" },
+          "modalContent": { "title": "악의 눈 - 주방복도", "description": "블루바 내부",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/uPgeZXt.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/81f48MS.jpeg" }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
