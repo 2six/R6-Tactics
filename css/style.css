@@ -1,9 +1,9 @@
 /* 기본 설정 */
 body {
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: #1a1a1a; /* 어두운 배경 */
+    color: #f0f2f5;           /* 밝은 글자색 */
     overflow: hidden;
 }
 
@@ -16,8 +16,9 @@ body {
 .controls {
     width: 300px;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    background-color: #2a2a2a; /* 어두운 패널 배경 */
+    border-right: 1px solid #444; /* 밝은 테두리로 경계 구분 */
+    box-shadow: none; /* 기존 그림자 제거 */
     overflow-y: auto;
     z-index: 10;
 }
@@ -37,7 +38,9 @@ body {
     width: 80%;
     padding: 8px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    background-color: #3a3a3a;
+    color: #f0f2f5;
+    border: 1px solid #555;
     border-radius: 4px;
 }
 
@@ -45,12 +48,14 @@ body {
     font-size: 1.8em;
     margin-top: 0;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .control-group label {
     display: block;
-    margin-bottom: 10px; /* 라벨과 컨텐츠 간 간격 조정 */
+    margin-bottom: 10px;
     font-weight: bold;
+    color: #ccc;
 }
 
 /* [추가됨] 버튼 그룹 공통 스타일 */
@@ -69,8 +74,9 @@ body {
 .control-button {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    border: 1px solid #555;
+    background-color: #3a3a3a;
+    color: #f0f2f5;
     text-align: left;
     cursor: pointer;
     font-size: 14px;
@@ -78,11 +84,12 @@ body {
     transition: background-color 0.2s, border-color 0.2s;
 }
 .control-button:hover {
-    border-color: #999;
+    background-color: #4a4a4a;
 }
 .control-button.selected {
     background-color: #ffc107; /* 노란색 배경 */
     border-color: #e0a800;
+    color: #1a1a1a; /* 선택 시 어두운 글자색 */
     font-weight: bold;
 }
 
@@ -102,12 +109,14 @@ body {
 }
 
 .filter-checkbox-item label {
-    margin-bottom: 0; /* 기본 마진 제거 */
+    margin-bottom: 0;
     font-weight: normal;
+    color: #f0f2f5;
 }
 
 .filter-checkbox-item input {
     margin: 0;
+    accent-color: #ffc107; /* 체크박스 색상 변경 */
 }
 
 /* 맵 영역 스타일 */
@@ -115,8 +124,9 @@ body {
     flex-grow: 1;
     display: flex;
     padding: 20px;
+    background-color: #121212; /* 맵 배경보다 약간 더 어두운 배경 */
     overflow: hidden; 
-    /*cursor: grab;*/
+    cursor: grab;
 }
 .map-area.panning {
     cursor: grabbing;
@@ -195,9 +205,12 @@ body {
 
 /* 모달(팝업) 스타일 */
 .hidden { display: none !important; }
-#modal-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); display: flex; justify-content: center; align-items: center; z-index: 1000; }
-.modal-content { background-color: #fff; padding: 20px; border-radius: 5px; width: 90%; max-width: 640px; position: relative; }
-.modal-close-btn { position: absolute; top: 10px; right: 15px; border: none; background: none; font-size: 24px; cursor: pointer; }
+#modal-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.75); display: flex; justify-content: center; align-items: center; z-index: 1000; }
+.modal-content { background-color: #2a2a2a; color: #f0f2f5; padding: 20px; border-radius: 5px; width: 90%; max-width: 640px; position: relative; }
+.modal-close-btn { position: absolute; color: #ccc; top: 10px; right: 15px; border: none; background: none; font-size: 24px; cursor: pointer; }
+.modal-close-btn:hover {
+    color: #fff;
+}
 /* --- [수정됨] 새로운 미디어 슬라이더 스타일 --- */
 #modal-media-slider {
     margin-top: 15px;
