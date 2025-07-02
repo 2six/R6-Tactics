@@ -28,12 +28,12 @@
         { "pos": { "x": "60.8%", "y": "35.2%" }, "text": "천문계단", "fontSize": "8px" },
         { "pos": { "x": "57.7%", "y": "60.7%" }, "text": "중앙\n계단", "fontSize": "8px" },
         { "pos": { "x": "68.6%", "y": "37.6%" }, "text": "식료품계단", "fontSize": "6px" },
-        { "pos": { "x": "63.0%", "y": "39.5%" }, "text": "도자기", "fontSize": "8px" },
+        { "pos": { "x": "63.0%", "y": "39.5%" }, "text": "도자기", "fontSize": "6px" },
         { "pos": { "x": "64.3%", "y": "36.6%" }, "text": "주방" },
         { "pos": { "x": "65.8%", "y": "40.8%" }, "text": "식당" },
         { "pos": { "x": "65.8%", "y": "44.9%" }, "text": "추모실" },
         { "pos": { "x": "66.8%", "y": "48.5%" }, "text": "추모\n작방", "fontSize": "8px" },
-        { "pos": { "x": "68.0%", "y": "35.8%" }, "text": "식료품", "fontSize": "8px" },
+        { "pos": { "x": "68.0%", "y": "35.8%" }, "text": "식료품", "fontSize": "6px" },
         { "pos": { "x": "68.7%", "y": "42.7%" }, "text": "세탁실", "rotation": 90 },
         { "pos": { "x": "58.8%", "y": "42.6%" }, "text": "자전거", "rotation": 90 },
         { "pos": { "x": "60.0%", "y": "46.9%" }, "text": "거실" },
@@ -44,7 +44,7 @@
         { "pos": { "x": "55.2%", "y": "57.9%" }, "text": "정문" },
         { "pos": { "x": "57.6%", "y": "57.9%" }, "text": "로비" },
         { "pos": { "x": "63.2%", "y": "57.9%" }, "text": "공방" },
-        { "pos": { "x": "60.9%", "y": "40.8%" }, "text": "괘종\n시계", "fontSize": "8px" },
+        { "pos": { "x": "60.9%", "y": "40.8%" }, "text": "괘종\n시계", "fontSize": "6px" },
         { "pos": { "x": "63.1%", "y": "43.9%" }, "text": "추모복도", "fontSize": "8px", "rotation": 90 },
         { "pos": { "x": "61.3%", "y": "50.7%" }, "text": "빨간복도", "fontSize": "8px" },
         { "pos": { "x": "60.2%", "y": "52.8%" }, "text": "간\n복\n도", "fontSize": "8px" }
@@ -781,7 +781,7 @@
       ]
     },
     "4": {
-      "name": "1F 블루바 / 선라이즈바",
+      "name": "1F 주방 / 식당",
       "strategies": [
         {
           "type": "reinforce",
@@ -928,26 +928,28 @@
             "media": [
               { "type": "image", "src": "https://i.imgur.com/V53RmLl.jpeg" },
               { "type": "image", "src": "https://i.imgur.com/5b1nXAZ.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/Ot54IoE.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/Ot54IoE.jpeg" },
+              { "type": "youtube", "src": "0AdL-7rLOiI" }
             ]
           }
         },
         {
           "type": "evilEye",
           "floorId": "1f",
-          "pos": { "x": "62.4%", "y": "37.6%" },
+          "pos": { "x": "62.4%", "y": "37.7%" },
           "modalContent": { "title": "악의 눈 - 주방 1", "description": "주방 내부",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/MgizUcD.jpeg" },
               { "type": "image", "src": "https://i.imgur.com/zFDaG8g.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/o5S35ki.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/o5S35ki.jpeg" },
+              { "type": "youtube", "src": "feBwPso71-0" }
             ]
           }
         },
         {
           "type": "evilEye",
           "floorId": "1f",
-          "pos": { "x": "62.4%", "y": "36.5%" },
+          "pos": { "x": "62.4%", "y": "36.6%" },
           "modalContent": { "title": "악의 눈 - 주방 2", "description": "주방 내부, 도자기 일부",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/7OTS1ZV.jpeg" },
@@ -964,7 +966,8 @@
             "media": [
               { "type": "image", "src": "https://i.imgur.com/fEsMhOM.jpeg" },
               { "type": "image", "src": "https://i.imgur.com/OOK0RTV.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/hzFvhA3.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/hzFvhA3.jpeg" },
+              { "type": "youtube", "src": "mVE7N2z6Qb4" }
             ]
           }
         },
@@ -976,7 +979,8 @@
             "media": [
               { "type": "image", "src": "https://i.imgur.com/tnQJQ6r.jpeg" },
               { "type": "image", "src": "https://i.imgur.com/EptCuwf.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/YMpuYTs.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/YMpuYTs.jpeg" },
+              { "type": "youtube", "src": "Fe2bWRzu854" }
             ]
           }
         },
