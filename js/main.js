@@ -56,7 +56,6 @@ function handleFilterChange() {
 }
 
 async function init() {
-    // [수정됨] 1. 전체 맵 설정을 먼저 불러옴
     const config = await loadStrategyData(configPath);
     if (!config || !config.maps) {
         alert('맵 설정 파일을 불러오는 데 실패했습니다.');
@@ -64,20 +63,17 @@ async function init() {
     }
     createMapSelector(config.maps, currentMapId);
     
-    // [수정됨] 2. 현재 맵의 데이터를 불러옴
     fullData = await loadStrategyData(dataPath);
     if (!fullData) {
         alert('전략 데이터를 불러오는 데 실패했습니다.');
         return;
     }
 
-    // [수정됨] 3. 맵 타이틀 설정
     const currentMapInfo = config.maps.find(map => map.id === currentMapId);
     if (currentMapInfo) {
         setMapTitle(currentMapInfo.name);
     }
 
-    // [수정됨] 4. 나머지 UI 및 로직 초기화
     const params = new URLSearchParams(window.location.search);
     const floorIds = Object.keys(fullData.floors);
     const siteIds = Object.keys(fullData.sites);
@@ -107,19 +103,10 @@ async function init() {
     renderView();
     
     setTimeout(() => {
-        initMapControls();
+        // [수정됨] 현재 맵의 initialView 정보를 initMapControls에 전달
+        const initialView = currentMapInfo ? currentMapInfo.initialView : null;
+        initMapControls(initialView);
     }, 0);
 }
-
-window.addEventListener('popstate', () => {
-    const params = new URLSearchParams(window.location.search);
-    currentFloorId = params.get('floor') || Object.keys(fullData.floors)[0];
-    currentSiteId = params.get('site') || Object.keys(fullData.sites)[0];
-    
-    document.getElementById('floor-selector').value = currentFloorId;
-    document.getElementById('site-selector').value = currentSiteId;
-
-    renderView();
-});
 
 document.addEventListener('DOMContentLoaded', init);

@@ -36,22 +36,28 @@ let startX, startY, startTranslateX, startTranslateY;
 // --- Map Control Functions ---
 
 function applyTransform() {
-    // [수정됨] 바깥쪽 컨테이너에 transform 적용
     mapContainer.style.transform = `translate(${currentTranslateX}px, ${currentTranslateY}px) scale(${currentScale})`;
 }
 
-function fitMapToContainer() {
-    const areaWidth = mapArea.clientWidth;
-    const areaHeight = mapArea.clientHeight;
-    // [수정됨] 바깥쪽 컨테이너의 크기를 기준으로 계산
-    const containerBaseWidth = mapContainer.offsetWidth;
-    const containerBaseHeight = mapContainer.offsetHeight;
-    if (containerBaseWidth === 0) return;
+// [수정됨] 함수의 이름과 기능 확장
+export function setInitialMapView(initialView) {
+    if (initialView && initialView.scale && initialView.translateX !== undefined && initialView.translateY !== undefined) {
+        // 1. config.json에 정의된 초기 뷰 사용
+        currentScale = initialView.scale;
+        currentTranslateX = initialView.translateX;
+        currentTranslateY = initialView.translateY;
+    } else {
+        // 2. 초기 뷰가 없으면 기본 동작 (가로 폭에 맞춰 중앙 정렬)
+        const areaWidth = mapArea.clientWidth;
+        const areaHeight = mapArea.clientHeight;
+        const containerBaseWidth = mapContainer.offsetWidth;
+        const containerBaseHeight = mapContainer.offsetHeight;
+        if (containerBaseWidth === 0) return;
 
-    currentScale = areaWidth / containerBaseWidth;
-    
-    currentTranslateX = (areaWidth - containerBaseWidth * currentScale) / 2;
-    currentTranslateY = (areaHeight - containerBaseHeight * currentScale) / 2;
+        currentScale = areaWidth / containerBaseWidth;
+        currentTranslateX = (areaWidth - containerBaseWidth * currentScale) / 2;
+        currentTranslateY = (areaHeight - containerBaseHeight * currentScale) / 2;
+    }
     
     applyTransform();
 }
@@ -105,14 +111,18 @@ function handleMouseUpOrLeave() {
     mapContainer.classList.remove('panning-optimization'); // <<< 제어 대상 변경
 }
 
-export function initMapControls() {
-    fitMapToContainer();
+export function initMapControls(initialView) {
+    // [수정됨] fitMapToContainer 대신 setInitialMapView 호출
+    setInitialMapView(initialView);
+    
     mapArea.addEventListener('wheel', handleWheelZoom, { passive: false });
     mapArea.addEventListener('mousedown', handleMouseDown);
     mapArea.addEventListener('mousemove', handleMouseMove);
     mapArea.addEventListener('mouseup', handleMouseUpOrLeave);
     mapArea.addEventListener('mouseleave', handleMouseUpOrLeave);
-    window.addEventListener('resize', fitMapToContainer);
+    
+    // [수정됨] 창 크기 변경 시에는 항상 기본 뷰로 돌아가도록 설정 (또는 initialView를 다시 적용할 수도 있음)
+    window.addEventListener('resize', () => setInitialMapView(null)); 
 }
 
 // --- UI Creation Functions ---
