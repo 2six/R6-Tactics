@@ -3,12 +3,14 @@
       {
         "id": "coastline",
         "name": "해안선",
-        "path": "/maps/coastline/"
+        "path": "/maps/coastline/",
+        "thumbnail": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5GfAQ3pXCJnDqiqaDH3Zic/db1722cd699bb864ee8f7b0db951b0c3/r6-maps-coastline.jpg"
       },
       {
         "id": "villa",
         "name": "빌라",
-        "path": "/maps/villa/"
+        "path": "/maps/villa/",
+        "thumbnail": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/Io6dxNeHbCbJoF9WLJf9s/ebf89b009affba37df84dcf1934c74e0/r6-maps-villa.jpg"
       }
     ]
   }
