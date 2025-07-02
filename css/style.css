@@ -27,24 +27,48 @@ body {
     margin-top: 0;
 }
 
+/* [수정됨] 컨트롤 패널 내부 스타일 */
 .control-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* 그룹 간 간격 조정 */
 }
 
 .control-group label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px; /* 라벨과 컨텐츠 간 간격 조정 */
     font-weight: bold;
 }
 
-#site-selector, .filter-checkbox label {
-    display: block;
-    margin-bottom: 5px;
+/* [추가됨] 버튼 그룹 공통 스타일 */
+.button-group {
+    display: flex;
+    gap: 8px;
+}
+.button-group.horizontal {
+    flex-direction: row;
+}
+.button-group.vertical {
+    flex-direction: column;
 }
 
-#floor-selector, #site-selector {
+/* [추가됨] 컨트롤 버튼 스타일 */
+.control-button {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+.control-button:hover {
+    border-color: #999;
+}
+.control-button.selected {
+    background-color: #ffc107; /* 노란색 배경 */
+    border-color: #e0a800;
+    font-weight: bold;
 }
 
 #filter-checkboxes {
@@ -54,12 +78,11 @@ body {
     align-items: center;
 }
 
-/* [수정됨] 개별 체크박스 아이템 스타일 */
-.filter-checkbox-item {
+#filter-checkboxes {
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     align-items: center;
-    gap: 5px; /* 라벨과 체크박스 사이의 간격 */
-    cursor: pointer;
 }
 
 .filter-checkbox-item label {

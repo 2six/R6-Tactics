@@ -1,8 +1,11 @@
 const mapArea = document.querySelector('.map-area');
-const mapContainer = document.getElementById('map-container'); // <<< 제어 대상을 바깥쪽 컨테이너로 변경
-const mapContent = document.getElementById('map-content');   // <<< 컨텐츠가 추가될 안쪽 컨테이너
-const floorSelector = document.getElementById('floor-selector');
-const siteSelector = document.getElementById('site-selector');
+const mapContainer = document.getElementById('map-container');
+const mapContent = document.getElementById('map-content');
+
+// [수정됨] 제어 대상을 버튼 컨테이너로 변경
+const floorButtonsContainer = document.getElementById('floor-buttons');
+const siteButtonsContainer = document.getElementById('site-buttons');
+
 const filterCheckboxesContainer = document.getElementById('filter-checkboxes');
 
 // Modal Elements
@@ -110,32 +113,60 @@ export function initMapControls() {
 
 // --- UI Creation Functions ---
 
+// [수정됨] 층 선택 버튼 그룹 생성 함수
 export function createFloorSelector(floors, currentFloorId, onFloorChange) {
-    floorSelector.innerHTML = '';
+    floorButtonsContainer.innerHTML = '';
     for (const floorId in floors) {
-        const option = document.createElement('option');
-        option.value = floorId;
-        option.textContent = floors[floorId].name;
+        const button = document.createElement('button');
+        button.className = 'control-button';
+        button.textContent = floors[floorId].name;
+        button.dataset.floorId = floorId; // 데이터 속성으로 ID 저장
         if (floorId === currentFloorId) {
-            option.selected = true;
+            button.classList.add('selected');
         }
-        floorSelector.appendChild(option);
+        floorButtonsContainer.appendChild(button);
     }
-    floorSelector.addEventListener('change', () => onFloorChange(floorSelector.value));
+
+    floorButtonsContainer.addEventListener('click', (e) => {
+        const targetButton = e.target.closest('.control-button');
+        if (!targetButton) return;
+
+        // 모든 버튼에서 'selected' 클래스 제거
+        floorButtonsContainer.querySelectorAll('.control-button').forEach(btn => {
+            btn.classList.remove('selected');
+        });
+        // 클릭된 버튼에만 'selected' 클래스 추가
+        targetButton.classList.add('selected');
+        
+        onFloorChange(targetButton.dataset.floorId);
+    });
 }
 
+// [수정됨] 방어 지역 선택 버튼 그룹 생성 함수
 export function createSiteSelector(sites, currentSiteId, onSiteChange) {
-    siteSelector.innerHTML = '';
+    siteButtonsContainer.innerHTML = '';
     for (const siteId in sites) {
-        const option = document.createElement('option');
-        option.value = siteId;
-        option.textContent = sites[siteId].name;
+        const button = document.createElement('button');
+        button.className = 'control-button';
+        button.textContent = sites[siteId].name;
+        button.dataset.siteId = siteId; // 데이터 속성으로 ID 저장
         if (siteId === currentSiteId) {
-            option.selected = true;
+            button.classList.add('selected');
         }
-        siteSelector.appendChild(option);
+        siteButtonsContainer.appendChild(button);
     }
-    siteSelector.addEventListener('change', () => onSiteChange(siteSelector.value));
+    
+    siteButtonsContainer.addEventListener('click', (e) => {
+        const targetButton = e.target.closest('.control-button');
+        if (!targetButton) return;
+
+        siteButtonsContainer.querySelectorAll('.control-button').forEach(btn => {
+            btn.classList.remove('selected');
+        });
+        targetButton.classList.add('selected');
+
+        onSiteChange(targetButton.dataset.siteId);
+    });
 }
 
 export function createFilterCheckboxes(strategyTypes, onFilterChange) {
