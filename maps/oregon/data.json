@@ -79,7 +79,7 @@
   },
   "sites": {
     "1": {
-      "name": "2F 당구장 / 물담배",
+      "name": "2F 기숙사 / 아이방",
       "strategies": [
         {
           "type": "reinforce",
@@ -761,101 +761,101 @@
       ]
     },
     "4": {
-      "name": "1F 블루바 / 선라이즈바",
+      "name": "지하 세탁실 / 비품실",
       "strategies": [
         {
           "type": "reinforce",
-          "floorId": "1f",
-          "pos": { "x": "58.2%", "y": "60.8%" },
-          "width": "15px",
-          "height": "2px",
-          "modalContent": { "title": "블루 2벽", "description": "사무실->블루바 진입 저지",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/laZAXgJ.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "1f",
-          "pos": { "x": "57.0%", "y": "56.2%" },
-          "width": "8px",
-          "height": "2px",
-          "modalContent": { "title": "블루바-선라이즈 4벽 가운데", "description": "블루바 창문->선라이즈 소파 각 지우기",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/8L7qeJ9.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "1f",
-          "pos": { "x": "57.9%", "y": "56.2%" },
-          "width": "7px",
-          "height": "2px",
-          "modalContent": { "title": "블루바-선라이즈 4벽 가운데", "description": "블루바 창문->선라이즈 소파 각 지우기",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/8L7qeJ9.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "1f",
-          "pos": { "x": "59.0%", "y": "55.6%" },
+          "floorId": "0f",
+          "pos": { "x": "68.8%", "y": "56.9%" },
           "width": "2px",
           "height": "8px",
-          "modalContent": { "title": "선라이즈-복도 2벽", "description": "로비->선라이즈 소파 각 지우기",
+          "modalContent": { "title": "비품실 2벽 오른쪽", "description": "벙커->작방 각 지우기",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/9kSstjq.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/Xo9F48u.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
-          "floorId": "1f",
-          "pos": { "x": "53.8%", "y": "49.2%" },
-          "width": "14px",
+          "floorId": "0f",
+          "pos": { "x": "66.7%", "y": "59.2%" },
+          "width": "8px",
           "height": "2px",
-          "modalContent": { "title": "선라입구 왼쪽 2벽", "description": "선라입구 외부 문->소파 각 지우기",
+          "modalContent": { "title": "작방 2벽 왼쪽", "description": "세탁실 계단 교전 엄폐물",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/bK1L5ds.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/XmqaiwT.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
-          "floorId": "1f",
-          "pos": { "x": "66.1%", "y": "49.2%" },
+          "floorId": "0f",
+          "pos": { "x": "63.4%", "y": "61.5%" },
           "width": "2px",
-          "height": "9px",
-          "modalContent": { "title": "주방-직출 벽", "description": "응접실 진입 적과 교전을 위한 엄폐물",
+          "height": "10px",
+          "modalContent": { "title": "냉동고 2벽 왼쪽", "description": "세탁실 보호",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/7dWU2UF.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/O3MdFuM.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
-          "floorId": "2f",
-          "pos": { "x": "57.1%", "y": "56.2%" },
-          "width": "9px",
+          "floorId": "0f",
+          "pos": { "x": "68.8%", "y": "52.1%" },
+          "width": "2px",
+          "height": "6px",
+          "modalContent": { "title": "전기실-벙커 2벽 오른쪽", "description": "벙커 큰문->전기실->기둥뒤 각 지우기 및 엄폐물",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/qxyXYsU.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "0f",
+          "pos": { "x": "67.7%", "y": "50.6%" },
+          "width": "16px",
           "height": "2px",
-          "modalContent": { "title": "당구장-물담배 벽", "description": "물담배 진입 저지",
+          "modalContent": { "title": "전기실 2벽", "description": "회관 해치->보일러 각 지우기",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/qxyXYsU.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
-          "floorId": "2f",
-          "pos": { "x": "56.3%", "y": "54.8%" },
+          "floorId": "1f",
+          "pos": { "x": "67.3%", "y": "51.8%" },
           "width": "7px",
           "height": "7px",
-          "modalContent": { "title": "물담배 트랩도어", "description": "열면 물담배에서 선라입구 견제 가능하긴 하지만 그냥 닫는게 좋음",
+          "modalContent": { "title": "회관 해치", "description": "전기실 보호",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/nOFAVPJ.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "67.2%", "y": "64.2%" },
+          "width": "px",
+          "height": "px",
+          "modalContent": { "title": "로비 해치", "description": "세탁실 보호",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/5BHb0gz.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "61.7%", "y": "61.8%" },
+          "width": "px",
+          "height": "px",
+          "modalContent": { "title": "보안실 해치", "description": "냉동고 보호",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/nzaLwMY.jpeg" }
             ]
           }
         },
