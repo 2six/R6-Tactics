@@ -31,7 +31,7 @@
       "name": "1층",
       "mapImage": "https://i.imgur.com/4qyq0wX.jpeg",
       "labels": [
-        { "pos": { "x": "60%", "y": "48.8%" }, "text": "물담배\n계단", "fontSize": "8px" },
+        { "pos": { "x": "66.6%", "y": "45.6%" }, "text": "큰타워\n계단", "fontSize": "8px" },
         { "pos": { "x": "48.7%", "y": "58.4%" }, "text": "작타계단", "fontSize": "8px" },
         { "pos": { "x": "60.2%", "y": "65.1%" }, "text": "흰계단", "fontSize": "8px" },
         { "pos": { "x": "68.7%", "y": "64.4%" }, "text": "무기고계단", "fontSize": "8px", "rotation": 90 },
