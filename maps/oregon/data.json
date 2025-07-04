@@ -84,7 +84,7 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "59.8%", "y": "59.9%" },
+          "pos": { "x": "59.9%", "y": "59.9%" },
           "width": "10px",
           "height": "3px",
           "modalContent": { "title": "기숙사-아이방 2벽 오른쪽", "description": "기숙사 큰창->아이방 각 지우기",
@@ -96,7 +96,7 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "63.2%", "y": "56.7%" },
+          "pos": { "x": "63.1%", "y": "56.7%" },
           "width": "2px",
           "height": "7px",
           "modalContent": { "title": "아이방-다락방 2벽 오른쪽", "description": "아이방 레펠->다락방 각 지우기",
@@ -108,7 +108,7 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "67.1%", "y": "58.0%" },
+          "pos": { "x": "67.1%", "y": "58.1%" },
           "width": "18px",
           "height": "3px",
           "modalContent": { "title": "트로피 2벽", "description": "다락방 보호 (왼쪽 열고 쓰는 경우도 있으니 누가 열어놨으면 걍 두면 됨)",
@@ -120,7 +120,7 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "67.2%", "y": "48.9%" },
+          "pos": { "x": "67.1%", "y": "48.9%" },
           "width": "16px",
           "height": "2px",
           "modalContent": { "title": "구름다리 2벽", "description": "큰타->구름다리 진입로 제한",
@@ -132,12 +132,24 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "65.1%", "y": "64.9%" },
-          "width": "16px",
+          "pos": { "x": "65.0%", "y": "64.9%" },
+          "width": "17px",
           "height": "2px",
           "modalContent": { "title": "게임방 2벽", "description": "안방->게임방 진입로 제한",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/9AfRHem.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "6981%", "y": "60.7%" },
+          "width": "2px",
+          "height": "9px",
+          "modalContent": { "title": "무기방 2벽 왼쪽", "description": "무기방->트로피->다락방 각 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/98G9QaG.jpeg" }
             ]
           }
         },
@@ -164,80 +176,35 @@
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "58%", "y": "56.2%" },
-          "width": "9px",
-          "height": "2px",
-          "modalContent": { "title": "물담배-당구장 위쪽", "description": "투척물 넘기기",
+          "pos": { "x": "58.7%", "y": "59.9%" },
+          "width": "10px",
+          "height": "3px",
+          "modalContent": { "title": "기숙사-아이방 큰창 쪽 발작", "description": "큰창 넘어오는 적 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/7CqmcWU.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/eilgmuL.jpeg" }
             ]
           }
         },
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "56.5%", "y": "62.4%" },
-          "width": "17px",
-          "height": "2px",
-          "modalContent": { "title": "아쿠아 발작", "description": "아쿠아 견제",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/2JhTaWS.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "60.925%", "y": "56.9%" },
+          "pos": { "x": "68.7%", "y": "63.0%" },
           "width": "2px",
-          "height": "8px",
-          "modalContent": { "title": "당구장 4벽 왼쪽 머리작", "description": "당구장->VIP복도, VIP복도->당구장 큰창",
+          "height": "16px",
+          "modalContent": { "title": "안방 2벽 발작", "description": "트로피->무기고계단 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/BtKtbIL.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/PJCTb0c.jpeg" }
             ]
           }
         },
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "63%", "y": "56.3%" },
-          "modalContent": { "title": "악의 눈 - VIP 복도", "description": "물담배 입구, 당구장 큰창",
+          "pos": { "x": "%", "y": "%" },
+          "modalContent": { "title": "악의 눈 - ", "description": "",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/DOiBBck.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/gmpsV7b.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "evilEye",
-          "floorId": "2f",
-          "pos": { "x": "55.9%", "y": "53.1%" },
-          "modalContent": { "title": "악의 눈 - 물담배", "description": "물담배 내부, 설치 저지",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/YBqs9a3.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/93LxuKM.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "evilEye",
-          "floorId": "2f",
-          "pos": { "x": "57.4%", "y": "65.3%" },
-          "modalContent": { "title": "악의 눈 - 아쿠아 1", "description": "아쿠아 내부, 당구장 폭탄 뒤 설치 저지",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/jmAhCsZ.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/eGyCvwY.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "evilEye",
-          "floorId": "2f",
-          "pos": { "x": "60.7%", "y": "61.8%" },
-          "modalContent": { "title": "악의 눈 - 아쿠아 2", "description": "아쿠아 큰 문, 아쿠아 내부",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/V5sdu6K.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/gtZFdvD.jpeg" }
+              { "type": "image", "src": "" },
+              { "type": "image", "src": "" }
             ]
           }
         }
