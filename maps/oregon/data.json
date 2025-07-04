@@ -84,72 +84,60 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "57.1%", "y": "56.2%" },
-          "width": "9px",
+          "pos": { "x": "59.9%", "y": "59.9%" },
+          "width": "8px",
           "height": "2px",
-          "modalContent": { "title": "당구장-물담배 벽", "description": "물담배 홀딩",
+          "modalContent": { "title": "기숙사-아이방 2벽 오른쪽", "description": "기숙사 큰창->아이방 각 지우기",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/7CqmcWU.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/eilgmuL.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "60.925%", "y": "59.2%" },
+          "pos": { "x": "63.1%", "y": "56.7%" },
           "width": "2px",
-          "height": "26px",
-          "modalContent": { "title": "당구장 4벽", "description": "당구장 소파 뒤 홀딩",
+          "height": "6px",
+          "modalContent": { "title": "아이방-다락방 2벽 오른쪽", "description": "아이방 레펠->다락방 각 지우기",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/BtKtbIL.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/NPBaK6L.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "58.9%", "y": "51.3%" },
-          "width": "2px",
-          "height": "10px",
-          "modalContent": { "title": "물담배 벽", "description": "물담배 복도 홀딩",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/mBoOzQl.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "2f",
-          "pos": { "x": "58.9%", "y": "55.7%" },
-          "width": "2px",
-          "height": "8px",
-          "modalContent": { "title": "물담배 벽", "description": "물담배 홀딩",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/2kXXEnt.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "reinforce",
-          "floorId": "2f",
-          "pos": { "x": "63.1%", "y": "47.2%" },
-          "width": "20px",
+          "pos": { "x": "67.0%", "y": "58.1%" },
+          "width": "16px",
           "height": "2px",
-          "modalContent": { "title": "VIP 외벽", "description": "VIP 진입 저지",
+          "modalContent": { "title": "트로피 2벽", "description": "다락방 보호 (왼쪽 열고 쓰는 경우도 있으니 누가 열어놨으면 걍 두면 됨)",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/Yh5zBJc.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/llrOud0.jpeg" }
             ]
           }
         },
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "62.0%", "y": "54.1%" },
-          "width": "18px",
+          "pos": { "x": "67.1%", "y": "48.9%" },
+          "width": "14px",
           "height": "2px",
-          "modalContent": { "title": "VIP 복도 벽", "description": "VIP 외벽 열릴 시 VIP->복도,당구장 각 지우기",
+          "modalContent": { "title": "구름다리 2벽", "description": "큰타->구름다리 진입로 제한",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/Kt36sps.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/5cWE0w1.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "65.0%", "y": "64.9%" },
+          "width": "14px",
+          "height": "2px",
+          "modalContent": { "title": "게임방 2벽", "description": "안방->게임방 진입로 제한",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/9AfRHem.jpeg" }
             ]
           }
         },
