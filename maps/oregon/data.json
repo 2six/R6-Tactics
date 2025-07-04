@@ -84,9 +84,9 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "59.9%", "y": "59.9%" },
-          "width": "8px",
-          "height": "2px",
+          "pos": { "x": "59.8%", "y": "59.9%" },
+          "width": "10px",
+          "height": "3px",
           "modalContent": { "title": "기숙사-아이방 2벽 오른쪽", "description": "기숙사 큰창->아이방 각 지우기",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/eilgmuL.jpeg" }
@@ -96,9 +96,9 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "63.1%", "y": "56.7%" },
+          "pos": { "x": "63.2%", "y": "56.7%" },
           "width": "2px",
-          "height": "6px",
+          "height": "7px",
           "modalContent": { "title": "아이방-다락방 2벽 오른쪽", "description": "아이방 레펠->다락방 각 지우기",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/NPBaK6L.jpeg" }
@@ -108,9 +108,9 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "67.0%", "y": "58.1%" },
-          "width": "16px",
-          "height": "2px",
+          "pos": { "x": "67.1%", "y": "58.0%" },
+          "width": "18px",
+          "height": "3px",
           "modalContent": { "title": "트로피 2벽", "description": "다락방 보호 (왼쪽 열고 쓰는 경우도 있으니 누가 열어놨으면 걍 두면 됨)",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/llrOud0.jpeg" }
@@ -120,8 +120,8 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "67.1%", "y": "48.9%" },
-          "width": "14px",
+          "pos": { "x": "67.2%", "y": "48.9%" },
+          "width": "16px",
           "height": "2px",
           "modalContent": { "title": "구름다리 2벽", "description": "큰타->구름다리 진입로 제한",
             "media": [
@@ -132,8 +132,8 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "65.0%", "y": "64.9%" },
-          "width": "14px",
+          "pos": { "x": "65.1%", "y": "64.9%" },
+          "width": "16px",
           "height": "2px",
           "modalContent": { "title": "게임방 2벽", "description": "안방->게임방 진입로 제한",
             "media": [
@@ -144,20 +144,20 @@
         {
           "type": "rotate",
           "floorId": "2f",
-          "pos": { "x": "56%", "y": "56.2%" },
-          "modalContent": { "title": "사이트 로테이션", "description": "사이트 간 이동",
+          "pos": { "x": "63.1%", "y": "55.7%" },
+          "modalContent": { "title": "아이방-다락방 로테이션", "description": "아이방<->다락방 간 이동",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/7CqmcWU.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/NPBaK6L.jpeg" }
             ]
           }
         },
         {
           "type": "rotate",
           "floorId": "2f",
-          "pos": { "x": "58.9%", "y": "49.7%" },
-          "modalContent": { "title": "물담배 계단 로테이션", "description": "계단에서 사이트 견제 및 이동",
+          "pos": { "x": "62.6%", "y": "64.1%" },
+          "modalContent": { "title": "기숙사-게임방 로테이션", "description": "기숙사<->게임방 간 이동 및 흰계단->트로피 문 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/mBoOzQl.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/ZQEWBFF.jpeg" }
             ]
           }
         },
