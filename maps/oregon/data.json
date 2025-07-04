@@ -237,7 +237,7 @@
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "58.1%", "y": "63.1%" },
+          "pos": { "x": "58.2%", "y": "63.1%" },
           "modalContent": { "title": "악의 눈 - 기숙사", "description": "기숙사 큰창 넘어온 적 견제, 옆 바닥 열면 흰계단 초입부 보임",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/ftXup7S.jpeg" },
