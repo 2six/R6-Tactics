@@ -84,7 +84,7 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "59.8%", "y": "60.0%" },
+          "pos": { "x": "59.8%", "y": "59.9%" },
           "width": "11px",
           "height": "2px",
           "modalContent": { "title": "기숙사-아이방 2벽 오른쪽", "description": "기숙사 큰창->아이방 각 지우기",
@@ -132,8 +132,8 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "65.0%", "y": "64.9%" },
-          "width": "18px",
+          "pos": { "x": "64.9%", "y": "64.9%" },
+          "width": "17px",
           "height": "2px",
           "modalContent": { "title": "게임방 2벽", "description": "안방->게임방 진입로 제한",
             "media": [
@@ -144,7 +144,7 @@
         {
           "type": "reinforce",
           "floorId": "2f",
-          "pos": { "x": "69.9%", "y": "60.8%" },
+          "pos": { "x": "69.8%", "y": "60.8%" },
           "width": "2px",
           "height": "8px",
           "modalContent": { "title": "무기방 2벽 왼쪽", "description": "무기방->트로피->다락방 각 견제",
@@ -177,7 +177,7 @@
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "58.8%", "y": "60.0%" },
+          "pos": { "x": "58.8%", "y": "59.9%" },
           "width": "10px",
           "height": "2px",
           "modalContent": { "title": "기숙사-아이방 큰창 쪽 발작", "description": "큰창 넘어오는 적 견제",
