@@ -779,8 +779,8 @@
           "type": "reinforce",
           "floorId": "0f",
           "pos": { "x": "66.7%", "y": "59.2%" },
-          "width": "8px",
-          "height": "2px",
+          "width": "9px",
+          "height": "3px",
           "modalContent": { "title": "작방 2벽 왼쪽", "description": "세탁실 계단 교전 엄폐물",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/XmqaiwT.jpeg" }
@@ -804,7 +804,7 @@
           "floorId": "0f",
           "pos": { "x": "68.8%", "y": "52.1%" },
           "width": "2px",
-          "height": "6px",
+          "height": "7px",
           "modalContent": { "title": "전기실-벙커 2벽 오른쪽", "description": "벙커 큰문->전기실->기둥뒤 각 지우기 및 엄폐물",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/qxyXYsU.jpeg" }
@@ -814,8 +814,8 @@
         {
           "type": "reinforce",
           "floorId": "0f",
-          "pos": { "x": "67.7%", "y": "50.6%" },
-          "width": "16px",
+          "pos": { "x": "67.8%", "y": "50.4%" },
+          "width": "18px",
           "height": "2px",
           "modalContent": { "title": "전기실 2벽", "description": "회관 해치->보일러 각 지우기",
             "media": [
