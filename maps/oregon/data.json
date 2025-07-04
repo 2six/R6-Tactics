@@ -374,7 +374,7 @@
         {
           "type": "rotate",
           "floorId": "2f",
-          "pos": { "x": "58.1%", "y": "57.8%" },
+          "pos": { "x": "58.1%", "y": "57.7%" },
           "zIndex": 15,
           "modalContent": { "title": "아이방 해치", "description": "아이방-주방 간 이동 및 아이방->식당 견제",
             "media": [
@@ -399,7 +399,7 @@
           "floorId": "1f",
           "pos": { "x": "52.1%", "y": "63.7%" },
           "width": "2px",
-          "height": "9px",
+          "height": "8px",
           "modalContent": { "title": "샤워-작타 2벽 왼쪽 발목작", "description": "샤워 복도로 지르는 적 견제 및 충수로 강화벽 브리칭 방해",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/XX0pX00.jpeg" }
@@ -409,9 +409,9 @@
         {
           "type": "break",
           "floorId": "2f",
-          "pos": { "x": "58.2%", "y": "60.8%" },
-          "width": "3px",
-          "height": "4px",
+          "pos": { "x": "58.1%", "y": "60.5%" },
+          "width": "4px",
+          "height": "6px",
           "modalContent": { "title": "기숙사 큰창 앞 바닥", "description": "1층에서 큰창 견제",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/hbndSHH.jpeg" }
