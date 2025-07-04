@@ -169,7 +169,8 @@
           "pos": { "x": "62.6%", "y": "64.1%" },
           "modalContent": { "title": "기숙사-게임방 로테이션", "description": "기숙사<->게임방 간 이동 및 흰계단->트로피 문 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/ZQEWBFF.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/ZQEWBFF.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/TJF3AW3.jpeg" }
             ]
           }
         },
@@ -193,18 +194,55 @@
           "height": "16px",
           "modalContent": { "title": "안방 2벽 발작", "description": "트로피->무기고계단 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/PJCTb0c.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/PJCTb0c.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/f6SuqlE.jpeg" }
             ]
           }
         },
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "%", "y": "%" },
-          "modalContent": { "title": "악의 눈 - ", "description": "",
+          "pos": { "x": "66.4%", "y": "63.3%" },
+          "modalContent": { "title": "악의 눈 - 안방", "description": "안방 내부, 무기고 계단 발작, 트로피 입구",
             "media": [
-              { "type": "image", "src": "" },
-              { "type": "image", "src": "" }
+              { "type": "image", "src": "https://i.imgur.com/wnu5LAG.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/2VevsZz.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/YggkUSs.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "63.0%", "y": "63.1%" },
+          "modalContent": { "title": "악의 눈 - 게암방", "description": "게임방 내부, 커넥터",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/oN7Zbce.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/t8RjKNr.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "59.7%", "y": "57.2%" },
+          "modalContent": { "title": "악의 눈 - 아이방 침대 옆 바닥", "description": "큰창 넘어온 적 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/pHSDPP8.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/lN2AFn4.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/INoFkTD.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "58.1%", "y": "63.1%" },
+          "modalContent": { "title": "악의 눈 - 기숙사", "description": "기숙사 큰창 넘어온 적 견제, 옆 바닥 열면 흰계단 초입부 보임",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/ftXup7S.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/EU6zgy7.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/b23xQi0.jpeg" }
             ]
           }
         }
