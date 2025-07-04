@@ -814,7 +814,7 @@
         {
           "type": "reinforce",
           "floorId": "0f",
-          "pos": { "x": "67.7%", "y": "50.5%" },
+          "pos": { "x": "67.8%", "y": "50.5%" },
           "width": "19px",
           "height": "2px",
           "modalContent": { "title": "전기실 2벽", "description": "회관 해치->보일러 각 지우기",
@@ -892,92 +892,82 @@
         {
           "type": "break",
           "floorId": "0f",
-          "pos": { "x": "63.4%", "y": "60.0%" },
+          "pos": { "x": "63.4%", "y": "60.1%" },
           "width": "2px",
           "height": "10px",
           "modalContent": { "title": "냉동고 2벽 오른쪽", "description": "세탁실,작방->냉동고 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/O3MdFuM.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/O3MdFuM.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/39X0w60.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/J8BB5aZ.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/IT2hcJk.jpeg" }
             ]
           }
         },
         {
           "type": "break",
           "floorId": "0f",
-          "pos": { "x": "68.8%", "y": "51.1%" },
+          "pos": { "x": "68.8%", "y": "51.2%" },
           "width": "2px",
           "height": "7px",
           "modalContent": { "title": "전기실-벙커 2벽 왼쪽", "description": "전기실,기둥뒤->벙커 큰문 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/qxyXYsU.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/qxyXYsU.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/k0lZbRE.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/YorCPjn.jpeg" }
             ]
           }
         },
         {
           "type": "break",
           "floorId": "0f",
-          "pos": { "x": "%", "y": "%" },
-          "width": "px",
-          "height": "px",
-          "modalContent": { "title": "", "description": "",
+          "pos": { "x": "65.7%", "y": "52.7%" },
+          "width": "8px",
+          "height": "2px",
+          "modalContent": { "title": "비품실-기둥 1벽 위쪽", "description": "비품실,복도->큰타계단 견제",
             "media": [
-              { "type": "image", "src": "" }
+              { "type": "image", "src": "https://i.imgur.com/vSlO6Ss.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/YnCNbMs.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/Q15tS3K.jpeg" }
             ]
           }
         },
         {
-          "type": "break",
+          "type": "evilEye",
           "floorId": "0f",
-          "pos": { "x": "%", "y": "%" },
-          "width": "px",
-          "height": "px",
-          "modalContent": { "title": "", "description": "",
+          "pos": { "x": "64.8%", "y": "59.6%" },
+          "modalContent": { "title": "악의 눈 - 세탁실", "description": "세탁실 내부, 냉동고 입구",
             "media": [
-              { "type": "image", "src": "" }
+              { "type": "image", "src": "https://i.imgur.com/528WfSc.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/SCksNHP.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/IashW6Z.jpeg" }
             ]
           }
         },
         {
           "type": "evilEye",
-          "floorId": "1f",
-          "pos": { "x": "57.4%", "y": "51.6%" },
-          "modalContent": { "title": "악의 눈 - 선라이즈", "description": "선라이즈 내부",
+          "floorId": "0f",
+          "pos": { "x": "65.1%", "y": "55.8%" },
+          "modalContent": { "title": "악의 눈 - 비품실 문틀", "description": "큰타계단, 비품실 내부, 지하 복도",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/KeqCvz7.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/feYB8kQ.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/iTqjU1O.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/T3XDlJa.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/ZfXTyst.jpeg" }
             ]
           }
         },
         {
           "type": "evilEye",
-          "floorId": "1f",
-          "pos": { "x": "57.4%", "y": "56.8%" },
-          "modalContent": { "title": "악의 눈 - 블루바", "description": "블루바 내부, 창문",
+          "floorId": "0f",
+          "pos": { "x": "71.3%", "y": "48.7%" },
+          "modalContent": { "title": "악의 눈 - 벙커", "description": "벙커 내부",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/VwvISvN.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/kowLWYF.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "evilEye",
-          "floorId": "1f",
-          "pos": { "x": "69.3%", "y": "61.2%" },
-          "modalContent": { "title": "악의 눈 - 로비 카운터", "description": "로비 내부, 로비 큰 문",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/WYxIWac.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/V73mdVy.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "evilEye",
-          "floorId": "1f",
-          "pos": { "x": "62.9%", "y": "56.1%" },
-          "modalContent": { "title": "악의 눈 - 주방복도", "description": "블루바 내부",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/uPgeZXt.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/81f48MS.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/13WLVEf.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/tCFsgao.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/fJlKvuF.png" },
+              { "type": "image", "src": "https://i.imgur.com/wbohTee.png" },
+              { "type": "image", "src": "https://i.imgur.com/ugyTpCN.png" },
+              { "type": "image", "src": "https://i.imgur.com/ibBj1KT.png" }
             ]
           }
         }
