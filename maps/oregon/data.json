@@ -24,7 +24,7 @@
         { "pos": { "x": "67.6%", "y": "53.9%" }, "text": "국설", "fontSize": "6px" },
         { "pos": { "x": "70.2%", "y": "56.2%" }, "text": "1mm\n방패", "fontSize": "6px" },
         { "pos": { "x": "66.1%", "y": "58.1%" }, "text": "작방", "fontSize": "8px" },
-        { "pos": { "x": "68.1%", "y": "60.4%" }, "text": "세탁\n로테", "fontSize": "8px" }
+        { "pos": { "x": "68.1%", "y": "60.5%" }, "text": "세탁\n로테", "fontSize": "6px" }
       ]
     },
     "1f": {
@@ -814,8 +814,8 @@
         {
           "type": "reinforce",
           "floorId": "0f",
-          "pos": { "x": "67.8%", "y": "50.4%" },
-          "width": "18px",
+          "pos": { "x": "67.7%", "y": "50.5%" },
+          "width": "19px",
           "height": "2px",
           "modalContent": { "title": "전기실 2벽", "description": "회관 해치->보일러 각 지우기",
             "media": [
@@ -850,7 +850,7 @@
         {
           "type": "reinforce",
           "floorId": "1f",
-          "pos": { "x": "61.7%", "y": "61.8%" },
+          "pos": { "x": "61.6%", "y": "61.7%" },
           "width": "8px",
           "height": "8px",
           "modalContent": { "title": "보안실 해치", "description": "냉동고 보호",
@@ -861,169 +861,79 @@
         },
         {
           "type": "rotate",
-          "floorId": "1f",
-          "pos": { "x": "55.9%", "y": "56.1%" },
+          "floorId": "0f",
+          "pos": { "x": "68.8%", "y": "55.7%" },
+          "modalContent": { "title": "비품실-벙커 로테이션", "description": "벙커 후퇴용 로테이션",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/Xo9F48u.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "0f",
+          "pos": { "x": "67.9%", "y": "59.2%" },
           "modalContent": { "title": "사이트 로테이션", "description": "사이트 간 이동",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/8L7qeJ9.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/vTjazmd.jpeg" }
             ]
           }
         },
         {
           "type": "rotate",
-          "floorId": "2f",
-          "pos": { "x": "56%", "y": "56.2%" },
-          "zIndex": 15,
-          "modalContent": { "title": "당구장-물담배 로테이션", "description": "",
+          "floorId": "0f",
+          "pos": { "x": "65.6%", "y": "59.2%" },
+          "modalContent": { "title": "사이트 로테이션", "description": "사이트 간 이동",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "rotate",
-          "floorId": "2f",
-          "pos": { "x": "56.1%", "y": "65.0%" },
-          "modalContent": { "title": "아쿠아 해치", "description": "아쿠아->사무실 이동",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/FaWyN50.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/XmqaiwT.jpeg" }
             ]
           }
         },
         {
           "type": "break",
-          "floorId": "1f",
-          "pos": { "x": "55.8%", "y": "49.2%" },
-          "width": "12px",
-          "height": "2px",
-          "modalContent": { "title": "선라입구 오른쪽 벽 발작", "description": "선라입구 창문 진입 견제",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/bK1L5ds.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "1f",
-          "pos": { "x": "58.6%", "y": "56.2%" },
-          "width": "7px",
-          "height": "2px",
-          "modalContent": { "title": "블루바-선라이즈 4벽 헤드홀", "description": "블루바 창문 견제",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/8L7qeJ9.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/7JkGcfk.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "1f",
-          "pos": { "x": "66.1%", "y": "48.0%" },
+          "floorId": "0f",
+          "pos": { "x": "63.4%", "y": "60.0%" },
           "width": "2px",
-          "height": "9px",
-          "modalContent": { "title": "주방-직출 헤드홀", "description": "응접실 진입 견제",
+          "height": "10px",
+          "modalContent": { "title": "냉동고 2벽 오른쪽", "description": "세탁실,작방->냉동고 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/7dWU2UF.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/O3MdFuM.jpeg" }
             ]
           }
         },
         {
           "type": "break",
-          "floorId": "1f",
-          "pos": { "x": "61.1%", "y": "58.5%" },
+          "floorId": "0f",
+          "pos": { "x": "68.8%", "y": "51.1%" },
           "width": "2px",
-          "height": "32px",
-          "modalContent": { "title": "블루바 4벽 헤드홀", "description": "블루바 외부에서 블루바 견제",
+          "height": "7px",
+          "modalContent": { "title": "전기실-벙커 2벽 왼쪽", "description": "전기실,기둥뒤->벙커 큰문 견제",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/fy0gi1s.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/4UAYsPE.jpeg" }
+              { "type": "image", "src": "https://i.imgur.com/qxyXYsU.jpeg" }
             ]
           }
         },
         {
           "type": "break",
-          "floorId": "1f",
-          "pos": { "x": "63.6%", "y": "54.1%" },
-          "width": "16px",
-          "height": "2px",
-          "modalContent": { "title": "주방 4벽 가운데", "description": "주방->블루바 / 선라복도->로비",
+          "floorId": "0f",
+          "pos": { "x": "%", "y": "%" },
+          "width": "px",
+          "height": "px",
+          "modalContent": { "title": "", "description": "",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/TtuyKpE.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/aUB5MtK.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/FeEd905.jpeg" }
+              { "type": "image", "src": "" }
             ]
           }
         },
         {
           "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "58%", "y": "56.2%" },
-          "width": "9px",
-          "height": "2px",
-          "modalContent": { "title": "물담배-당구장 헤드홀", "description": "물담배 진입 견제",
+          "floorId": "0f",
+          "pos": { "x": "%", "y": "%" },
+          "width": "px",
+          "height": "px",
+          "modalContent": { "title": "", "description": "",
             "media": [
-              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "56.2%", "y": "56.2%" },
-          "width": "9px",
-          "height": "2px",
-          "modalContent": { "title": "물담배-당구장 헤드홀", "description": "물담배 진입 견제",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/sdfgTtx.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "56.1%", "y": "54.0%" },
-          "width": "4px",
-          "height": "3px",
-          "modalContent": { "title": "물담배 버티컬", "description": "물담배->선라입구",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/eHN8kGV.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/7faA7Dy.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "56.0%", "y": "56.9%" },
-          "width": "4px",
-          "height": "4px",
-          "modalContent": { "title": "당구장 버티컬", "description": "당구장->사무실 문, 블루바 창문 진입 견제",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/bPIUDXG.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "58.0%", "y": "56.9%" },
-          "width": "4px",
-          "height": "3px",
-          "modalContent": { "title": "당구장 버티컬", "description": "당구장->블루바 국설 저지",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/LS3IiSj.jpeg" }
-            ]
-          }
-        },
-        {
-          "type": "break",
-          "floorId": "2f",
-          "pos": { "x": "56.5%", "y": "62.4%" },
-          "width": "17px",
-          "height": "2px",
-          "modalContent": { "title": "아쿠아 발작", "description": "아쿠아 견제",
-            "media": [
-              { "type": "image", "src": "https://i.imgur.com/lEa7oaA.jpeg" }
+              { "type": "image", "src": "" }
             ]
           }
         },
