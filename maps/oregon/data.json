@@ -421,7 +421,7 @@
         {
           "type": "evilEye",
           "floorId": "2f",
-          "pos": { "x": "50.4%", "y": "62/0%" },
+          "pos": { "x": "50.4%", "y": "62.0%" },
           "modalContent": { "title": "악의 눈 - 작타 2층", "description": "작타 내부",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/7xa98xL.jpeg" },
