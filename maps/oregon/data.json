@@ -935,7 +935,7 @@
         {
           "type": "evilEye",
           "floorId": "0f",
-          "pos": { "x": "64.8%", "y": "59.6%" },
+          "pos": { "x": "64.8%", "y": "59.7%" },
           "modalContent": { "title": "악의 눈 - 세탁실", "description": "세탁실 내부, 냉동고 입구",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/528WfSc.jpeg" },
@@ -947,7 +947,7 @@
         {
           "type": "evilEye",
           "floorId": "0f",
-          "pos": { "x": "65.1%", "y": "55.8%" },
+          "pos": { "x": "65.2%", "y": "55.8%" },
           "modalContent": { "title": "악의 눈 - 비품실 문틀", "description": "큰타계단, 비품실 내부, 지하 복도",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/iTqjU1O.jpeg" },
@@ -959,15 +959,16 @@
         {
           "type": "evilEye",
           "floorId": "0f",
-          "pos": { "x": "71.3%", "y": "48.7%" },
+          "pos": { "x": "71.4%", "y": "48.7%" },
           "modalContent": { "title": "악의 눈 - 벙커", "description": "벙커 내부",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/13WLVEf.jpeg" },
               { "type": "image", "src": "https://i.imgur.com/tCFsgao.jpeg" },
-              { "type": "image", "src": "https://i.imgur.com/fJlKvuF.png" },
-              { "type": "image", "src": "https://i.imgur.com/wbohTee.png" },
-              { "type": "image", "src": "https://i.imgur.com/ugyTpCN.png" },
-              { "type": "image", "src": "https://i.imgur.com/ibBj1KT.png" }
+              { "type": "image", "src": "https://i.imgur.com/fJlKvuF.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/wbohTee.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/ugyTpCN.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/ibBj1KT.jpeg" },
+              { "type": "youtube", "src": "4M8XPISvc5g" }
             ]
           }
         }
