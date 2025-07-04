@@ -827,8 +827,8 @@
           "type": "reinforce",
           "floorId": "1f",
           "pos": { "x": "67.3%", "y": "51.8%" },
-          "width": "7px",
-          "height": "7px",
+          "width": "8px",
+          "height": "8px",
           "modalContent": { "title": "회관 해치", "description": "전기실 보호",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/nOFAVPJ.jpeg" }
@@ -839,8 +839,8 @@
           "type": "reinforce",
           "floorId": "1f",
           "pos": { "x": "67.2%", "y": "64.2%" },
-          "width": "px",
-          "height": "px",
+          "width": "8px",
+          "height": "8px",
           "modalContent": { "title": "로비 해치", "description": "세탁실 보호",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/5BHb0gz.jpeg" }
@@ -851,8 +851,8 @@
           "type": "reinforce",
           "floorId": "1f",
           "pos": { "x": "61.7%", "y": "61.8%" },
-          "width": "px",
-          "height": "px",
+          "width": "8px",
+          "height": "8px",
           "modalContent": { "title": "보안실 해치", "description": "냉동고 보호",
             "media": [
               { "type": "image", "src": "https://i.imgur.com/nzaLwMY.jpeg" }
