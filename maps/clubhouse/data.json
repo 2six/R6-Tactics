@@ -12,7 +12,7 @@
       "mapImage": "https://i.imgur.com/Pq9KDWY.jpeg",
       "labels": [
         { "pos": { "x": "63.4%", "y": "45.4%" }, "text": "중앙\n계단", "fontSize": "8px" },
-        { "pos": { "x": "72.3%", "y": "52.1%" }, "text": "블루계단", "fontSize": "6px" },
+        { "pos": { "x": "72.4%", "y": "52.1%" }, "text": "블루계단", "fontSize": "6px" },
         { "pos": { "x": "69.1%", "y": "43.1%" }, "text": "동굴" },
         { "pos": { "x": "66.0%", "y": "45.7%" }, "text": "무기고" },
         { "pos": { "x": "66.4%", "y": "50.5%" }, "text": "예배당" },
@@ -21,11 +21,11 @@
         { "pos": { "x": "70.4%", "y": "56.1%" }, "text": "블루복도", "fontSize": "6px", "rotation": 90 },
         { "pos": { "x": "70.0%", "y": "59.7%" }, "text": "블루\n사다리", "fontSize": "8px" },
         { "pos": { "x": "70.6%", "y": "46.1%" }, "text": "AK", "fontSize": "6px" },
-        { "pos": { "x": "67.9%", "y": "46.0%" }, "text": "B1", "fontSize": "6px" },
+        { "pos": { "x": "67.9%", "y": "46.1%" }, "text": "B1", "fontSize": "6px" },
         { "pos": { "x": "69.1%", "y": "47.1%" }, "text": "B2", "fontSize": "6px" },
         { "pos": { "x": "69.4%", "y": "48.6%" }, "text": "B3", "fontSize": "6px" },
-        { "pos": { "x": "66.2%", "y": "48.2%" }, "text": "무기고복도", "fontSize": "6px" },
-        { "pos": { "x": "64.0%", "y": "49.5%" }, "text": "오토바이\n복도", "fontSize": "6px", "rotation": 90 }
+        { "pos": { "x": "66.2%", "y": "48.1%" }, "text": "무기고복도", "fontSize": "6px" },
+        { "pos": { "x": "63.9%", "y": "49.7%" }, "text": "오토바이\n복도", "fontSize": "6px", "rotation": 90 }
       ]
     },
     "1f": {
