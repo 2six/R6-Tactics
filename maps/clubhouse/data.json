@@ -9,7 +9,7 @@
   "floors": {
     "0f": {
       "name": "지하",
-      "mapImage": "https://i.imgur.com/oMbqVbl.jpeg",
+      "mapImage": "https://i.imgur.com/Pq9KDWY.jpeg",
       "labels": [
         { "pos": { "x": "66.1%", "y": "45.6%" }, "text": "큰타워\n계단", "fontSize": "8px" },
         { "pos": { "x": "59.1%", "y": "65.2%" }, "text": "냉동고계단", "fontSize": "6px" },
@@ -30,7 +30,7 @@
     },
     "1f": {
       "name": "1층",
-      "mapImage": "https://i.imgur.com/UGd71vM.jpeg",
+      "mapImage": "https://i.imgur.com/g9VVITM.jpeg",
       "labels": [
         { "pos": { "x": "66.6%", "y": "45.6%" }, "text": "큰타워\n계단", "fontSize": "8px" },
         { "pos": { "x": "48.7%", "y": "58.4%" }, "text": "작타\n계단", "fontSize": "8px" },
@@ -57,7 +57,7 @@
     },
     "2f": {
       "name": "2층",
-      "mapImage": "https://i.imgur.com/oGO4Xrf.jpeg",
+      "mapImage": "https://i.imgur.com/3MeEhOK.jpeg",
       "labels": [
         { "pos": { "x": "66.9%", "y": "45.5%" }, "text": "큰타워\n계단", "fontSize": "8px" },
         { "pos": { "x": "60.0%", "y": "65.8%" }, "text": "흰계단", "fontSize": "8px" },
