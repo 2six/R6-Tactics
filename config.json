@@ -41,6 +41,20 @@
                 "y2": "71.7%"
             }
         }
+      },
+      {
+        "id": "clubhouse",
+        "name": "클럽하우스",
+        "path": "/maps/clubhouse/",
+        "thumbnail": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/Z9a0gU7iR0vfcbXtoJUOW/42ad6aabbd189fbcd74c497627f1624e/r6-maps-clubhouse.jpg",
+        "initialView": {
+            "aoi": {
+                "x1": "45.3%",
+                "y1": "41.7%",
+                "x2": "75.2%",
+                "y2": "71.7%"
+            }
+        }
       }
     ]
   }

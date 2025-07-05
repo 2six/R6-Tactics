@@ -1,0 +1,701 @@
+{
+  "strategyTypes": [
+    { "id": "reinforce", "label": "강화", "icon": "../../images/icons/blue.png", "width": "10px", "height": "2px" },
+    { "id": "break", "label": "파괴", "icon": "../../images/icons/red.png", "width": "10px", "height": "2px" },
+    { "id": "rotate", "label": "로테이션", "icon": "../../images/icons/rotate.png", "width": "8px", "height": "8px" },
+    { "id": "barri", "label": "바리케이드", "icon": "../../images/icons/green.png", "width": "10px", "height": "2px" },
+    { "id": "evilEye", "label": "악의 눈", "icon": "../../images/icons/Evil Eye.png", "width": "6px", "height": "6px" }
+  ],
+  "floors": {
+    "0f": {
+      "name": "지하",
+      "mapImage": "https://i.imgur.com/oMbqVbl.jpeg",
+      "labels": [
+        { "pos": { "x": "66.1%", "y": "45.6%" }, "text": "큰타워\n계단", "fontSize": "8px" },
+        { "pos": { "x": "59.1%", "y": "65.2%" }, "text": "냉동고계단", "fontSize": "6px" },
+        { "pos": { "x": "68.2%", "y": "64.4%" }, "text": "세탁실계단", "fontSize": "8px", "rotation": 90 },
+        { "pos": { "x": "66.5%", "y": "65.1%" }, "text": "세탁실\n입구", "fontSize": "8px" },
+        { "pos": { "x": "65.4%", "y": "61.0%" }, "text": "세탁실" },
+        { "pos": { "x": "60.3%", "y": "60.7%" }, "text": "냉동고" },
+        { "pos": { "x": "64.2%", "y": "56.1%" }, "text": "지하복도", "rotation": 90 },
+        { "pos": { "x": "64.7%", "y": "50.6%" }, "text": "기둥" },
+        { "pos": { "x": "67.8%", "y": "51.5%" }, "text": "전기실", "fontSize": "6px" },
+        { "pos": { "x": "70.2%", "y": "50.5%" }, "text": "벙커" },
+        { "pos": { "x": "67.0%", "y": "55.3%" }, "text": "비품실" },
+        { "pos": { "x": "67.6%", "y": "53.9%" }, "text": "국설", "fontSize": "6px" },
+        { "pos": { "x": "70.2%", "y": "56.2%" }, "text": "1mm\n방패", "fontSize": "6px" },
+        { "pos": { "x": "66.1%", "y": "58.1%" }, "text": "작방", "fontSize": "8px" },
+        { "pos": { "x": "68.1%", "y": "60.5%" }, "text": "세탁\n로테", "fontSize": "6px" }
+      ]
+    },
+    "1f": {
+      "name": "1층",
+      "mapImage": "https://i.imgur.com/UGd71vM.jpeg",
+      "labels": [
+        { "pos": { "x": "66.6%", "y": "45.6%" }, "text": "큰타워\n계단", "fontSize": "8px" },
+        { "pos": { "x": "48.7%", "y": "58.4%" }, "text": "작타\n계단", "fontSize": "8px" },
+        { "pos": { "x": "60.2%", "y": "65.3%" }, "text": "흰계단", "fontSize": "8px" },
+        { "pos": { "x": "68.7%", "y": "64.4%" }, "text": "무기고계단", "fontSize": "8px", "rotation": 90 },
+        { "pos": { "x": "49.7%", "y": "61.2%" }, "text": "작은\n타워" },
+        { "pos": { "x": "54.8%", "y": "57.2%" }, "text": "식당" },
+        { "pos": { "x": "54.0%", "y": "62.5%" }, "text": "샤워실" },
+        { "pos": { "x": "54.3%", "y": "65.7%" }, "text": "샤워복도", "fontSize": "8px" },
+        { "pos": { "x": "60.5%", "y": "57.3%" }, "text": "주방" },
+        { "pos": { "x": "59.9%", "y": "61.2%" }, "text": "보안실" },
+        { "pos": { "x": "60.5%", "y": "63.4%" }, "text": "보안복도", "fontSize": "8px" },
+        { "pos": { "x": "63.9%", "y": "60.9%" }, "text": "ㄱ자복도", "fontSize": "7px" },
+        { "pos": { "x": "63.0%", "y": "62.7%" }, "text": "자\n복\n도", "fontSize": "7px" },
+        { "pos": { "x": "64.7%", "y": "64.9%" }, "text": "교실" },
+        { "pos": { "x": "66.9%", "y": "61.8%" }, "text": "로비" },
+        { "pos": { "x": "70.9%", "y": "62.8%" }, "text": "차고" },
+        { "pos": { "x": "66.4%", "y": "59.1%" }, "text": "회관입구", "fontSize": "8px" },
+        { "pos": { "x": "66.5%", "y": "54.6%" }, "text": "회관" },
+        { "pos": { "x": "66.8%", "y": "50.1%" }, "text": "무대", "fontSize": "8px" },
+        { "pos": { "x": "63.0%", "y": "52.0%" }, "text": "녹색복도", "fontSize": "8px", "rotation": 90 },
+        { "pos": { "x": "67.5%", "y": "47.7%" }, "text": "큰타워" }
+      ]
+    },
+    "2f": {
+      "name": "2층",
+      "mapImage": "https://i.imgur.com/oGO4Xrf.jpeg",
+      "labels": [
+        { "pos": { "x": "66.9%", "y": "45.5%" }, "text": "큰타워\n계단", "fontSize": "8px" },
+        { "pos": { "x": "60.0%", "y": "65.8%" }, "text": "흰계단", "fontSize": "8px" },
+        { "pos": { "x": "69.2%", "y": "65.2%" }, "text": "무기고계단", "fontSize": "6px", "rotation": 90 },
+        { "pos": { "x": "51.2%", "y": "59.8%" }, "text": "작은타워" },
+        { "pos": { "x": "60.5%", "y": "57.7%" }, "text": "아이방" },
+        { "pos": { "x": "60.2%", "y": "62.6%" }, "text": "기숙사" },
+        { "pos": { "x": "65.2%", "y": "56.6%" }, "text": "다락방" },
+        { "pos": { "x": "64.5%", "y": "60.0%" }, "text": "커넥터", "fontSize": "8px" },
+        { "pos": { "x": "64.2%", "y": "63.3%" }, "text": "게임방" },
+        { "pos": { "x": "67.1%", "y": "52.1%" }, "text": "구름다리", "rotation": 90 },
+        { "pos": { "x": "67.2%", "y": "60.0%" }, "text": "트로피", "fontSize": "8px" },
+        { "pos": { "x": "67.2%", "y": "64.3%" }, "text": "안방" },
+        { "pos": { "x": "71.5%", "y": "62.6%" }, "text": "무기고" },
+        { "pos": { "x": "69.2%", "y": "60.4%" }, "text": "무기고복도", "fontSize": "6px", "rotation": 90 },
+        { "pos": { "x": "65.0%", "y": "65.8%" }, "text": "외벽", "fontSize": "8px" },
+        { "pos": { "x": "67.2%", "y": "47.7%" }, "text": "큰타워" }
+      ]
+    }
+  },
+  "sites": {
+    "1": {
+      "name": "2F 기숙사 / 아이방",
+      "strategies": [
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "59.8%", "y": "59.9%" },
+          "width": "11px",
+          "height": "2px",
+          "modalContent": { "title": "기숙사-아이방 2벽 오른쪽", "description": "기숙사 큰창->아이방 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/eilgmuL.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "63.1%", "y": "56.7%" },
+          "width": "2px",
+          "height": "7px",
+          "modalContent": { "title": "아이방-다락방 2벽 오른쪽", "description": "아이방 레펠->다락방 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/NPBaK6L.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "67.0%", "y": "58.1%" },
+          "width": "18px",
+          "height": "3px",
+          "modalContent": { "title": "트로피 2벽", "description": "다락방 보호 (왼쪽 열고 쓰는 경우도 있으니 누가 열어놨으면 걍 두면 됨)",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/llrOud0.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "67.1%", "y": "48.9%" },
+          "width": "16px",
+          "height": "2px",
+          "modalContent": { "title": "구름다리 2벽", "description": "큰타->구름다리 진입로 제한",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/5cWE0w1.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "64.9%", "y": "64.9%" },
+          "width": "17px",
+          "height": "2px",
+          "modalContent": { "title": "게임방 2벽", "description": "안방->게임방 진입로 제한",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/9AfRHem.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "69.8%", "y": "60.8%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "무기방 2벽 왼쪽", "description": "무기방->트로피->다락방 각 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/98G9QaG.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "2f",
+          "pos": { "x": "63.1%", "y": "55.7%" },
+          "modalContent": { "title": "아이방-다락방 로테이션", "description": "아이방<->다락방 간 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/NPBaK6L.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "2f",
+          "pos": { "x": "62.6%", "y": "64.1%" },
+          "modalContent": { "title": "기숙사-게임방 로테이션", "description": "기숙사<->게임방 간 이동 및 흰계단->트로피 문 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/ZQEWBFF.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/TJF3AW3.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "58.8%", "y": "59.9%" },
+          "width": "10px",
+          "height": "2px",
+          "modalContent": { "title": "기숙사-아이방 큰창 쪽 발작", "description": "큰창 넘어오는 적 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/eilgmuL.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "68.7%", "y": "63.0%" },
+          "width": "2px",
+          "height": "14px",
+          "modalContent": { "title": "안방 2벽 발작", "description": "트로피->무기고계단 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/PJCTb0c.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/f6SuqlE.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "66.4%", "y": "63.3%" },
+          "modalContent": { "title": "악의 눈 - 안방", "description": "안방 내부, 무기고 계단 발작, 트로피 입구",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/wnu5LAG.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/2VevsZz.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/YggkUSs.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "63.0%", "y": "63.1%" },
+          "modalContent": { "title": "악의 눈 - 게암방", "description": "게임방 내부, 커넥터",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/oN7Zbce.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/t8RjKNr.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "59.7%", "y": "57.2%" },
+          "modalContent": { "title": "악의 눈 - 아이방 침대 옆 바닥", "description": "큰창 넘어온 적 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/pHSDPP8.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/lN2AFn4.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/INoFkTD.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "58.2%", "y": "63.1%" },
+          "modalContent": { "title": "악의 눈 - 기숙사", "description": "기숙사 큰창 넘어온 적 견제, 옆 바닥 열면 흰계단 초입부 보임",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/ftXup7S.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/EU6zgy7.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/b23xQi0.jpeg" }
+            ]
+          }
+        }
+      ]
+    },
+    "2": {
+      "name": "1F 식당 / 주방",
+      "strategies": [
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "63.6%", "y": "58.2%" },
+          "width": "2px",
+          "height": "16px",
+          "modalContent": { "title": "주방-회관 2벽", "description": "주방 보호",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/Lnu1JnJ.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "52.1%", "y": "58.7%" },
+          "width": "2px",
+          "height": "18px",
+          "modalContent": { "title": "식당-작타 2벽", "description": "식당 보호 (벽 위 천장 살짝 열어두면 좋음)",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/ZJbzbe6.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/BBzuCw9.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "54.8%", "y": "60.0%" },
+          "width": "9px",
+          "height": "2px",
+          "modalContent": { "title": "식당-샤워 2벽 오른쪽", "description": "작타 2층->샤워실 버티컬 보호",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/2XwmgTy.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "52.1%", "y": "62.6%" },
+          "width": "2px",
+          "height": "9px",
+          "modalContent": { "title": "샤워-작타 2벽 오른쪽", "description": "샤워실 보호 및 작타와의 교전 엄폐물",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/XX0pX00.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "62.6%", "y": "64.2%" },
+          "width": "2px",
+          "height": "9px",
+          "modalContent": { "title": "게임방 1벽", "description": "2층 올라가는 길 보호",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/NTMbNVb.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "58.8%", "y": "59.9%" },
+          "width": "10px",
+          "height": "2px",
+          "modalContent": { "title": "아이방-기숙사 2벽 오른쪽", "description": "기숙사 큰창->아이방 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/N0pATkD.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "2f",
+          "pos": { "x": "63.1%", "y": "56.3%" },
+          "width": "2px",
+          "height": "12px",
+          "modalContent": { "title": "다락방 2벽", "description": "아이방 보호",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/P4wLyBz.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "1f",
+          "pos": { "x": "57.9%", "y": "60.0%" },
+          "zIndex": 15,
+          "modalContent": { "title": "주방-보안 로테이션", "description": "주방-보안실 간 이동 및 1층에서 큰창 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/oxdKleG.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/hbndSHH.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "1f",
+          "pos": { "x": "57.5%", "y": "57.2%" },
+          "zIndex": 15,
+          "modalContent": { "title": "사이트 간 로테이션", "description": "",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/JMOVGCZ.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "1f",
+          "pos": { "x": "55.8%", "y": "60.0%" },
+          "zIndex": 15,
+          "modalContent": { "title": "식당-샤워 로테이션", "description": "식당-샤워 간 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/2XwmgTy.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "2f",
+          "pos": { "x": "58.1%", "y": "57.7%" },
+          "zIndex": 15,
+          "modalContent": { "title": "아이방 해치", "description": "아이방-주방 간 이동 및 아이방->식당 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/enJinAt.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "barri",
+          "floorId": "1f",
+          "pos": { "x": "61.2%", "y": "64.5%" },
+          "width": "6px",
+          "height": "2px",
+          "modalContent": { "title": "냉동고 계단 바리케이드", "description": "",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/1DnsPpX.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "1f",
+          "pos": { "x": "52.2%", "y": "63.7%" },
+          "width": "2px",
+          "height": "9px",
+          "modalContent": { "title": "샤워-작타 2벽 왼쪽 발목작", "description": "샤워 복도로 지르는 적 견제 및 충수로 강화벽 브리칭 방해",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/XX0pX00.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "2f",
+          "pos": { "x": "58.1%", "y": "60.5%" },
+          "width": "4px",
+          "height": "6px",
+          "modalContent": { "title": "기숙사 큰창 앞 바닥", "description": "1층에서 큰창 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/hbndSHH.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "2f",
+          "pos": { "x": "50.4%", "y": "62.0%" },
+          "modalContent": { "title": "악의 눈 - 작타 2층", "description": "작타 내부",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/7xa98xL.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/YMHpr7i.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/AVVxEV2.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "51.2%", "y": "54.9%" },
+          "modalContent": { "title": "악의 눈 - 작타", "description": "식당 외벽 브리칭 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/PIB9aJY.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/CfZRO69.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "55.2%", "y": "54.9%" },
+          "modalContent": { "title": "악의 눈 - 식당", "description": "식당 내부",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/9e4tC2I.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/dHKDMNd.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/0TMdWpU.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/dRUS43f.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "57.1%", "y": "66.1%" },
+          "modalContent": { "title": "악의 눈 - 샤워복도", "description": "샤워실 복도",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/BbGCajn.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/8qZRaTg.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "1f",
+          "pos": { "x": "62.9%", "y": "56.0%" },
+          "modalContent": { "title": "악의 눈 - 주방", "description": "주방 일부, 녹색 복도",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/zgLIAXh.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/8ndftdZ.jpeg" }
+            ]
+          }
+        }
+      ]
+    },
+    "3": {
+      "name": "1F 회관 / 주방",
+      "strategies": [
+      ]
+    },
+    "4": {
+      "name": "지하 세탁실 / 비품실",
+      "strategies": [
+        {
+          "type": "reinforce",
+          "floorId": "0f",
+          "pos": { "x": "68.8%", "y": "56.9%" },
+          "width": "2px",
+          "height": "8px",
+          "modalContent": { "title": "비품실 2벽 오른쪽", "description": "벙커->작방 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/Xo9F48u.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "0f",
+          "pos": { "x": "66.7%", "y": "59.2%" },
+          "width": "9px",
+          "height": "3px",
+          "modalContent": { "title": "작방 2벽 왼쪽", "description": "세탁실 계단 교전 엄폐물",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/XmqaiwT.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "0f",
+          "pos": { "x": "63.4%", "y": "61.5%" },
+          "width": "2px",
+          "height": "10px",
+          "modalContent": { "title": "냉동고 2벽 왼쪽", "description": "세탁실 보호",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/O3MdFuM.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "0f",
+          "pos": { "x": "68.8%", "y": "52.1%" },
+          "width": "2px",
+          "height": "7px",
+          "modalContent": { "title": "전기실-벙커 2벽 오른쪽", "description": "벙커 큰문->전기실->기둥뒤 각 지우기 및 엄폐물",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/qxyXYsU.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "0f",
+          "pos": { "x": "67.8%", "y": "50.5%" },
+          "width": "19px",
+          "height": "2px",
+          "modalContent": { "title": "전기실 2벽", "description": "회관 해치->보일러 각 지우기",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/qxyXYsU.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "67.3%", "y": "51.8%" },
+          "width": "8px",
+          "height": "8px",
+          "modalContent": { "title": "회관 해치", "description": "전기실 보호",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/nOFAVPJ.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "67.2%", "y": "64.2%" },
+          "width": "8px",
+          "height": "8px",
+          "modalContent": { "title": "로비 해치", "description": "세탁실 보호",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/5BHb0gz.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "reinforce",
+          "floorId": "1f",
+          "pos": { "x": "61.6%", "y": "61.7%" },
+          "width": "8px",
+          "height": "8px",
+          "modalContent": { "title": "보안실 해치", "description": "냉동고 보호",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/nzaLwMY.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "0f",
+          "pos": { "x": "68.8%", "y": "55.7%" },
+          "modalContent": { "title": "비품실-벙커 로테이션", "description": "벙커 후퇴용 로테이션",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/Xo9F48u.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "0f",
+          "pos": { "x": "67.9%", "y": "59.2%" },
+          "modalContent": { "title": "사이트 로테이션", "description": "사이트 간 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/vTjazmd.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "rotate",
+          "floorId": "0f",
+          "pos": { "x": "65.6%", "y": "59.2%" },
+          "modalContent": { "title": "사이트 로테이션", "description": "사이트 간 이동",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/XmqaiwT.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "0f",
+          "pos": { "x": "63.4%", "y": "60.1%" },
+          "width": "2px",
+          "height": "10px",
+          "modalContent": { "title": "냉동고 2벽 오른쪽", "description": "세탁실,작방->냉동고 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/O3MdFuM.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/39X0w60.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/J8BB5aZ.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/IT2hcJk.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "0f",
+          "pos": { "x": "68.8%", "y": "51.2%" },
+          "width": "2px",
+          "height": "7px",
+          "modalContent": { "title": "전기실-벙커 2벽 왼쪽", "description": "전기실,기둥뒤->벙커 큰문 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/qxyXYsU.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/k0lZbRE.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/YorCPjn.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "break",
+          "floorId": "0f",
+          "pos": { "x": "65.7%", "y": "52.7%" },
+          "width": "8px",
+          "height": "2px",
+          "modalContent": { "title": "비품실-기둥 1벽 위쪽", "description": "비품실,복도->큰타계단 견제",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/vSlO6Ss.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/YnCNbMs.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/Q15tS3K.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "0f",
+          "pos": { "x": "64.8%", "y": "59.7%" },
+          "modalContent": { "title": "악의 눈 - 세탁실", "description": "세탁실 내부, 냉동고 입구",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/528WfSc.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/SCksNHP.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/IashW6Z.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "0f",
+          "pos": { "x": "65.2%", "y": "55.8%" },
+          "modalContent": { "title": "악의 눈 - 비품실 문틀", "description": "큰타계단, 비품실 내부, 지하 복도",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/iTqjU1O.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/T3XDlJa.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/ZfXTyst.jpeg" }
+            ]
+          }
+        },
+        {
+          "type": "evilEye",
+          "floorId": "0f",
+          "pos": { "x": "71.4%", "y": "48.7%" },
+          "modalContent": { "title": "악의 눈 - 벙커", "description": "벙커 내부",
+            "media": [
+              { "type": "image", "src": "https://i.imgur.com/13WLVEf.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/tCFsgao.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/fJlKvuF.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/wbohTee.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/ugyTpCN.jpeg" },
+              { "type": "image", "src": "https://i.imgur.com/ibBj1KT.jpeg" },
+              { "type": "youtube", "src": "4M8XPISvc5g" }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
