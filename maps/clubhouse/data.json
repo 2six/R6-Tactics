@@ -32,7 +32,7 @@
       "name": "1층",
       "mapImage": "https://i.imgur.com/g9VVITM.jpeg",
       "labels": [
-        { "pos": { "x": "63.7%", "y": "45.4%" }, "text": "중앙\n계단", "fontSize": "8px" },
+        { "pos": { "x": "63.8%", "y": "45.3%" }, "text": "중앙\n계단", "fontSize": "8px" },
         { "pos": { "x": "73.0%", "y": "52.4%" }, "text": "동쪽계단", "fontSize": "6px", "rotation": 90 },
         { "pos": { "x": "70.8%", "y": "62.4%" }, "text": "차고계단", "fontSize": "6px" },
         { "pos": { "x": "73.9%", "y": "53.4%" }, "text": "블루계단", "fontSize": "6px", "rotation": 90 },
@@ -49,14 +49,29 @@
         { "pos": { "x": "61.5%", "y": "47.9%" }, "text": "화장실" },
         { "pos": { "x": "61.4%", "y": "53.1%" }, "text": "당구대", "rotation": 90 },
         { "pos": { "x": "58.4%", "y": "55.5%" }, "text": "스트립" },
-        { "pos": { "x": "59.4%", "y": "49.6%" }, "text": "스트립복도", "fontSize": "8px", "rotation": 90 }
+        { "pos": { "x": "59.5%", "y": "49.6%" }, "text": "스트립복도", "fontSize": "8px"," rotation": 90 }
       ]
     },
     "2f": {
       "name": "2층",
       "mapImage": "https://i.imgur.com/3MeEhOK.jpeg",
       "labels": [
-        { "pos": { "x": "%", "y": "%" }, "text": "" }
+        { "pos": { "x": "64.0%", "y": "45.1%" }, "text": "중앙\n계단", "fontSize": "8px" },
+        { "pos": { "x": "73.0%", "y": "50.3%" }, "text": "동쪽계단", "fontSize": "6px", "rotation": 45 },
+        { "pos": { "x": "71.1%", "y": "62.4%" }, "text": "차고계단", "fontSize": "6px" },
+        { "pos": { "x": "66.8%", "y": "45.1%" }, "text": "병참" },
+        { "pos": { "x": "62.8%", "y": "52.3%" }, "text": "체육관" },
+        { "pos": { "x": "65.2%", "y": "51.5%" }, "text": "침실" },
+        { "pos": { "x": "63.8%", "y": "49.2%" }, "text": "화장실", "fontSize": "6px" },
+        { "pos": { "x": "62.3%", "y": "48.5%" }, "text": "체육관복도", "fontSize": "6px"," rotation": 90 },
+        { "pos": { "x": "64.1%", "y": "47.5%" }, "text": "침실복도", "fontSize": "6px" },
+        { "pos": { "x": "68.0%", "y": "51.5%" }, "text": "공사장" },
+        { "pos": { "x": "70.5%", "y": "50.8%" }, "text": "현금" },
+        { "pos": { "x": "71.2%", "y": "54.9%" }, "text": "CCTV" },
+        { "pos": { "x": "69.5%", "y": "60.9%" }, "text": "1번", "fontSize": "6px" },
+        { "pos": { "x": "69.5%", "y": "59.2%" }, "text": "2번", "fontSize": "6px" },
+        { "pos": { "x": "61.0%", "y": "48.4%" }, "text": "체육외벽", "fontSize": "8px"," rotation": 90 },
+        { "pos": { "x": "73.6%", "y": "54.5%" }, "text": "CC외벽", "fontSize": "8px"," rotation": 90 }
       ]
     }
   },
